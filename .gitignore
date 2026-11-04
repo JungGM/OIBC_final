@@ -1,0 +1,11 @@
+__pycache__/
+*.csv
+*.parquet
+*.zip
+*.pkl
+*.joblib
+.venv/
+data/
+outputs/
+tmp/
+*.ubj

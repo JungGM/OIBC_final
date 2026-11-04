@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "timezone": "Asia/Seoul",
+  "train_cutoff": "2023-12-31 17:00:00+09:00",
+  "test_start": "2024-01-01 01:00:00+09:00",
+  "test_end": "2025-01-01 00:00:00+09:00",
+  "forecast_rows": 17568,
+  "sites": 253,
+  "min_group_capacity_kw": 20000,
+  "score_source_sha256": {
+    "sites.csv": "93d166fffd009c3643db748fc6d5a1d48851e5f70b314171130e6ab6b7997ea2",
+    "train\\generation.parquet": "a2c334a5d2dd0983be78c7ac138e25a013cf70fd9d027515953129ea79964e95",
+    "train\\smp.csv": "6ae610fc3e527e603681da3867ecd79d210ed24a17e676ac16149ba7d349645b"
+  },
+  "meaning": "Compare these hashes locally; do not upload source files"
+}
