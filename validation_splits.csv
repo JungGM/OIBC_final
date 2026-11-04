@@ -1,0 +1,5 @@
+fold,train_start,train_end,validation_start,validation_end,first_issue_cutoff,purpose,label_receipt_status
+tune_2022,2021-01-01 01:00:00+09:00,2021-12-31 17:00:00+09:00,2022-01-01 01:00:00+09:00,2023-01-01 00:00:00+09:00,2021-12-31 17:00:00+09:00,feature_selection,timestamp embargo enforced; receipt metadata unavailable
+tune_2023,2021-01-01 01:00:00+09:00,2022-12-31 17:00:00+09:00,2023-01-01 01:00:00+09:00,2024-01-01 00:00:00+09:00,2022-12-31 17:00:00+09:00,feature_selection,timestamp embargo enforced; receipt metadata unavailable
+confirm_2024,2021-01-01 01:00:00+09:00,2023-12-31 17:00:00+09:00,2024-01-01 01:00:00+09:00,2025-01-01 00:00:00+09:00,2023-12-31 17:00:00+09:00,confirmation,timestamp embargo enforced; receipt metadata unavailable
+holdout_2025,2021-01-01 01:00:00+09:00,2024-12-31 17:00:00+09:00,2025-01-01 01:00:00+09:00,2025-06-01 00:00:00+09:00,2024-12-31 17:00:00+09:00,final_unused_holdout,timestamp embargo enforced; receipt metadata unavailable
