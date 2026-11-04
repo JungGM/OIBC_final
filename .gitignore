@@ -1,0 +1,15 @@
+__pycache__/
+.venv/
+data/
+work/
+outputs/
+features_v2/
+*.parquet
+*.csv
+*.zip
+*.joblib
+*.pt
+*.pkl
+*.ubj
+*.npy
+*.npz
