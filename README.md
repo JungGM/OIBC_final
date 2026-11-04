@@ -1,4 +1,7 @@
-# OIBC test1 — 팀 공통 평가와 모델 실험
+# OIBC 개별 발전량 예측과 팀 공통 평가
+
+새 특징 생성 절차는 [FEATURE_REPORT.md](FEATURE_REPORT.md), 7종 개별 모델의
+학습·검증 절차는 [INDIVIDUAL_MODELS.md](INDIVIDUAL_MODELS.md)에 정리했다.
 
 새 실험: [모델 v2의 방법과 결과](MODEL_V2_REPORT.md), 팀 공통 기준: [test기준](test기준/README.md). v2는 기존보다 개별 MAE를 줄였지만 178시간 그룹 벌금은 늘었으므로 두 결과를 모두 보존합니다.
 

@@ -9,3 +9,8 @@ data/
 outputs/
 tmp/
 *.ubj
+*.pt
+*.npy
+*.npz
+work/
+features_v2/
