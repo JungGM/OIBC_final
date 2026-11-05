@@ -1,0 +1,17 @@
+제출/
+*.parquet
+*.npy
+*.npz
+*.pt
+*.pth
+*.ubj
+*.pkl
+*.joblib
+__pycache__/
+.venv/
+data/
+oibc_data/
+models/
+cache/
+*.csv
+
