@@ -1,6 +1,7 @@
 # GM_Ver3
 
 2026 OIBC용 독립 프로젝트입니다. [AGENTS.md](AGENTS.md)에 목표와 개발 규칙을 기록했습니다.
+원본 데이터로 실행한 계절·월별 검증과 최종 결과는 [RESULTS.md](RESULTS.md)에 있습니다.
 
 ## 검증 절차
 
