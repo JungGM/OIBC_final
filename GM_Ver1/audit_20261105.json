@@ -1,0 +1,681 @@
+{
+  "training_grid_sha256": "70ed4636611b084eef42562e4505f82522af06f40aeccd82579db7d208dcbe02",
+  "common_hours_by_month": {
+    "March": 737,
+    "April": 713,
+    "May": 737
+  },
+  "results": {
+    "official_Nov02": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 12972597.629118372,
+          "fleet_floor": 12459229.647344517,
+          "site_mae": 5.462435051925804,
+          "peak_penalty": 10689477.058856595
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 17449032.113204792,
+          "fleet_floor": 17041281.83029888,
+          "site_mae": 6.2590103197909075,
+          "peak_penalty": 13839921.865339119,
+          "GA_penalty": 17467490.408261757
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 21525804.527087055,
+          "fleet_floor": 21148584.382614,
+          "site_mae": 6.804401630400957,
+          "peak_penalty": 17171450.977369264,
+          "GA_penalty": 21567128.768756304
+        }
+      },
+      "apr_may_reference": 38974836.64029185,
+      "apr_may_GA": 39034619.17701806,
+      "apr_may_fleet_floor": 38189866.21291288,
+      "apr_may_peak_error_corr": 0.9502572529632274,
+      "apr_may_peak_bias_kwh": -163.68579834739012,
+      "apr_may_peak_penalty_share": 0.7956767883062554,
+      "deep_night_penalty": 5.8228610629999995,
+      "deep_night_zero_diagnostic_gain": 0.0
+    },
+    "official_V8": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 12830312.780291319,
+          "fleet_floor": 12326995.618624499,
+          "site_mae": 5.442749096494196,
+          "peak_penalty": 10560341.866062757
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 16208952.293592563,
+          "fleet_floor": 15801555.547016658,
+          "site_mae": 6.064877983058067,
+          "peak_penalty": 12756190.209672026,
+          "GA_penalty": 16218253.336670484
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 21033873.91600249,
+          "fleet_floor": 20535843.445973054,
+          "site_mae": 6.705032404932174,
+          "peak_penalty": 16743682.646860955,
+          "GA_penalty": 20920912.721072398
+        }
+      },
+      "apr_may_reference": 37242826.209595054,
+      "apr_may_GA": 37139166.05774288,
+      "apr_may_fleet_floor": 36337398.99298971,
+      "apr_may_peak_error_corr": 0.9462661504973022,
+      "apr_may_peak_bias_kwh": 30.31461884335364,
+      "apr_may_peak_penalty_share": 0.7920954411599618,
+      "deep_night_penalty": 335.9341709652448,
+      "deep_night_zero_diagnostic_gain": 330.1113099022448
+    },
+    "legacy_V7": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 12849913.778601076,
+          "fleet_floor": 12370433.35631321,
+          "site_mae": 5.447158715498595,
+          "peak_penalty": 10536570.313863613
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 15472152.64841362,
+          "fleet_floor": 15071285.91772966,
+          "site_mae": 5.984672143002008,
+          "peak_penalty": 12165227.218168946,
+          "GA_penalty": 15579433.087225761
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 20935065.08707887,
+          "fleet_floor": 20385641.738819957,
+          "site_mae": 6.690476692382882,
+          "peak_penalty": 16673177.329835294,
+          "GA_penalty": 20801653.875865318
+        }
+      },
+      "apr_may_reference": 36407217.73549249,
+      "apr_may_GA": 36381086.963091075,
+      "apr_may_fleet_floor": 35456927.65654962,
+      "apr_may_peak_error_corr": 0.9433100237017047,
+      "apr_may_peak_bias_kwh": 179.2448383169406,
+      "apr_may_peak_penalty_share": 0.7921067947988346,
+      "deep_night_penalty": 335.9450871093439,
+      "deep_night_zero_diagnostic_gain": 330.1222260463439
+    },
+    "V11": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 12326615.638188075,
+          "fleet_floor": 11803490.774828361,
+          "site_mae": 5.339123013028813,
+          "peak_penalty": 10147071.114977494
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 15985910.524001744,
+          "fleet_floor": 15589036.79692611,
+          "site_mae": 6.027213062597466,
+          "peak_penalty": 12608655.858118858,
+          "GA_penalty": 15955600.665667826
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 20003431.158453323,
+          "fleet_floor": 19549615.83376789,
+          "site_mae": 6.617277102966454,
+          "peak_penalty": 15763227.23203056,
+          "GA_penalty": 20012042.534884963
+        }
+      },
+      "apr_may_reference": 35989341.68245506,
+      "apr_may_GA": 35967643.20055279,
+      "apr_may_fleet_floor": 35138652.630694,
+      "apr_may_peak_error_corr": 0.9423286565125246,
+      "apr_may_peak_bias_kwh": -108.13446389157933,
+      "apr_may_peak_penalty_share": 0.7883412633796749,
+      "deep_night_penalty": 88.3506885385612,
+      "deep_night_zero_diagnostic_gain": 82.5278274755612
+    },
+    "V14": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 12211765.366611136,
+          "fleet_floor": 11747331.16118744,
+          "site_mae": 5.314110598461392,
+          "peak_penalty": 10104839.005946625
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 15984236.659802424,
+          "fleet_floor": 15561878.66319557,
+          "site_mae": 5.983604971247087,
+          "peak_penalty": 12640089.88718323,
+          "GA_penalty": 15926231.514011133
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 19985545.563349955,
+          "fleet_floor": 19536590.236516703,
+          "site_mae": 6.640370962452503,
+          "peak_penalty": 15709871.20630021,
+          "GA_penalty": 19963192.221640676
+        }
+      },
+      "apr_may_reference": 35969782.223152384,
+      "apr_may_GA": 35889423.735651806,
+      "apr_may_fleet_floor": 35098468.89971227,
+      "apr_may_peak_error_corr": 0.9434044113042849,
+      "apr_may_peak_bias_kwh": -117.01762181367972,
+      "apr_may_peak_penalty_share": 0.7881604875337734,
+      "deep_night_penalty": 88.3506885385612,
+      "deep_night_zero_diagnostic_gain": 82.5278274755612
+    },
+    "V18": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 12539830.143526305,
+          "fleet_floor": 12042661.130479418,
+          "site_mae": 5.370512071739477,
+          "peak_penalty": 10291304.812948197
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 15856810.845121589,
+          "fleet_floor": 15478135.643335897,
+          "site_mae": 5.951026837788036,
+          "peak_penalty": 12494442.466227353,
+          "GA_penalty": 15840828.367031572
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 19908412.624909043,
+          "fleet_floor": 19497689.10201543,
+          "site_mae": 6.553143173548982,
+          "peak_penalty": 15692728.712918472,
+          "GA_penalty": 19924651.876397945
+        }
+      },
+      "apr_may_reference": 35765223.47003063,
+      "apr_may_GA": 35765480.24342951,
+      "apr_may_fleet_floor": 34975824.74535133,
+      "apr_may_peak_error_corr": 0.9427829850776883,
+      "apr_may_peak_bias_kwh": -87.3941422600988,
+      "apr_may_peak_penalty_share": 0.7881167358779455,
+      "deep_night_penalty": 88.3506885385612,
+      "deep_night_zero_diagnostic_gain": 82.5278274755612
+    },
+    "XGBoost/Ver1": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 12331928.771351367,
+          "fleet_floor": 11850673.51750432,
+          "site_mae": 5.801178938854584,
+          "peak_penalty": 9827040.571783412
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 16440712.110971987,
+          "fleet_floor": 16134058.34968137,
+          "site_mae": 6.188146181118462,
+          "peak_penalty": 12955232.491684522,
+          "GA_penalty": 16396502.898354515
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 22116794.954390068,
+          "fleet_floor": 21598449.679146416,
+          "site_mae": 7.058490656734436,
+          "peak_penalty": 17677493.98574333,
+          "GA_penalty": 21855224.74303489
+        }
+      },
+      "apr_may_reference": 38557507.06536205,
+      "apr_may_GA": 38251727.64138941,
+      "apr_may_fleet_floor": 37732508.02882779,
+      "apr_may_peak_error_corr": 0.9451440233227363,
+      "apr_may_peak_bias_kwh": 403.1366183595309,
+      "apr_may_peak_penalty_share": 0.7944685434538016,
+      "deep_night_penalty": 12204.752618585175,
+      "deep_night_zero_diagnostic_gain": 12198.929757522175
+    },
+    "XGBoost/Ver2": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 12867407.02491108,
+          "fleet_floor": 12407909.856473528,
+          "site_mae": 5.841837085186957,
+          "peak_penalty": 10413415.563653419
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 16447220.593989572,
+          "fleet_floor": 16148918.122516118,
+          "site_mae": 6.194276938887523,
+          "peak_penalty": 13000470.019117346,
+          "GA_penalty": 16497722.23604649
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 21898634.084906913,
+          "fleet_floor": 21267426.90992508,
+          "site_mae": 7.048713657137976,
+          "peak_penalty": 17535693.763347153,
+          "GA_penalty": 21631965.8726262
+        }
+      },
+      "apr_may_reference": 38345854.67889649,
+      "apr_may_GA": 38129688.10867269,
+      "apr_may_fleet_floor": 37416345.0324412,
+      "apr_may_peak_error_corr": 0.9455001865974786,
+      "apr_may_peak_bias_kwh": 333.1501167482747,
+      "apr_may_peak_penalty_share": 0.7963354588956385,
+      "deep_night_penalty": 4571.494858171228,
+      "deep_night_zero_diagnostic_gain": 4565.6719971082275
+    },
+    "GRU/Ver1": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 14032628.864769824,
+          "fleet_floor": 13392499.022586698,
+          "site_mae": 5.749034001915618,
+          "peak_penalty": 11166149.94638265
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 13878822.895862503,
+          "fleet_floor": 13427838.437577331,
+          "site_mae": 5.854943967098074,
+          "peak_penalty": 10560518.751381416,
+          "GA_penalty": 13634549.760540383
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 15661054.656507302,
+          "fleet_floor": 14991761.987082697,
+          "site_mae": 6.226433446006062,
+          "peak_penalty": 11805980.565656755,
+          "GA_penalty": 15208215.365469553
+        }
+      },
+      "apr_may_reference": 29539877.552369807,
+      "apr_may_GA": 28842765.126009937,
+      "apr_may_fleet_floor": 28419600.424660023,
+      "apr_may_peak_error_corr": 0.9032205410900835,
+      "apr_may_peak_bias_kwh": 229.31450298631023,
+      "apr_may_peak_penalty_share": 0.757162898775924,
+      "deep_night_penalty": 124436.45971859124,
+      "deep_night_zero_diagnostic_gain": 124430.63685752824
+    },
+    "GRU/Ver2": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 13293635.91102136,
+          "fleet_floor": 12710774.135784352,
+          "site_mae": 5.8739370062639615,
+          "peak_penalty": 10446409.092415284
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 14844417.014193082,
+          "fleet_floor": 14461759.12725678,
+          "site_mae": 6.1301879942271285,
+          "peak_penalty": 11206433.030541657,
+          "GA_penalty": 14632363.833803747
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 15761380.292738039,
+          "fleet_floor": 15062930.445237782,
+          "site_mae": 6.337389681095532,
+          "peak_penalty": 11930871.676550264,
+          "GA_penalty": 15236464.532993186
+        }
+      },
+      "apr_may_reference": 30605797.306931123,
+      "apr_may_GA": 29868828.366796933,
+      "apr_may_fleet_floor": 29524689.572494563,
+      "apr_may_peak_error_corr": 0.9071898681859007,
+      "apr_may_peak_bias_kwh": -276.02274292495184,
+      "apr_may_peak_penalty_share": 0.755977845473483,
+      "deep_night_penalty": 131666.36672761972,
+      "deep_night_zero_diagnostic_gain": 131660.54386655672
+    },
+    "TCN/Ver1": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 16599742.676009683,
+          "fleet_floor": 16148581.486334316,
+          "site_mae": 5.788697889341609,
+          "peak_penalty": 13552080.606119074
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 19613315.64761644,
+          "fleet_floor": 19378565.08078873,
+          "site_mae": 6.137045922676185,
+          "peak_penalty": 15541692.457284966,
+          "GA_penalty": 19473141.154681608
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 21990978.255823635,
+          "fleet_floor": 21177975.134979617,
+          "site_mae": 6.797194731656032,
+          "peak_penalty": 17398203.033663686,
+          "GA_penalty": 21392634.907072254
+        }
+      },
+      "apr_may_reference": 41604293.90344007,
+      "apr_may_GA": 40865776.06175386,
+      "apr_may_fleet_floor": 40556540.21576835,
+      "apr_may_peak_error_corr": 0.922846452233711,
+      "apr_may_peak_bias_kwh": 1925.501919091307,
+      "apr_may_peak_penalty_share": 0.7917426880840537,
+      "deep_night_penalty": 231660.4578765371,
+      "deep_night_zero_diagnostic_gain": 231654.6350154741
+    },
+    "TCN/Ver2": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 14878582.382671576,
+          "fleet_floor": 14549885.690076213,
+          "site_mae": 5.935573310247995,
+          "peak_penalty": 12173454.42509965
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 17128833.296222344,
+          "fleet_floor": 16811424.040813528,
+          "site_mae": 6.292470860528614,
+          "peak_penalty": 13145834.046086255,
+          "GA_penalty": 17011624.105421774
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 19438609.19346503,
+          "fleet_floor": 18731110.66549114,
+          "site_mae": 6.6789073656622175,
+          "peak_penalty": 15351501.140386153,
+          "GA_penalty": 18978372.484203137
+        }
+      },
+      "apr_may_reference": 36567442.48968738,
+      "apr_may_GA": 35989996.589624904,
+      "apr_may_fleet_floor": 35542534.70630467,
+      "apr_may_peak_error_corr": 0.9214672074148874,
+      "apr_may_peak_bias_kwh": 1228.5139711872205,
+      "apr_may_peak_penalty_share": 0.7793089493340729,
+      "deep_night_penalty": 124830.60984060077,
+      "deep_night_zero_diagnostic_gain": 124824.78697953776
+    },
+    "uniform": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 12431881.676063433,
+          "fleet_floor": 12076046.496801121,
+          "site_mae": 5.434823056222045,
+          "peak_penalty": 10049621.436359495
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 14431075.527550343,
+          "fleet_floor": 14045851.192697478,
+          "site_mae": 5.683304119741962,
+          "peak_penalty": 11145439.931109019,
+          "GA_penalty": 14323922.871741397
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 17791804.269300126,
+          "fleet_floor": 17392659.142337404,
+          "site_mae": 6.258520580027939,
+          "peak_penalty": 13932005.141283823,
+          "GA_penalty": 17552643.8947677
+        }
+      },
+      "apr_may_reference": 32222879.796850465,
+      "apr_may_GA": 31876566.7665091,
+      "apr_may_fleet_floor": 31438510.33503488,
+      "apr_may_peak_error_corr": 0.9223615397829904,
+      "apr_may_peak_bias_kwh": 640.5990739114678,
+      "apr_may_peak_penalty_share": 0.7782496546085855,
+      "deep_night_penalty": 104895.02361182205,
+      "deep_night_zero_diagnostic_gain": 104889.20075075905
+    },
+    "ridge": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 12557939.132490473,
+          "fleet_floor": 12159918.247340363,
+          "site_mae": 5.529518981112755,
+          "peak_penalty": 10036587.268364973
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 14523308.168877814,
+          "fleet_floor": 14123870.19965123,
+          "site_mae": 5.7853272363236625,
+          "peak_penalty": 11083751.788421199,
+          "GA_penalty": 14402159.591729317
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 17571115.819266237,
+          "fleet_floor": 17173959.49770392,
+          "site_mae": 6.298534591262809,
+          "peak_penalty": 13623287.100017548,
+          "GA_penalty": 17329720.923133798
+        }
+      },
+      "apr_may_reference": 32094423.98814405,
+      "apr_may_GA": 31731880.51486312,
+      "apr_may_fleet_floor": 31297829.697355147,
+      "apr_may_peak_error_corr": 0.921158431960659,
+      "apr_may_peak_bias_kwh": 588.887473186899,
+      "apr_may_peak_penalty_share": 0.7698234091244551,
+      "deep_night_penalty": 179042.78678337173,
+      "deep_night_zero_diagnostic_gain": 179036.96392230873
+    },
+    "March-selected challenger": {
+      "months": {
+        "3": {
+          "hours": 737,
+          "reference_penalty": 11914114.203564957,
+          "fleet_floor": 11495141.458463542,
+          "site_mae": 5.314851342105501,
+          "peak_penalty": 9688176.527730253
+        },
+        "4": {
+          "hours": 713,
+          "reference_penalty": 14542637.2587271,
+          "fleet_floor": 14191252.91323409,
+          "site_mae": 5.735239044795741,
+          "peak_penalty": 11284953.451364707,
+          "GA_penalty": 14563224.694443472
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 19081798.771070458,
+          "fleet_floor": 18618197.43249633,
+          "site_mae": 6.366345139489167,
+          "peak_penalty": 15073180.34762076,
+          "GA_penalty": 18927167.015885606
+        }
+      },
+      "apr_may_reference": 33624436.02979756,
+      "apr_may_GA": 33490391.71032908,
+      "apr_may_fleet_floor": 32809450.345730424,
+      "apr_may_peak_error_corr": 0.9344901163977133,
+      "apr_may_peak_bias_kwh": 335.45684637741067,
+      "apr_may_peak_penalty_share": 0.7838981678570672,
+      "deep_night_penalty": 52610.27758567694,
+      "deep_night_zero_diagnostic_gain": 52604.454724613934
+    },
+    "current_GD": {
+      "months": {
+        "4": {
+          "hours": 713,
+          "reference_penalty": 14529884.540895198,
+          "fleet_floor": 14178255.604949225,
+          "site_mae": 5.803262765729756,
+          "peak_penalty": 11219015.490226492,
+          "GA_penalty": 14422788.53618061
+        },
+        "5": {
+          "hours": 737,
+          "reference_penalty": 18304222.133939568,
+          "fleet_floor": 17890512.654777043,
+          "site_mae": 6.411100390973197,
+          "peak_penalty": 14354839.971072234,
+          "GA_penalty": 18105744.454568215
+        }
+      },
+      "apr_may_reference": 32834106.674834765,
+      "apr_may_GA": 32528532.990748823,
+      "apr_may_fleet_floor": 32068768.25972627,
+      "apr_may_peak_error_corr": 0.9280048730238813,
+      "apr_may_peak_bias_kwh": 294.7430201089247,
+      "apr_may_peak_penalty_share": 0.7788808056988937,
+      "deep_night_penalty": 63977.497474875185,
+      "deep_night_zero_diagnostic_gain": 63971.67461381218
+    }
+  },
+  "GA_daily_block_bootstrap_90pct_gain_krw": [
+    143381.3907946105,
+    476729.2131974979
+  ],
+  "complete_days_used_for_interval": 59,
+  "March_only_screen": [
+    {
+      "candidate": "V8 + 50% uniform",
+      "march_penalty_krw": 11914114.203564953
+    },
+    {
+      "candidate": "V8 + 50% GRU/Ver1",
+      "march_penalty_krw": 12099440.91714491
+    },
+    {
+      "candidate": "V8 + 50% GRU/Ver2",
+      "march_penalty_krw": 12123495.074608445
+    },
+    {
+      "candidate": "V8 + 25% GRU/Ver1",
+      "march_penalty_krw": 12163982.337211639
+    },
+    {
+      "candidate": "V8 + 25% GRU/Ver2",
+      "march_penalty_krw": 12181501.120782085
+    },
+    {
+      "candidate": "V8 + 25% uniform",
+      "march_penalty_krw": 12238988.770313254
+    },
+    {
+      "candidate": "V8 + 25% TCN/Ver2",
+      "march_penalty_krw": 12293229.490493411
+    },
+    {
+      "candidate": "V8 + 50% XGBoost/Ver1",
+      "march_penalty_krw": 12315550.625551343
+    },
+    {
+      "candidate": "V8 + 50% TCN/Ver2",
+      "march_penalty_krw": 12363947.084420178
+    },
+    {
+      "candidate": "V8 + 25% TCN/Ver1",
+      "march_penalty_krw": 12369767.15394354
+    },
+    {
+      "candidate": "V8 + 10% GRU/Ver2",
+      "march_penalty_krw": 12492335.286349446
+    },
+    {
+      "candidate": "V8 + 10% GRU/Ver1",
+      "march_penalty_krw": 12495144.039992841
+    },
+    {
+      "candidate": "V8 + 25% XGBoost/Ver1",
+      "march_penalty_krw": 12511557.511447886
+    },
+    {
+      "candidate": "V8 + 10% TCN/Ver1",
+      "march_penalty_krw": 12537945.502251329
+    },
+    {
+      "candidate": "V8 + 50% XGBoost/Ver2",
+      "march_penalty_krw": 12545574.880226504
+    },
+    {
+      "candidate": "V8 + 10% TCN/Ver2",
+      "march_penalty_krw": 12556964.410910536
+    },
+    {
+      "candidate": "V8 + 10% uniform",
+      "march_penalty_krw": 12564107.349833146
+    },
+    {
+      "candidate": "V8 + 25% XGBoost/Ver2",
+      "march_penalty_krw": 12617801.796786623
+    },
+    {
+      "candidate": "V8 + 10% XGBoost/Ver1",
+      "march_penalty_krw": 12689987.541490253
+    },
+    {
+      "candidate": "V8 + 10% XGBoost/Ver2",
+      "march_penalty_krw": 12726430.095481414
+    },
+    {
+      "candidate": "V8 + 50% TCN/Ver1",
+      "march_penalty_krw": 12803181.457261369
+    },
+    {
+      "candidate": "V8 unchanged",
+      "march_penalty_krw": 12830312.780291319
+    }
+  ],
+  "March_selected_challenger": "V8 + 50% uniform",
+  "reassignment_diagnostic": {
+    "retrospective_GRU1_GA_fit": "March complete hours, fixed seed; GRU1 chosen after observing spring",
+    "apr_may_reference": 29539877.552369807,
+    "apr_may_GD_GA_map": 28842765.126009937,
+    "apr_may_GRU1_GA_map": 29104084.8361581,
+    "refit_assignment_changes_up_to_label_swap": 53
+  },
+  "annual_forecast_totals_without_actuals": {
+    "official_Nov02": {
+      "predicted_energy_kwh": 59161389.73086369,
+      "forecast_implied_gross_krw": 6624885258.591073
+    },
+    "official_V8": {
+      "predicted_energy_kwh": 59473561.890739694,
+      "forecast_implied_gross_krw": 6657466979.316271
+    },
+    "current_GD_GA": {
+      "predicted_energy_kwh": 57915724.77283567,
+      "forecast_implied_gross_krw": 6481953668.17899
+    }
+  },
+  "comparison_caveat": "Historical diagnostics. Legacy predictors fit through Feb 28 and current base predictors through Dec 31. No claim of architecture-only effect or globally untouched test."
+}
