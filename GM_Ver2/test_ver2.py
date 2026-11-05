@@ -5,13 +5,34 @@ from tempfile import TemporaryDirectory
 
 import numpy as np
 import pandas as pd
+import torch
 
 from .data import prices
 from .decision import apply_blend, blend_weights, penalty, vpp
 from .target67 import scenarios
+from .solar_joint import SolarJoint, objective
+from .solar_final import refine_membership
 
 
 class DecisionTest(unittest.TestCase):
+    def test_vpp_refinement_improves_without_violating_capacity(self):
+        errors = np.array([[4., 4., 4., -4., -4., -4.]])
+        capacity = np.full(6, 7000.)
+        bits = np.array([True, True, True, False, False, False])
+        refined, summary = refine_membership(errors, np.array([100.]), capacity, np.array([1]), bits)
+        self.assertLess(summary["final"], summary["initial"])
+        self.assertGreaterEqual(capacity[refined].sum(), 20000.)
+        self.assertGreaterEqual(capacity[~refined].sum(), 20000.)
+
+    def test_solar_joint_excludes_missing_target_members_from_loss(self):
+        model = SolarJoint(1, [10., 10.], [[1.], [1.]])
+        price = torch.ones(1, 1)
+        actual = torch.tensor([[[5., float("nan")]]])
+        correct = torch.tensor([[[.5, 12.]]])
+        wrong = torch.tensor([[[.7, 12.]]])
+        self.assertEqual(objective(model, correct, actual, price, .35).item(), 0.)
+        self.assertGreater(objective(model, wrong, actual, price, .35).item(), 0.)
+
     def test_target_scenarios_score_models_on_common_actuals(self):
         price = pd.DataFrame({"smp": np.full(72, 100.), "k": np.full(72, 3)})
         forecast = np.full((72, 2), 4.)

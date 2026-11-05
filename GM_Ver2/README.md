@@ -45,3 +45,16 @@ python -m GM_Ver2.target67 --raw "C:/path/01_participant_dataset" --artifacts "C
 ```
 
 연간 시뮬레이션에서는 두 가지 기준 예측에 각각 5월 시점외 발전소별 잔차의 연속 3일 블록을 더합니다. 각 시나리오에서 모든 후보가 같은 발전소별 실적을 사용하므로 매출은 공통입니다. 보고서는 벌금 0원일 때 67억에 도달한 시나리오 횟수도 기록합니다. 실제 평가기간 실적은 이 절차로 복원할 수 없습니다.
+
+## SolarJoint 새 학습
+
+전일 17시 예보의 일중 맥락, 전체 발전소의 기상 특징, 태양고도 기반 발전 외피를 쓰는 24시간 합성곱 신경망입니다. 발전소 오차와 참조 그룹·전체 발전량 오차를 함께 학습합니다. 실측이 일부 있는 시간에는 같은 관측 멤버로 예측과 실적을 합산하며 관측 용량 비중으로 손실을 줄입니다.
+
+```powershell
+python -m GM_Ver2.solar_joint --raw "C:/path/01_participant_dataset" --artifacts "C:/path/local_run" --out "C:/path/joint"
+python -m GM_Ver2.solar_final --raw "C:/path/01_participant_dataset" --artifacts "C:/path/local_run" --gru "C:/path/GRU/Ver1" --joint "C:/path/joint" --out "C:/path/solar_final"
+```
+
+두 번째 실행은 기존 조합, 새 모델 단독, 전역 혼합, 피크별 혼합, 전체 발전량 잔차 보정을 비교합니다. 각 조합의 VPP는 앞선 시간 블록에서 강건 MILP로 적합합니다. 3·4월에서 선발하고 5월 벌금으로 채택을 검사합니다. `report.json`은 월별 벌금, 채택 상태, 공통 연간 실적 시나리오를 기록합니다.
+
+두 번째 명령에 `--refine-only`를 붙이고 별도의 출력 폴더를 지정하면 기존 예측을 고정한 상태에서 VPP 이동·교환 후처리를 검증합니다. MILP 결과를 시작점으로 삼아 두 그룹의 용량 하한을 만족하는 단일 이동·쌍 교환을 최대 네 번 적용합니다.
