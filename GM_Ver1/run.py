@@ -287,7 +287,7 @@ def main():
     dataset = args.dataset or current_dataset()
     out = local_output(args.out)
     write_json(out / "environment.json", dict(python=sys.version, platform=platform.platform(), seed=SEED,
-        packages={p: importlib.metadata.version(p) for p in ["numpy", "pandas", "pyarrow", "torch", "xgboost", "optuna"]},
+        packages={p: importlib.metadata.version(p) for p in ["numpy", "pandas", "pyarrow", "torch", "xgboost", "optuna", "scikit-learn"]},
         device="cpu", threads=4))
     panel = prepare_panel(dataset, out / "cache" / "training")
     evaluation = prepare_panel(dataset, out / "cache" / "evaluation", evaluation=True)

@@ -2,3 +2,4 @@
 torch==2.15.0
 xgboost==3.4.1
 optuna==5.0.0
+scikit-learn==1.9.1
