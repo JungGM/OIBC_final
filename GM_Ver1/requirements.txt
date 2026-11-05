@@ -1,0 +1,4 @@
+-r ../train/requirements.txt
+torch==2.15.0
+xgboost==3.4.1
+optuna==5.0.0

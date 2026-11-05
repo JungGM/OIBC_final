@@ -1,0 +1,14 @@
+{
+  "XGBoost": {
+    "Ver1": "complete",
+    "Ver2": "in_progress"
+  },
+  "GRU": {
+    "Ver1": "complete",
+    "Ver2": "in_progress"
+  },
+  "TCN": {
+    "Ver1": "pending",
+    "Ver2": "pending"
+  }
+}

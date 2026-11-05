@@ -1,0 +1,98 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.01606394339475487,
+    "seconds": 5.27253794670105,
+    "validation_mae_kwh": 4.7227911949157715
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.006937342180500177,
+    "seconds": 5.7999796867370605,
+    "validation_mae_kwh": 4.592203140258789
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.006324639706786804,
+    "seconds": 4.755406379699707,
+    "validation_mae_kwh": 4.625131130218506
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.0059374614022313825,
+    "seconds": 4.655442476272583,
+    "validation_mae_kwh": 4.693631649017334
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.005606019782591469,
+    "seconds": 7.0635857582092285,
+    "validation_mae_kwh": 4.565793514251709
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.0053326889436207505,
+    "seconds": 4.784149646759033,
+    "validation_mae_kwh": 4.508312225341797
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.005068505316463649,
+    "seconds": 5.003443717956543,
+    "validation_mae_kwh": 4.565236568450928
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.004887323921121378,
+    "seconds": 4.7915074825286865,
+    "validation_mae_kwh": 4.453522682189941
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.004639509708921684,
+    "seconds": 4.789680480957031,
+    "validation_mae_kwh": 4.632346153259277
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.004463908048869185,
+    "seconds": 4.678227186203003,
+    "validation_mae_kwh": 4.46321964263916
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.00425883009656754,
+    "seconds": 4.76575231552124,
+    "validation_mae_kwh": 4.610419273376465
+  },
+  {
+    "epoch": 12,
+    "train_loss": 0.004248239964754199,
+    "seconds": 4.92252254486084,
+    "validation_mae_kwh": 4.439222812652588
+  },
+  {
+    "epoch": 13,
+    "train_loss": 0.00397298806366991,
+    "seconds": 4.345655202865601,
+    "validation_mae_kwh": 4.732121467590332
+  },
+  {
+    "epoch": 14,
+    "train_loss": 0.003929402607777021,
+    "seconds": 2.8846161365509033,
+    "validation_mae_kwh": 4.620845317840576
+  },
+  {
+    "epoch": 15,
+    "train_loss": 0.003777253447017216,
+    "seconds": 2.972623348236084,
+    "validation_mae_kwh": 4.728200912475586
+  },
+  {
+    "epoch": 16,
+    "train_loss": 0.0037210605127310213,
+    "seconds": 3.040039539337158,
+    "validation_mae_kwh": 4.682191371917725
+  }
+]

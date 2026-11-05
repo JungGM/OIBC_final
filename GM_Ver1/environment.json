@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "seed": 20261105,
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "pyarrow": "26.0.1",
+    "torch": "2.15.0",
+    "xgboost": "3.4.1",
+    "optuna": "5.0.0"
+  },
+  "device": "cpu",
+  "threads": 4
+}

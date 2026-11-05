@@ -17,3 +17,10 @@ outputs/
 !feature_ablation.csv
 .env*
 .dataset.local.json
+.models.local.json
+*.sqlite3
+*.sqlite3-journal
+!GM_Ver1/**/*.parquet
+!GM_Ver1/**/*.pt
+!GM_Ver1/**/*.ubj
+!GM_Ver1/**/*.sqlite3

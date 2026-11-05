@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "family": "GRU",
+  "version": 1,
+  "config_sha256": "dd7f295f6d7430e15d22abbf80f45d476fd7248f953728c823f04de958d3b861",
+  "final_training_end": "2025-05-31 17:00:00+09:00",
+  "evaluation_rows": 2216280,
+  "stacking": false,
+  "vpp_optimization": false
+}

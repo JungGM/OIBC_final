@@ -1,0 +1,10 @@
+{
+  "training_start": "2021-01-01 01:00:00+09:00",
+  "training_end": "2024-12-31 17:00:00+09:00",
+  "eligible_rows": 3473883,
+  "labeled_sequences": 144952,
+  "seconds": 298.56573724746704,
+  "model_sha256": "80bb4619e0cbb7de17e8fdba028e39eece9a6b0d04d93582a72db5d697a9bbd0",
+  "full_history": true,
+  "excluded_missing_and_negative": true
+}

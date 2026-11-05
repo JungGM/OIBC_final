@@ -1,0 +1,44 @@
+[
+  {
+    "trial": 8,
+    "validation_mae_kwh": 3.8336069583892822,
+    "config": {
+      "objective": "reg:absoluteerror",
+      "max_depth": 7,
+      "eta": 0.045180220132759526,
+      "min_child_weight": 6.873745161975307,
+      "subsample": 0.7923713965815848,
+      "colsample_bytree": 0.7031086747652652,
+      "reg_lambda": 2.797378517909805,
+      "reg_alpha": 0.020033942558570526,
+      "tree_method": "hist",
+      "max_bin": 128,
+      "nthread": 4,
+      "seed": 20261105,
+      "eval_metric": "mae",
+      "weight_power": 2,
+      "num_boost_round": 595
+    }
+  },
+  {
+    "trial": 7,
+    "validation_mae_kwh": 3.8488471508026123,
+    "config": {
+      "objective": "reg:absoluteerror",
+      "max_depth": 8,
+      "eta": 0.025271426840579696,
+      "min_child_weight": 8.753377633756028,
+      "subsample": 0.9845569660308551,
+      "colsample_bytree": 0.8118161247235363,
+      "reg_lambda": 2.2233205470301773,
+      "reg_alpha": 0.0017665265853001222,
+      "tree_method": "hist",
+      "max_bin": 128,
+      "nthread": 4,
+      "seed": 20261105,
+      "eval_metric": "mae",
+      "weight_power": 2,
+      "num_boost_round": 596
+    }
+  }
+]
