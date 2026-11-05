@@ -8,9 +8,22 @@ import pandas as pd
 
 from .data import prices
 from .decision import apply_blend, blend_weights, penalty, vpp
+from .target67 import scenarios
 
 
 class DecisionTest(unittest.TestCase):
+    def test_target_scenarios_score_models_on_common_actuals(self):
+        price = pd.DataFrame({"smp": np.full(72, 100.), "k": np.full(72, 3)})
+        forecast = np.full((72, 2), 4.)
+        first = np.array([True, False])
+        actual = forecast + 1.
+        history = {"ver2": forecast, "gru_v1": forecast}
+        models = {"ver2": (forecast, first), "gru_v1": (actual, first)}
+        result = scenarios(price, history, history, actual, models, draws=2)["ver2"]
+        self.assertEqual(result["gross_mean_krw"], 72000.)
+        self.assertEqual(result["candidates"]["ver2"]["mean_penalty_krw"], 4320.)
+        self.assertEqual(result["candidates"]["gru_v1"]["mean_penalty_krw"], 0.)
+
     def test_k_uses_closing_hour(self):
         times = pd.date_range("2025-03-01 01:00+09:00", periods=24, freq="h")
         with TemporaryDirectory() as directory:

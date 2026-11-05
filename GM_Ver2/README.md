@@ -35,3 +35,13 @@ python -m GM_Ver2.run --raw "C:/path/01_participant_dataset" --out "C:/path/loca
 ```powershell
 python -m GM_Ver2.strengthen --raw "C:/path/01_participant_dataset" --artifacts "C:/path/local_run" --out "C:/path/strengthened_run"
 ```
+
+## 67억 목표 검증
+
+기존 GRU Ver1의 시점외 아티팩트를 별도 후보로 추가합니다. 파일 지문과 학습·선택 경계를 검사합니다. Ver2, GRU Ver1, 두 모델의 새 가중 절대오차 혼합, 혼합 후 피크·비피크 편향 보정을 비교합니다. 각 후보의 VPP 배정도 이전 시점외 잔차로 새로 최적화합니다. 3·4월로 조합을 고르고 5월에서 기존 Ver2 대비 회귀를 검사합니다. 기존 GRU의 검증 학습 마감은 Ver2보다 이릅니다.
+
+```powershell
+python -m GM_Ver2.target67 --raw "C:/path/01_participant_dataset" --artifacts "C:/path/local_run" --gru "C:/path/GRU/Ver1" --out "C:/path/target_run"
+```
+
+연간 시뮬레이션에서는 두 가지 기준 예측에 각각 5월 시점외 발전소별 잔차의 연속 3일 블록을 더합니다. 각 시나리오에서 모든 후보가 같은 발전소별 실적을 사용하므로 매출은 공통입니다. 보고서는 벌금 0원일 때 67억에 도달한 시나리오 횟수도 기록합니다. 실제 평가기간 실적은 이 절차로 복원할 수 없습니다.
