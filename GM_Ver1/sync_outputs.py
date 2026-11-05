@@ -33,6 +33,10 @@ def sync(out, destination):
     write_json(destination / "run_status.json", status)
     if (out / "environment.json").exists():
         shutil.copy2(out / "environment.json", destination / "environment.json")
+    logs = destination / "logs"
+    logs.mkdir(exist_ok=True)
+    for path in out.glob("*.log"):
+        shutil.copy2(path, logs / path.name)
     print(json.dumps(status, indent=2))
 
 

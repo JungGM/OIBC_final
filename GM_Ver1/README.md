@@ -37,6 +37,8 @@ python -m unittest GM_Ver1.test_models train.test_dataset -v
 python -m GM_Ver1.run --out C:\OIBC_local\OIBC_final\forecast_run
 # 모델별 실행도 가능: --family XGBoost / GRU / TCN
 python -m GM_Ver1.XGBoost.Ver1.model --artifact-root C:\OIBC_local\OIBC_final\forecast_run --output C:\OIBC_local\OIBC_final\forecast_run\reproduced.parquet
+# Git에 들어 있는 가중치를 바로 사용할 때:
+python -m GM_Ver1.XGBoost.Ver1.model --artifact-root GM_Ver1 --dataset C:\OIBC_local\fixed_training_v1 --output C:\OIBC_local\reproduced.parquet
 ```
 
 이번 채팅의 소스·후보 설정·탐색 기록·집계 결과·학습 가중치·예측 파일은 `GM_Ver1/`에 파일 단위로 보관한다. 실제 학습 데이터와 재생성 가능한 입력 캐시는 업로드하지 않는다. 각 `Family/VerN/`에는 `config.json`, `metrics.json`, `confirm_2024/`, `check_2025/`, `final/`이 있다. 각 stage는 학습 모델, 학습 메타데이터와 전체 발전소별 예측 Parquet를 가진다. GRU/TCN에는 scaler와 epoch 이력도 있다. `final/`만 대회 평가 기간용 전체 이력 재학습 모델이다. `run_status.json`에서 완료·진행·대기 상태를 확인할 수 있다.

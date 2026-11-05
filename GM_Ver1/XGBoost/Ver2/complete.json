@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "family": "XGBoost",
+  "version": 2,
+  "config_sha256": "7bce111d38e29eb862c946b548c20555b413387ee359f2dc3150dbdab92c72e7",
+  "final_training_end": "2025-05-31 17:00:00+09:00",
+  "evaluation_rows": 2216280,
+  "stacking": false,
+  "vpp_optimization": false
+}

@@ -1,0 +1,12 @@
+{
+  "training_start": "2021-01-01 01:00:00+09:00",
+  "training_end": "2025-05-31 17:00:00+09:00",
+  "eligible_rows": 4390755,
+  "labeled_sequences": 183155,
+  "seconds": 393.094535112381,
+  "model_sha256": "4b7cbc36b30ba8646786b69b4893a05a005a5d8c326ad2f03c07571b1c85fd64",
+  "full_history": true,
+  "excluded_missing_and_negative": true,
+  "trained_epochs": 3,
+  "refit_epoch_policy": "min(selected_epoch, max(3, ceil(selected_epoch*20000/full_training_sequences)))"
+}

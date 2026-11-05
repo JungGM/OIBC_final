@@ -1,0 +1,5 @@
+[I 2026-11-05 11:46:32,408] A new study created in RDB with name: tcn_2023
+ForecastTCN epoch 1/16: {'epoch': 1, 'train_loss': 0.09589310605369974, 'seconds': 10.85193681716919, 'validation_mae_kwh': 5.3073954582214355}
+ForecastTCN epoch 2/16: {'epoch': 2, 'train_loss': 0.03325025806027461, 'seconds': 10.537944793701172, 'validation_mae_kwh': 4.604743480682373}
+ForecastTCN epoch 3/16: {'epoch': 3, 'train_loss': 0.028615720949157042, 'seconds': 21.50256657600403, 'validation_mae_kwh': 4.644262313842773}
+ForecastTCN epoch 4/16: {'epoch': 4, 'train_loss': 0.02713736691111795, 'seconds': 8.467652797698975, 'validation_mae_kwh': 4.613463401794434}

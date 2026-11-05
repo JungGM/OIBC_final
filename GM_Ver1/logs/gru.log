@@ -1,0 +1,171 @@
+[I 2026-11-05 11:06:41,011] A new study created in RDB with name: gru_2023
+ForecastGRU epoch 1/16: {'epoch': 1, 'train_loss': 0.10628672223075145, 'seconds': 10.866671800613403, 'validation_mae_kwh': 6.248112201690674}
+ForecastGRU epoch 2/16: {'epoch': 2, 'train_loss': 0.03413549100639788, 'seconds': 6.358720302581787, 'validation_mae_kwh': 5.114232540130615}
+ForecastGRU epoch 3/16: {'epoch': 3, 'train_loss': 0.03004470068596339, 'seconds': 10.121780395507812, 'validation_mae_kwh': 5.0708723068237305}
+ForecastGRU epoch 4/16: {'epoch': 4, 'train_loss': 0.028698886689135616, 'seconds': 6.080246925354004, 'validation_mae_kwh': 4.966508865356445}
+ForecastGRU epoch 5/16: {'epoch': 5, 'train_loss': 0.027740851631423865, 'seconds': 5.492894172668457, 'validation_mae_kwh': 4.9085211753845215}
+ForecastGRU epoch 6/16: {'epoch': 6, 'train_loss': 0.02704441862229932, 'seconds': 5.613234281539917, 'validation_mae_kwh': 4.9243669509887695}
+ForecastGRU epoch 7/16: {'epoch': 7, 'train_loss': 0.02643751380979121, 'seconds': 5.75685715675354, 'validation_mae_kwh': 4.857954978942871}
+ForecastGRU epoch 8/16: {'epoch': 8, 'train_loss': 0.025929353198517933, 'seconds': 5.534840822219849, 'validation_mae_kwh': 4.873962879180908}
+ForecastGRU epoch 9/16: {'epoch': 9, 'train_loss': 0.025379974026970516, 'seconds': 5.559029579162598, 'validation_mae_kwh': 4.850622653961182}
+ForecastGRU epoch 10/16: {'epoch': 10, 'train_loss': 0.02491173105746885, 'seconds': 5.524655342102051, 'validation_mae_kwh': 4.817513465881348}
+ForecastGRU epoch 11/16: {'epoch': 11, 'train_loss': 0.024502039403035362, 'seconds': 8.380693912506104, 'validation_mae_kwh': 4.804288387298584}
+ForecastGRU epoch 12/16: {'epoch': 12, 'train_loss': 0.024168615668195295, 'seconds': 5.8424906730651855, 'validation_mae_kwh': 4.726351737976074}
+ForecastGRU epoch 13/16: {'epoch': 13, 'train_loss': 0.02369526210519218, 'seconds': 5.577625513076782, 'validation_mae_kwh': 4.8219451904296875}
+ForecastGRU epoch 14/16: {'epoch': 14, 'train_loss': 0.023342369695000767, 'seconds': 5.582729339599609, 'validation_mae_kwh': 4.898578643798828}
+ForecastGRU epoch 15/16: {'epoch': 15, 'train_loss': 0.023274176747512938, 'seconds': 12.047328472137451, 'validation_mae_kwh': 4.730947494506836}
+ForecastGRU epoch 16/16: {'epoch': 16, 'train_loss': 0.022803207398428057, 'seconds': 7.9844207763671875, 'validation_mae_kwh': 4.899105072021484}
+GRU trial 0: MAE=4.726352, best epoch=12
+[I 2026-11-05 11:09:01,125] Trial 0 finished with value: 4.726351737976074 and parameters: {'embedding_dim': 8, 'dropout': 0.021111072548293308, 'learning_rate': 0.000712949727659373, 'weight_decay': 1.7586001020187672e-05, 'loss': 'huber', 'huber_beta': 0.054504891302191764, 'hidden_size': 64, 'num_layers': 2, 'bidirectional': False}. Best is trial 0 with value: 4.726351737976074.
+ForecastGRU epoch 1/16: {'epoch': 1, 'train_loss': 0.014590450845538396, 'seconds': 13.063404560089111, 'validation_mae_kwh': 4.780091762542725}
+ForecastGRU epoch 2/16: {'epoch': 2, 'train_loss': 0.0065046850617723724, 'seconds': 9.424640655517578, 'validation_mae_kwh': 4.734991550445557}
+ForecastGRU epoch 3/16: {'epoch': 3, 'train_loss': 0.006012556177674583, 'seconds': 12.145312547683716, 'validation_mae_kwh': 4.635486602783203}
+ForecastGRU epoch 4/16: {'epoch': 4, 'train_loss': 0.0057159467074335436, 'seconds': 15.205557107925415, 'validation_mae_kwh': 4.548735618591309}
+ForecastGRU epoch 5/16: {'epoch': 5, 'train_loss': 0.0054067860082076145, 'seconds': 11.290971517562866, 'validation_mae_kwh': 4.457387924194336}
+ForecastGRU epoch 6/16: {'epoch': 6, 'train_loss': 0.0051092672083551125, 'seconds': 8.43085765838623, 'validation_mae_kwh': 4.43112325668335}
+ForecastGRU epoch 7/16: {'epoch': 7, 'train_loss': 0.0048627143127081595, 'seconds': 8.813548803329468, 'validation_mae_kwh': 4.428452968597412}
+ForecastGRU epoch 8/16: {'epoch': 8, 'train_loss': 0.004705296472076787, 'seconds': 8.821066856384277, 'validation_mae_kwh': 4.384410381317139}
+ForecastGRU epoch 9/16: {'epoch': 9, 'train_loss': 0.00437877649283158, 'seconds': 11.434709548950195, 'validation_mae_kwh': 4.421092987060547}
+ForecastGRU epoch 10/16: {'epoch': 10, 'train_loss': 0.004173785581415991, 'seconds': 9.799161434173584, 'validation_mae_kwh': 4.395785331726074}
+ForecastGRU epoch 11/16: {'epoch': 11, 'train_loss': 0.003943208935529802, 'seconds': 9.404214143753052, 'validation_mae_kwh': 4.426429748535156}
+ForecastGRU epoch 12/16: {'epoch': 12, 'train_loss': 0.003932670412494793, 'seconds': 10.742912530899048, 'validation_mae_kwh': 4.299108505249023}
+ForecastGRU epoch 13/16: {'epoch': 13, 'train_loss': 0.0036921047985728327, 'seconds': 9.715485334396362, 'validation_mae_kwh': 4.684816360473633}
+ForecastGRU epoch 14/16: {'epoch': 14, 'train_loss': 0.003730889943303226, 'seconds': 9.03306245803833, 'validation_mae_kwh': 4.477956295013428}
+ForecastGRU epoch 15/16: {'epoch': 15, 'train_loss': 0.003520740472008656, 'seconds': 10.805668592453003, 'validation_mae_kwh': 4.6055402755737305}
+ForecastGRU epoch 16/16: {'epoch': 16, 'train_loss': 0.003436017212651371, 'seconds': 9.023190259933472, 'validation_mae_kwh': 4.569943904876709}
+GRU trial 1: MAE=4.299109, best epoch=12
+[I 2026-11-05 11:12:20,157] Trial 1 finished with value: 4.299108505249023 and parameters: {'embedding_dim': 8, 'dropout': 0.06384793914186113, 'learning_rate': 0.0027918199962014764, 'weight_decay': 6.3773022905221505e-06, 'loss': 'mse', 'huber_beta': 0.08235990320047933, 'hidden_size': 48, 'num_layers': 2, 'bidirectional': True}. Best is trial 1 with value: 4.299108505249023.
+ForecastGRU epoch 1/16: {'epoch': 1, 'train_loss': 0.09793416177870283, 'seconds': 2.217233180999756, 'validation_mae_kwh': 5.884848117828369}
+ForecastGRU epoch 2/16: {'epoch': 2, 'train_loss': 0.03834759659278748, 'seconds': 2.1766552925109863, 'validation_mae_kwh': 4.795636177062988}
+ForecastGRU epoch 3/16: {'epoch': 3, 'train_loss': 0.03446823930284407, 'seconds': 2.1836464405059814, 'validation_mae_kwh': 4.7793145179748535}
+ForecastGRU epoch 4/16: {'epoch': 4, 'train_loss': 0.03296625901012134, 'seconds': 2.2144200801849365, 'validation_mae_kwh': 4.6043806076049805}
+ForecastGRU epoch 5/16: {'epoch': 5, 'train_loss': 0.03179365714373771, 'seconds': 2.2088730335235596, 'validation_mae_kwh': 4.649758338928223}
+ForecastGRU epoch 6/16: {'epoch': 6, 'train_loss': 0.031148110578670216, 'seconds': 2.2355051040649414, 'validation_mae_kwh': 4.606093406677246}
+ForecastGRU epoch 7/16: {'epoch': 7, 'train_loss': 0.030449965403008743, 'seconds': 2.174894332885742, 'validation_mae_kwh': 4.579876899719238}
+ForecastGRU epoch 8/16: {'epoch': 8, 'train_loss': 0.02985688040121228, 'seconds': 2.199280023574829, 'validation_mae_kwh': 4.583714485168457}
+ForecastGRU epoch 9/16: {'epoch': 9, 'train_loss': 0.02925555458260693, 'seconds': 2.1933345794677734, 'validation_mae_kwh': 4.524818420410156}
+ForecastGRU epoch 10/16: {'epoch': 10, 'train_loss': 0.028746368777906282, 'seconds': 2.2442665100097656, 'validation_mae_kwh': 4.621151924133301}
+ForecastGRU epoch 11/16: {'epoch': 11, 'train_loss': 0.028318558630860663, 'seconds': 2.9416236877441406, 'validation_mae_kwh': 4.563902854919434}
+ForecastGRU epoch 12/16: {'epoch': 12, 'train_loss': 0.027862723619415813, 'seconds': 2.456240653991699, 'validation_mae_kwh': 4.606197357177734}
+ForecastGRU epoch 13/16: {'epoch': 13, 'train_loss': 0.027409991661988896, 'seconds': 2.3396270275115967, 'validation_mae_kwh': 4.765732765197754}
+GRU trial 2: MAE=4.524818, best epoch=9
+[I 2026-11-05 11:12:58,706] Trial 2 finished with value: 4.524818420410156 and parameters: {'embedding_dim': 8, 'dropout': 0.14291007261684752, 'learning_rate': 0.0018287299978087311, 'weight_decay': 0.00042987555866365253, 'loss': 'huber', 'huber_beta': 0.03704347001831569, 'hidden_size': 32, 'num_layers': 1, 'bidirectional': False}. Best is trial 1 with value: 4.299108505249023.
+ForecastGRU epoch 1/16: {'epoch': 1, 'train_loss': 0.08045852925422363, 'seconds': 3.4401698112487793, 'validation_mae_kwh': 5.793211460113525}
+ForecastGRU epoch 2/16: {'epoch': 2, 'train_loss': 0.03503820353640053, 'seconds': 3.2996625900268555, 'validation_mae_kwh': 4.812348365783691}
+ForecastGRU epoch 3/16: {'epoch': 3, 'train_loss': 0.032034674136821435, 'seconds': 3.333570718765259, 'validation_mae_kwh': 4.856754302978516}
+ForecastGRU epoch 4/16: {'epoch': 4, 'train_loss': 0.030720845593254234, 'seconds': 3.304206609725952, 'validation_mae_kwh': 4.637815475463867}
+ForecastGRU epoch 5/16: {'epoch': 5, 'train_loss': 0.029845446505308192, 'seconds': 3.345686912536621, 'validation_mae_kwh': 4.616546630859375}
+ForecastGRU epoch 6/16: {'epoch': 6, 'train_loss': 0.02900164837774744, 'seconds': 3.340735912322998, 'validation_mae_kwh': 4.611485958099365}
+ForecastGRU epoch 7/16: {'epoch': 7, 'train_loss': 0.028346550977709647, 'seconds': 3.2848193645477295, 'validation_mae_kwh': 4.50189733505249}
+ForecastGRU epoch 8/16: {'epoch': 8, 'train_loss': 0.027645826884068362, 'seconds': 3.6534814834594727, 'validation_mae_kwh': 4.4976325035095215}
+ForecastGRU epoch 9/16: {'epoch': 9, 'train_loss': 0.02711610401043887, 'seconds': 4.117951154708862, 'validation_mae_kwh': 4.523590564727783}
+ForecastGRU epoch 10/16: {'epoch': 10, 'train_loss': 0.02655053691636431, 'seconds': 3.5056312084198, 'validation_mae_kwh': 4.52155876159668}
+ForecastGRU epoch 11/16: {'epoch': 11, 'train_loss': 0.02595689165241189, 'seconds': 3.382038116455078, 'validation_mae_kwh': 4.542407035827637}
+ForecastGRU epoch 12/16: {'epoch': 12, 'train_loss': 0.025766888893861355, 'seconds': 3.27583909034729, 'validation_mae_kwh': 4.478198051452637}
+ForecastGRU epoch 13/16: {'epoch': 13, 'train_loss': 0.025331663927772266, 'seconds': 2.8369574546813965, 'validation_mae_kwh': 4.591537952423096}
+ForecastGRU epoch 14/16: {'epoch': 14, 'train_loss': 0.0247365218332211, 'seconds': 3.0207366943359375, 'validation_mae_kwh': 4.687894821166992}
+ForecastGRU epoch 15/16: {'epoch': 15, 'train_loss': 0.024675200256463924, 'seconds': 3.314035654067993, 'validation_mae_kwh': 4.512482643127441}
+ForecastGRU epoch 16/16: {'epoch': 16, 'train_loss': 0.024091373879619984, 'seconds': 3.5950446128845215, 'validation_mae_kwh': 4.623979091644287}
+GRU trial 3: MAE=4.478198, best epoch=12
+[I 2026-11-05 11:14:06,997] Trial 3 finished with value: 4.478198051452637 and parameters: {'embedding_dim': 8, 'dropout': 0.20680814237472708, 'learning_rate': 0.0017553774593565912, 'weight_decay': 0.00013689912984532276, 'loss': 'huber', 'huber_beta': 0.048898786376345614, 'hidden_size': 32, 'num_layers': 1, 'bidirectional': True}. Best is trial 1 with value: 4.299108505249023.
+ForecastGRU epoch 1/16: {'epoch': 1, 'train_loss': 0.018955452390286943, 'seconds': 11.003111362457275, 'validation_mae_kwh': 5.290816783905029}
+ForecastGRU epoch 2/16: {'epoch': 2, 'train_loss': 0.006964115279042939, 'seconds': 9.225504398345947, 'validation_mae_kwh': 4.849774360656738}
+ForecastGRU epoch 3/16: {'epoch': 3, 'train_loss': 0.006362581584637962, 'seconds': 10.8820321559906, 'validation_mae_kwh': 4.772576808929443}
+ForecastGRU epoch 4/16: {'epoch': 4, 'train_loss': 0.005980414493296362, 'seconds': 9.011322736740112, 'validation_mae_kwh': 4.591591835021973}
+ForecastGRU epoch 5/16: {'epoch': 5, 'train_loss': 0.005685559898276726, 'seconds': 11.998003482818604, 'validation_mae_kwh': 4.591601371765137}
+ForecastGRU epoch 6/16: {'epoch': 6, 'train_loss': 0.00544273453309053, 'seconds': 8.806514739990234, 'validation_mae_kwh': 4.5953803062438965}
+ForecastGRU epoch 7/16: {'epoch': 7, 'train_loss': 0.0052986356422304644, 'seconds': 8.810664653778076, 'validation_mae_kwh': 4.4620137214660645}
+ForecastGRU epoch 8/16: {'epoch': 8, 'train_loss': 0.0051747655792545155, 'seconds': 8.882021188735962, 'validation_mae_kwh': 4.574009895324707}
+ForecastGRU epoch 9/16: {'epoch': 9, 'train_loss': 0.005005732407287354, 'seconds': 8.82271409034729, 'validation_mae_kwh': 4.451261043548584}
+ForecastGRU epoch 10/16: {'epoch': 10, 'train_loss': 0.004773931386585064, 'seconds': 8.925118207931519, 'validation_mae_kwh': 4.485297203063965}
+ForecastGRU epoch 11/16: {'epoch': 11, 'train_loss': 0.004579919192871206, 'seconds': 11.434614896774292, 'validation_mae_kwh': 4.540463447570801}
+ForecastGRU epoch 12/16: {'epoch': 12, 'train_loss': 0.004647351043657931, 'seconds': 8.272665977478027, 'validation_mae_kwh': 4.419848918914795}
+ForecastGRU epoch 13/16: {'epoch': 13, 'train_loss': 0.004402121143485762, 'seconds': 7.030008792877197, 'validation_mae_kwh': 4.543888092041016}
+ForecastGRU epoch 14/16: {'epoch': 14, 'train_loss': 0.004301253209426001, 'seconds': 8.704174280166626, 'validation_mae_kwh': 4.644136428833008}
+ForecastGRU epoch 15/16: {'epoch': 15, 'train_loss': 0.004246239301107531, 'seconds': 9.210625171661377, 'validation_mae_kwh': 4.552107810974121}
+ForecastGRU epoch 16/16: {'epoch': 16, 'train_loss': 0.004200079004043859, 'seconds': 9.621999263763428, 'validation_mae_kwh': 4.677999496459961}
+GRU trial 4: MAE=4.419849, best epoch=12
+[I 2026-11-05 11:17:08,933] Trial 4 finished with value: 4.419848918914795 and parameters: {'embedding_dim': 8, 'dropout': 0.07885623007874218, 'learning_rate': 0.0013535786516160472, 'weight_decay': 2.748246244882833e-06, 'loss': 'mse', 'huber_beta': 0.13811915628049892, 'hidden_size': 48, 'num_layers': 2, 'bidirectional': True}. Best is trial 1 with value: 4.299108505249023.
+ForecastGRU epoch 1/16: {'epoch': 1, 'train_loss': 0.01725240188119214, 'seconds': 5.393757343292236, 'validation_mae_kwh': 6.070380210876465}
+ForecastGRU epoch 2/16: {'epoch': 2, 'train_loss': 0.007565093318086891, 'seconds': 6.498164176940918, 'validation_mae_kwh': 4.930112838745117}
+ForecastGRU epoch 3/16: {'epoch': 3, 'train_loss': 0.006880106480189972, 'seconds': 5.9057981967926025, 'validation_mae_kwh': 4.923941612243652}
+ForecastGRU epoch 4/16: {'epoch': 4, 'train_loss': 0.0065408037221376695, 'seconds': 4.9061479568481445, 'validation_mae_kwh': 4.7143049240112305}
+ForecastGRU epoch 5/16: {'epoch': 5, 'train_loss': 0.006256937588020561, 'seconds': 4.827057838439941, 'validation_mae_kwh': 4.745547294616699}
+ForecastGRU epoch 6/16: {'epoch': 6, 'train_loss': 0.006176426134534559, 'seconds': 5.430566072463989, 'validation_mae_kwh': 4.864893913269043}
+ForecastGRU epoch 7/16: {'epoch': 7, 'train_loss': 0.005866205245742007, 'seconds': 5.483961582183838, 'validation_mae_kwh': 4.669156551361084}
+ForecastGRU epoch 8/16: {'epoch': 8, 'train_loss': 0.005618912629931747, 'seconds': 4.826980113983154, 'validation_mae_kwh': 4.781550884246826}
+ForecastGRU epoch 9/16: {'epoch': 9, 'train_loss': 0.005455930222177069, 'seconds': 4.695470094680786, 'validation_mae_kwh': 4.850715160369873}
+ForecastGRU epoch 10/16: {'epoch': 10, 'train_loss': 0.005180710758336099, 'seconds': 4.785088777542114, 'validation_mae_kwh': 4.888896942138672}
+ForecastGRU epoch 11/16: {'epoch': 11, 'train_loss': 0.004917381918333858, 'seconds': 4.992467164993286, 'validation_mae_kwh': 4.9977827072143555}
+GRU trial 5: MAE=4.669157, best epoch=7
+[I 2026-11-05 11:18:22,911] Trial 5 finished with value: 4.669156551361084 and parameters: {'embedding_dim': 4, 'dropout': 0.21348963564778575, 'learning_rate': 0.00221358745606713, 'weight_decay': 0.00015688851002673023, 'loss': 'mse', 'huber_beta': 0.12157554693563331, 'hidden_size': 48, 'num_layers': 1, 'bidirectional': True}. Best is trial 1 with value: 4.299108505249023.
+ForecastGRU epoch 1/16: {'epoch': 1, 'train_loss': 0.03043519407929806, 'seconds': 4.782682180404663, 'validation_mae_kwh': 8.1478853225708}
+ForecastGRU epoch 2/16: {'epoch': 2, 'train_loss': 0.00823182059765796, 'seconds': 4.767982721328735, 'validation_mae_kwh': 5.692841053009033}
+ForecastGRU epoch 3/16: {'epoch': 3, 'train_loss': 0.00688855284918835, 'seconds': 5.030568838119507, 'validation_mae_kwh': 5.13326358795166}
+ForecastGRU epoch 4/16: {'epoch': 4, 'train_loss': 0.0064410675080444225, 'seconds': 5.668602705001831, 'validation_mae_kwh': 4.958527565002441}
+ForecastGRU epoch 5/16: {'epoch': 5, 'train_loss': 0.006167768104191988, 'seconds': 6.208818435668945, 'validation_mae_kwh': 4.809653282165527}
+ForecastGRU epoch 6/16: {'epoch': 6, 'train_loss': 0.005930884920434665, 'seconds': 5.058241605758667, 'validation_mae_kwh': 4.870882511138916}
+ForecastGRU epoch 7/16: {'epoch': 7, 'train_loss': 0.005810462133742603, 'seconds': 4.754689455032349, 'validation_mae_kwh': 4.7276291847229}
+ForecastGRU epoch 8/16: {'epoch': 8, 'train_loss': 0.005574667019111056, 'seconds': 4.947128534317017, 'validation_mae_kwh': 4.737154960632324}
+ForecastGRU epoch 9/16: {'epoch': 9, 'train_loss': 0.005423331660632177, 'seconds': 4.8742780685424805, 'validation_mae_kwh': 4.6675004959106445}
+ForecastGRU epoch 10/16: {'epoch': 10, 'train_loss': 0.005255675523733377, 'seconds': 4.976751327514648, 'validation_mae_kwh': 4.667086601257324}
+ForecastGRU epoch 11/16: {'epoch': 11, 'train_loss': 0.0051081378965579126, 'seconds': 6.685941696166992, 'validation_mae_kwh': 4.692590236663818}
+ForecastGRU epoch 12/16: {'epoch': 12, 'train_loss': 0.005043395963555201, 'seconds': 4.9416704177856445, 'validation_mae_kwh': 4.620449066162109}
+ForecastGRU epoch 13/16: {'epoch': 13, 'train_loss': 0.004858401021893881, 'seconds': 7.308002710342407, 'validation_mae_kwh': 4.6789326667785645}
+ForecastGRU epoch 14/16: {'epoch': 14, 'train_loss': 0.00472589374248612, 'seconds': 7.103133678436279, 'validation_mae_kwh': 4.745617389678955}
+ForecastGRU epoch 15/16: {'epoch': 15, 'train_loss': 0.004633811780265453, 'seconds': 5.260528564453125, 'validation_mae_kwh': 4.833201885223389}
+ForecastGRU epoch 16/16: {'epoch': 16, 'train_loss': 0.004617608829443377, 'seconds': 4.9130332469940186, 'validation_mae_kwh': 4.8284759521484375}
+GRU trial 6: MAE=4.620449, best epoch=12
+[I 2026-11-05 11:20:11,715] Trial 6 finished with value: 4.620449066162109 and parameters: {'embedding_dim': 8, 'dropout': 0.0707441547055941, 'learning_rate': 0.0009005328425735478, 'weight_decay': 6.504020947184724e-06, 'loss': 'mse', 'huber_beta': 0.05186520037058439, 'hidden_size': 48, 'num_layers': 1, 'bidirectional': True}. Best is trial 1 with value: 4.299108505249023.
+ForecastGRU epoch 1/16: {'epoch': 1, 'train_loss': 0.01606394339475487, 'seconds': 5.27253794670105, 'validation_mae_kwh': 4.7227911949157715}
+ForecastGRU epoch 2/16: {'epoch': 2, 'train_loss': 0.006937342180500177, 'seconds': 5.7999796867370605, 'validation_mae_kwh': 4.592203140258789}
+ForecastGRU epoch 3/16: {'epoch': 3, 'train_loss': 0.006324639706786804, 'seconds': 4.755406379699707, 'validation_mae_kwh': 4.625131130218506}
+ForecastGRU epoch 4/16: {'epoch': 4, 'train_loss': 0.0059374614022313825, 'seconds': 4.655442476272583, 'validation_mae_kwh': 4.693631649017334}
+ForecastGRU epoch 5/16: {'epoch': 5, 'train_loss': 0.005606019782591469, 'seconds': 7.0635857582092285, 'validation_mae_kwh': 4.565793514251709}
+ForecastGRU epoch 6/16: {'epoch': 6, 'train_loss': 0.0053326889436207505, 'seconds': 4.784149646759033, 'validation_mae_kwh': 4.508312225341797}
+ForecastGRU epoch 7/16: {'epoch': 7, 'train_loss': 0.005068505316463649, 'seconds': 5.003443717956543, 'validation_mae_kwh': 4.565236568450928}
+ForecastGRU epoch 8/16: {'epoch': 8, 'train_loss': 0.004887323921121378, 'seconds': 4.7915074825286865, 'validation_mae_kwh': 4.453522682189941}
+ForecastGRU epoch 9/16: {'epoch': 9, 'train_loss': 0.004639509708921684, 'seconds': 4.789680480957031, 'validation_mae_kwh': 4.632346153259277}
+ForecastGRU epoch 10/16: {'epoch': 10, 'train_loss': 0.004463908048869185, 'seconds': 4.678227186203003, 'validation_mae_kwh': 4.46321964263916}
+ForecastGRU epoch 11/16: {'epoch': 11, 'train_loss': 0.00425883009656754, 'seconds': 4.76575231552124, 'validation_mae_kwh': 4.610419273376465}
+ForecastGRU epoch 12/16: {'epoch': 12, 'train_loss': 0.004248239964754199, 'seconds': 4.92252254486084, 'validation_mae_kwh': 4.439222812652588}
+ForecastGRU epoch 13/16: {'epoch': 13, 'train_loss': 0.00397298806366991, 'seconds': 4.345655202865601, 'validation_mae_kwh': 4.732121467590332}
+ForecastGRU epoch 14/16: {'epoch': 14, 'train_loss': 0.003929402607777021, 'seconds': 2.8846161365509033, 'validation_mae_kwh': 4.620845317840576}
+ForecastGRU epoch 15/16: {'epoch': 15, 'train_loss': 0.003777253447017216, 'seconds': 2.972623348236084, 'validation_mae_kwh': 4.728200912475586}
+ForecastGRU epoch 16/16: {'epoch': 16, 'train_loss': 0.0037210605127310213, 'seconds': 3.040039539337158, 'validation_mae_kwh': 4.682191371917725}
+GRU trial 7: MAE=4.439223, best epoch=12
+[I 2026-11-05 11:21:43,067] Trial 7 finished with value: 4.439222812652588 and parameters: {'embedding_dim': 8, 'dropout': 0.16166460852056305, 'learning_rate': 0.0034996420931212827, 'weight_decay': 4.382721396943108e-06, 'loss': 'mse', 'huber_beta': 0.08256212384806075, 'hidden_size': 48, 'num_layers': 1, 'bidirectional': True}. Best is trial 1 with value: 4.299108505249023.
+Fitting GRU through 2023-12-31 17:00:00+09:00: 66391 labeled sequences
+Fitting GRU through 2023-12-31 17:00:00+09:00: 66391 labeled sequences
+ForecastGRU epoch 1/4: {'epoch': 1, 'train_loss': 0.008449596437969085, 'seconds': 30.992714643478394}
+ForecastGRU epoch 2/4: {'epoch': 2, 'train_loss': 0.0053973077812876, 'seconds': 35.02402663230896}
+ForecastGRU epoch 3/4: {'epoch': 3, 'train_loss': 0.004803071283875234, 'seconds': 31.226035594940186}
+ForecastGRU epoch 4/4: {'epoch': 4, 'train_loss': 0.004417906630211026, 'seconds': 35.945539474487305}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\GRU\Ver1\confirm_2024\model.pt (135.9s)
+Fitting GRU through 2024-12-31 17:00:00+09:00: 144952 labeled sequences
+ForecastGRU epoch 1/3: {'epoch': 1, 'train_loss': 0.006892977078670153, 'seconds': 68.09387493133545}
+ForecastGRU epoch 2/3: {'epoch': 2, 'train_loss': 0.005070123435866835, 'seconds': 67.96538853645325}
+ForecastGRU epoch 3/3: {'epoch': 3, 'train_loss': 0.004562673974207569, 'seconds': 79.37451267242432}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\GRU\Ver1\check_2025\model.pt (220.8s)
+Fitting GRU through 2025-05-31 17:00:00+09:00: 183155 labeled sequences
+ForecastGRU epoch 1/3: {'epoch': 1, 'train_loss': 0.006564656741267861, 'seconds': 89.091792345047}
+ForecastGRU epoch 2/3: {'epoch': 2, 'train_loss': 0.004924725727502383, 'seconds': 89.13951373100281}
+ForecastGRU epoch 3/3: {'epoch': 3, 'train_loss': 0.004482542898927825, 'seconds': 96.98957395553589}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\GRU\Ver1\final\model.pt (281.9s)
+Fitting GRU through 2023-12-31 17:00:00+09:00: 66391 labeled sequences
+ForecastGRU epoch 1/4: {'epoch': 1, 'train_loss': 0.010081916082029177, 'seconds': 33.66530704498291}
+ForecastGRU epoch 2/4: {'epoch': 2, 'train_loss': 0.005788226009255868, 'seconds': 42.39027452468872}
+ForecastGRU epoch 3/4: {'epoch': 3, 'train_loss': 0.005306427838627987, 'seconds': 32.712480783462524}
+ForecastGRU epoch 4/4: {'epoch': 4, 'train_loss': 0.004992476155699418, 'seconds': 33.240760803222656}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\GRU\Ver2\confirm_2024\model.pt (144.6s)
+Fitting GRU through 2024-12-31 17:00:00+09:00: 144952 labeled sequences
+ForecastGRU epoch 1/3: {'epoch': 1, 'train_loss': 0.0076486168834676216, 'seconds': 73.03828835487366}
+ForecastGRU epoch 2/3: {'epoch': 2, 'train_loss': 0.005330727943474406, 'seconds': 78.60237050056458}
+ForecastGRU epoch 3/3: {'epoch': 3, 'train_loss': 0.0049527983952301294, 'seconds': 83.7243287563324}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\GRU\Ver2\check_2025\model.pt (241.2s)
+Fitting GRU through 2025-05-31 17:00:00+09:00: 183155 labeled sequences
+ForecastGRU epoch 1/3: {'epoch': 1, 'train_loss': 0.007317564980814239, 'seconds': 110.13584518432617}
+ForecastGRU epoch 2/3: {'epoch': 2, 'train_loss': 0.005274894468897369, 'seconds': 200.34033226966858}
+ForecastGRU epoch 3/3: {'epoch': 3, 'train_loss': 0.004885155159542834, 'seconds': 75.10950684547424}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\GRU\Ver2\final\model.pt (393.2s)
+Requested forecasting stages complete.

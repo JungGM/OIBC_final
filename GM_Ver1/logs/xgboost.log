@@ -1,0 +1,34 @@
+[I 2026-11-05 11:06:03,134] A new study created in RDB with name: xgboost_2023
+XGBoost trial 0: MAE=4.049600, rounds=600
+[I 2026-11-05 11:06:40,837] Trial 0 finished with value: 4.049600124359131 and parameters: {'objective': 'reg:absoluteerror', 'max_depth': 3, 'eta': 0.03267203395656604, 'min_child_weight': 6.934735619470666, 'subsample': 0.7677142303625376, 'colsample_bytree': 0.8312738480833316, 'reg_lambda': 3.5318664662335153, 'reg_alpha': 0.000782097738797033, 'weight_power': 2}. Best is trial 0 with value: 4.049600124359131.
+XGBoost trial 1: MAE=3.915110, rounds=521
+[I 2026-11-05 11:07:28,188] Trial 1 finished with value: 3.9151101112365723 and parameters: {'objective': 'reg:absoluteerror', 'max_depth': 5, 'eta': 0.02768883107199449, 'min_child_weight': 9.272161398223739, 'subsample': 0.7393871147986056, 'colsample_bytree': 0.9394740247187903, 'reg_lambda': 2.4899013464590505, 'reg_alpha': 0.01474661838158271, 'weight_power': 2}. Best is trial 1 with value: 3.9151101112365723.
+XGBoost trial 2: MAE=3.898194, rounds=571
+[I 2026-11-05 11:08:14,291] Trial 2 finished with value: 3.898193597793579 and parameters: {'objective': 'reg:absoluteerror', 'max_depth': 5, 'eta': 0.07645006549523144, 'min_child_weight': 2.1841170001053, 'subsample': 0.8590519080487177, 'colsample_bytree': 0.978432964623784, 'reg_lambda': 24.43428724437025, 'reg_alpha': 0.019344662711132155, 'weight_power': 2}. Best is trial 2 with value: 3.898193597793579.
+XGBoost trial 3: MAE=3.978044, rounds=573
+[I 2026-11-05 11:08:58,675] Trial 3 finished with value: 3.978043794631958 and parameters: {'objective': 'reg:absoluteerror', 'max_depth': 3, 'eta': 0.10400726767155827, 'min_child_weight': 17.19242009153892, 'subsample': 0.6923100268982549, 'colsample_bytree': 0.8148084729987126, 'reg_lambda': 21.730368647478667, 'reg_alpha': 0.00206576367744335, 'weight_power': 2}. Best is trial 2 with value: 3.898193597793579.
+XGBoost trial 4: MAE=3.939806, rounds=562
+[I 2026-11-05 11:09:44,350] Trial 4 finished with value: 3.9398059844970703 and parameters: {'objective': 'reg:absoluteerror', 'max_depth': 4, 'eta': 0.07481275790234901, 'min_child_weight': 2.3801597145655733, 'subsample': 0.9828557741320872, 'colsample_bytree': 0.9617399846727666, 'reg_lambda': 3.3005060533290673, 'reg_alpha': 0.07476193561529197, 'weight_power': 2}. Best is trial 2 with value: 3.898193597793579.
+XGBoost trial 5: MAE=3.868020, rounds=277
+[I 2026-11-05 11:10:15,086] Trial 5 finished with value: 3.8680198192596436 and parameters: {'objective': 'reg:absoluteerror', 'max_depth': 7, 'eta': 0.08185774391184274, 'min_child_weight': 5.951905916817344, 'subsample': 0.860653586669008, 'colsample_bytree': 0.9104009775321665, 'reg_lambda': 4.393604735150791, 'reg_alpha': 0.0002895456557535226, 'weight_power': 2}. Best is trial 5 with value: 3.8680198192596436.
+XGBoost trial 6: MAE=3.867634, rounds=517
+[I 2026-11-05 11:11:01,952] Trial 6 finished with value: 3.8676340579986572 and parameters: {'objective': 'reg:absoluteerror', 'max_depth': 6, 'eta': 0.07196062953769466, 'min_child_weight': 2.849267490142133, 'subsample': 0.9395609574371063, 'colsample_bytree': 0.8798351778819925, 'reg_lambda': 2.6619817094608904, 'reg_alpha': 0.00037889621068960843, 'weight_power': 2}. Best is trial 6 with value: 3.8676340579986572.
+XGBoost trial 7: MAE=3.848847, rounds=596
+[I 2026-11-05 11:12:01,644] Trial 7 finished with value: 3.8488471508026123 and parameters: {'objective': 'reg:absoluteerror', 'max_depth': 8, 'eta': 0.025271426840579696, 'min_child_weight': 8.753377633756028, 'subsample': 0.9845569660308551, 'colsample_bytree': 0.8118161247235363, 'reg_lambda': 2.2233205470301773, 'reg_alpha': 0.0017665265853001222, 'weight_power': 2}. Best is trial 7 with value: 3.8488471508026123.
+XGBoost trial 8: MAE=3.833607, rounds=595
+[I 2026-11-05 11:12:55,531] Trial 8 finished with value: 3.8336069583892822 and parameters: {'objective': 'reg:absoluteerror', 'max_depth': 7, 'eta': 0.045180220132759526, 'min_child_weight': 6.873745161975307, 'subsample': 0.7923713965815848, 'colsample_bytree': 0.7031086747652652, 'reg_lambda': 2.797378517909805, 'reg_alpha': 0.020033942558570526, 'weight_power': 2}. Best is trial 8 with value: 3.8336069583892822.
+XGBoost trial 9: MAE=3.853657, rounds=600
+[I 2026-11-05 11:13:49,428] Trial 9 finished with value: 3.8536570072174072 and parameters: {'objective': 'reg:absoluteerror', 'max_depth': 6, 'eta': 0.037784988189895716, 'min_child_weight': 18.01303142605525, 'subsample': 0.7266668010739262, 'colsample_bytree': 0.7247103769221196, 'reg_lambda': 1.8970413720622294, 'reg_alpha': 0.7688449136459428, 'weight_power': 2}. Best is trial 8 with value: 3.8336069583892822.
+Fitting XGBoost through 2023-12-31 17:00:00+09:00: 66391 labeled sequences
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\XGBoost\Ver1\confirm_2024\model.ubj (139.6s)
+Fitting XGBoost through 2024-12-31 17:00:00+09:00: 144952 labeled sequences
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\XGBoost\Ver1\check_2025\model.ubj (298.6s)
+Fitting XGBoost through 2025-05-31 17:00:00+09:00: 183155 labeled sequences
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\XGBoost\Ver1\final\model.ubj (380.7s)
+Fitting XGBoost through 2023-12-31 17:00:00+09:00: 66391 labeled sequences
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\XGBoost\Ver2\confirm_2024\model.ubj (153.2s)
+Fitting XGBoost through 2024-12-31 17:00:00+09:00: 144952 labeled sequences
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\XGBoost\Ver2\check_2025\model.ubj (330.8s)
+Fitting XGBoost through 2025-05-31 17:00:00+09:00: 183155 labeled sequences
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\XGBoost\Ver2\final\model.ubj (444.4s)
+Requested forecasting stages complete.

@@ -1,0 +1,9 @@
+{
+  "rows": 2216280,
+  "sha256": "3cb9cc142c5db4f65afff78cf251416306549b7bc6e9704bf56267fd371f612e",
+  "training_end": "2025-05-31 17:00:00+09:00",
+  "role": "competition evaluation input; labels unavailable",
+  "site_count": 253,
+  "nonnegative_finite": true,
+  "warning": "Chronological predictions only; never use final-refit training predictions for stacking"
+}
