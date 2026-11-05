@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "final_rows": 2216280,
+  "final_meta_training_rows": 2795734,
+  "final_meta_training_end": "2025-05-31 17:00:00+09:00",
+  "out_of_time_training_only": true,
+  "checkpoint_reload_matches": true,
+  "raw_training_targets_uploaded": false,
+  "evaluation_provenance": [
+    {
+      "model": "XGBoost/Ver1",
+      "stage": "final",
+      "prediction_sha256": "97c280a1821187ba9949c243f4708d817df8e7b3c7d304d9b03f21a71f6f3838",
+      "training_end": "2025-05-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "XGBoost/Ver2",
+      "stage": "final",
+      "prediction_sha256": "4c905079a8783658087b86772796d8b24bbc8c121c4eae69e5aa2f944866e314",
+      "training_end": "2025-05-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "GRU/Ver1",
+      "stage": "final",
+      "prediction_sha256": "9b4494c0195d9d4987976679ab0b721c4f10bec73635c8c7fc4db20609a0d7a2",
+      "training_end": "2025-05-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "GRU/Ver2",
+      "stage": "final",
+      "prediction_sha256": "3cb9cc142c5db4f65afff78cf251416306549b7bc6e9704bf56267fd371f612e",
+      "training_end": "2025-05-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "TCN/Ver1",
+      "stage": "final",
+      "prediction_sha256": "eaf33acc60ff37d51b2e6e25849370b3db27331ef4c7d1c8e1705446e9e75343",
+      "training_end": "2025-05-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "TCN/Ver2",
+      "stage": "final",
+      "prediction_sha256": "6b1594bccc2695ba023ecefcb9131b0edfdb27bdf36b44de5f7fc3646102b64e",
+      "training_end": "2025-05-31 17:00:00+09:00",
+      "rows": 2216280
+    }
+  ]
+}

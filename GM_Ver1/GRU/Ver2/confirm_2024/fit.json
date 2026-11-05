@@ -8,5 +8,6 @@
   "full_history": true,
   "excluded_missing_and_negative": true,
   "trained_epochs": 4,
-  "refit_epoch_policy": "min(selected_epoch, max(3, ceil(selected_epoch*20000/full_training_sequences)))"
+  "refit_epoch_policy": "min(selected_epoch, max(3, ceil(selected_epoch*20000/full_training_sequences)))",
+  "selection_labels_end": "2024-01-01 00:00:00+09:00"
 }

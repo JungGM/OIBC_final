@@ -31,8 +31,9 @@ from GM_Ver1.gru import ForecastGRU, predict as gru_predict, train as gru_train
 from GM_Ver1.tcn import ForecastTCN, receptive_field
 
 TUNE_END = "2022-12-31 17:00:00+09:00"
+SELECTION_LABEL_END = "2024-01-01 00:00:00+09:00"
 SPLITS = [
-    ("confirm_2024", "2023-12-31 17:00:00+09:00", "2024-01-01", "2024-12-31"),
+    ("confirm_2024", "2023-12-31 17:00:00+09:00", "2024-01-02", "2024-12-31"),
     ("check_2025", "2024-12-31 17:00:00+09:00", "2025-01-01", "2025-05-31"),
 ]
 FINAL_END = "2025-05-31 17:00:00+09:00"
@@ -190,6 +191,7 @@ def fit_model(family, panel, end, cfg, directory):
     write_json(directory / "fit.json", dict(training_start="2021-01-01 01:00:00+09:00",
         training_end=end, eligible_rows=nrows, labeled_sequences=len(ids), seconds=time.time()-started,
         model_sha256=sha256(model_path), full_history=True, excluded_missing_and_negative=True,
+        selection_labels_end=SELECTION_LABEL_END,
         trained_epochs=actual_epochs if family != "XGBoost" else None,
         refit_epoch_policy="min(selected_epoch, max(3, ceil(selected_epoch*20000/full_training_sequences)))" if family != "XGBoost" else None))
     print(f"Saved {model_path} ({time.time()-started:.1f}s)", flush=True)
@@ -199,7 +201,9 @@ def fit_model(family, panel, end, cfg, directory):
 def predict_to_file(family, model, scaler, panel, ids, path, *, fit_end, role):
     path = Path(path)
     if path.exists() and path.with_suffix(".json").exists():
-        return
+        old = json.loads(path.with_suffix(".json").read_text())
+        if old.get("rows") == len(ids)*24 and old.get("selection_labels_end") == SELECTION_LABEL_END:
+            return
     writer = None
     total = 0
     try:
@@ -230,6 +234,7 @@ def predict_to_file(family, model, scaler, panel, ids, path, *, fit_end, role):
     if total != expected:
         raise ValueError("Missing forecast rows")
     write_json(path.with_suffix(".json"), dict(rows=total, sha256=sha256(path), training_end=fit_end,
+        selection_labels_end=SELECTION_LABEL_END,
         role=role, site_count=panel.nsites, nonnegative_finite=True,
         warning="Chronological predictions only; never use final-refit training predictions for stacking"))
 
@@ -313,6 +318,8 @@ def main():
             cfg = candidate["config"]
             write_json(dest / "config.json", dict(family=family, version=version, **candidate,
                 features=panel.features, tuning_training_end=TUNE_END,
+                selection_labels_end=SELECTION_LABEL_END,
+                confirmation_operating_days=["2024-01-02", "2024-12-31"],
                 tuning_validation_operating_days=["2023-01-01", "2023-12-31"],
                 selection_metric="observed nonnegative-label site MAE in raw kWh on common 12,000-sequence validation sample",
                 features_status="78 frozen default features + site code and 6 solar features, fixed across all trials; no feature-importance claim"))

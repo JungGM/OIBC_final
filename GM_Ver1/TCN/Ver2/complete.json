@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "family": "TCN",
+  "version": 2,
+  "config_sha256": "00cbefcb0c6dc5473127f0b4eb237fd58a2c40deb21d0359000cbda0691e40aa",
+  "final_training_end": "2025-05-31 17:00:00+09:00",
+  "evaluation_rows": 2216280,
+  "stacking": false,
+  "vpp_optimization": false
+}

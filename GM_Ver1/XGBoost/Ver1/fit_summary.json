@@ -1,0 +1,37 @@
+{
+  "confirm_2024": {
+    "training_start": "2021-01-01 01:00:00+09:00",
+    "training_end": "2023-12-31 17:00:00+09:00",
+    "eligible_rows": 1590433,
+    "labeled_sequences": 66391,
+    "seconds": 139.6136338710785,
+    "model_sha256": "a5ae84de2c802957d10bfd47d51fa034ebd11cff08227011736d42cf067c4e66",
+    "full_history": true,
+    "excluded_missing_and_negative": true,
+    "selection_labels_end": "2024-01-01 00:00:00+09:00"
+  },
+  "check_2025": {
+    "training_start": "2021-01-01 01:00:00+09:00",
+    "training_end": "2024-12-31 17:00:00+09:00",
+    "eligible_rows": 3473883,
+    "labeled_sequences": 144952,
+    "seconds": 298.56573724746704,
+    "model_sha256": "80bb4619e0cbb7de17e8fdba028e39eece9a6b0d04d93582a72db5d697a9bbd0",
+    "full_history": true,
+    "excluded_missing_and_negative": true,
+    "selection_labels_end": "2024-01-01 00:00:00+09:00"
+  },
+  "final": {
+    "training_start": "2021-01-01 01:00:00+09:00",
+    "training_end": "2025-05-31 17:00:00+09:00",
+    "eligible_rows": 4390755,
+    "labeled_sequences": 183155,
+    "seconds": 380.6367962360382,
+    "model_sha256": "209c91bdf7d59dd4bc025347f56f5dd4948d688611fc597fa9ec1c46a98b9b7f",
+    "full_history": true,
+    "excluded_missing_and_negative": true,
+    "trained_epochs": null,
+    "refit_epoch_policy": null,
+    "selection_labels_end": "2024-01-01 00:00:00+09:00"
+  }
+}

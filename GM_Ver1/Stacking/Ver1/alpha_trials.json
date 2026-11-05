@@ -1,0 +1,44 @@
+[
+  {
+    "alpha": 0.001,
+    "validation_mae_kwh": 5.104093998328523,
+    "inner_training_rows": 1322275,
+    "validation_rows": 554823
+  },
+  {
+    "alpha": 0.0001,
+    "validation_mae_kwh": 5.108402735956024,
+    "inner_training_rows": 1322275,
+    "validation_rows": 554823
+  },
+  {
+    "alpha": 1e-05,
+    "validation_mae_kwh": 5.109199481509714,
+    "inner_training_rows": 1322275,
+    "validation_rows": 554823
+  },
+  {
+    "alpha": 1e-06,
+    "validation_mae_kwh": 5.109284947107486,
+    "inner_training_rows": 1322275,
+    "validation_rows": 554823
+  },
+  {
+    "alpha": 0.01,
+    "validation_mae_kwh": 5.119051286223313,
+    "inner_training_rows": 1322275,
+    "validation_rows": 554823
+  },
+  {
+    "alpha": 0.1,
+    "validation_mae_kwh": 5.366750611070899,
+    "inner_training_rows": 1322275,
+    "validation_rows": 554823
+  },
+  {
+    "alpha": 1.0,
+    "validation_mae_kwh": 7.838614327722451,
+    "inner_training_rows": 1322275,
+    "validation_rows": 554823
+  }
+]

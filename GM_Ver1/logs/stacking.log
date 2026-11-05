@@ -1,0 +1,154 @@
+Stacking selected alpha=0.001, Q4 MAE=5.104094
+{
+  "check_2025": {
+    "XGBoost/Ver1": {
+      "site_mae_kwh": 5.802991887689708,
+      "site_rmse_kwh": 23.06723917569079,
+      "reference_groups": {
+        "complete_hours": 3624,
+        "available_prediction_hours": 3624,
+        "rows": 916872,
+        "sites": 253,
+        "penalty_krw": 78126128.45860651,
+        "weighted_absolute_error": 781261284.5860653,
+        "revenue_krw": 3273622209.5507417,
+        "settlement_krw": 3195496081.092135,
+        "site_mae": 5.802991887689708,
+        "site_rmse": 23.06723917569079,
+        "group_mae": 387.5528650185584,
+        "group_rmse": 853.1509567490472
+      }
+    },
+    "XGBoost/Ver2": {
+      "site_mae_kwh": 5.8333180294362075,
+      "site_rmse_kwh": 23.10887415694066,
+      "reference_groups": {
+        "complete_hours": 3624,
+        "available_prediction_hours": 3624,
+        "rows": 916872,
+        "sites": 253,
+        "penalty_krw": 78268946.58461937,
+        "weighted_absolute_error": 782689465.8461938,
+        "revenue_krw": 3273622209.5507417,
+        "settlement_krw": 3195353262.966122,
+        "site_mae": 5.8333180294362075,
+        "site_rmse": 23.10887415694066,
+        "group_mae": 387.6191640510321,
+        "group_rmse": 855.6540643787831
+      }
+    },
+    "GRU/Ver1": {
+      "site_mae_kwh": 5.488462681272127,
+      "site_rmse_kwh": 22.64287624638793,
+      "reference_groups": {
+        "complete_hours": 3624,
+        "available_prediction_hours": 3624,
+        "rows": 916872,
+        "sites": 253,
+        "penalty_krw": 72118408.96344131,
+        "weighted_absolute_error": 721184089.634413,
+        "revenue_krw": 3273622209.5507417,
+        "settlement_krw": 3201503800.5873003,
+        "site_mae": 5.488462681272127,
+        "site_rmse": 22.64287624638793,
+        "group_mae": 372.9764363103358,
+        "group_rmse": 769.3946417688206
+      }
+    },
+    "GRU/Ver2": {
+      "site_mae_kwh": 5.675271368479358,
+      "site_rmse_kwh": 22.4330794371358,
+      "reference_groups": {
+        "complete_hours": 3624,
+        "available_prediction_hours": 3624,
+        "rows": 916872,
+        "sites": 253,
+        "penalty_krw": 71322817.18149191,
+        "weighted_absolute_error": 713228171.8149192,
+        "revenue_krw": 3273622209.5507417,
+        "settlement_krw": 3202299392.36925,
+        "site_mae": 5.675271368479358,
+        "site_rmse": 22.4330794371358,
+        "group_mae": 371.5728006339852,
+        "group_rmse": 763.9200878240571
+      }
+    },
+    "TCN/Ver1": {
+      "site_mae_kwh": 5.76748707977467,
+      "site_rmse_kwh": 23.54970859481486,
+      "reference_groups": {
+        "complete_hours": 3624,
+        "available_prediction_hours": 3624,
+        "rows": 916872,
+        "sites": 253,
+        "penalty_krw": 91326176.5567627,
+        "weighted_absolute_error": 913261765.567627,
+        "revenue_krw": 3273622209.5507417,
+        "settlement_krw": 3182296032.993979,
+        "site_mae": 5.76748707977467,
+        "site_rmse": 23.54970859481486,
+        "group_mae": 458.2435649764231,
+        "group_rmse": 914.1560549680913
+      }
+    },
+    "TCN/Ver2": {
+      "site_mae_kwh": 5.779762830811289,
+      "site_rmse_kwh": 23.03326148196087,
+      "reference_groups": {
+        "complete_hours": 3624,
+        "available_prediction_hours": 3624,
+        "rows": 916872,
+        "sites": 253,
+        "penalty_krw": 79674808.55320682,
+        "weighted_absolute_error": 796748085.5320681,
+        "revenue_krw": 3273622209.5507417,
+        "settlement_krw": 3193947400.9975348,
+        "site_mae": 5.779762830811289,
+        "site_rmse": 23.03326148196087,
+        "group_mae": 401.3684120361699,
+        "group_rmse": 831.6398186923043
+      }
+    },
+    "uniform_mean_6": {
+      "site_mae_kwh": 5.344200574223523,
+      "site_rmse_kwh": 22.040230049261208,
+      "observed_rows": 916872,
+      "reference_groups": {
+        "complete_hours": 3624,
+        "available_prediction_hours": 3624,
+        "rows": 916872,
+        "sites": 253,
+        "penalty_krw": 71477301.0665377,
+        "weighted_absolute_error": 714773010.6653769,
+        "revenue_krw": 3273622209.5507417,
+        "settlement_krw": 3202144908.484204,
+        "site_mae": 5.344200574223523,
+        "site_rmse": 22.040230049261208,
+        "group_mae": 360.3692432341318,
+        "group_rmse": 764.4494037542456
+      }
+    },
+    "Ridge_stacking": {
+      "site_mae_kwh": 5.432749614884753,
+      "site_rmse_kwh": 22.046601741182336,
+      "observed_rows": 916872,
+      "reference_groups": {
+        "complete_hours": 3624,
+        "available_prediction_hours": 3624,
+        "rows": 916872,
+        "sites": 253,
+        "penalty_krw": 71830742.96437362,
+        "weighted_absolute_error": 718307429.6437362,
+        "revenue_krw": 3273622209.5507417,
+        "settlement_krw": 3201791466.586368,
+        "site_mae": 5.432749614884753,
+        "site_rmse": 22.046601741182336,
+        "group_mae": 367.58222006933124,
+        "group_rmse": 761.7650546740871
+      }
+    }
+  },
+  "stacking_mae_improvement_vs_best_single_pct": 1.0150942007400188,
+  "stacking_penalty_improvement_vs_best_single_pct": -0.7121504771596676,
+  "validation_used_to_reselect_settings": false
+}

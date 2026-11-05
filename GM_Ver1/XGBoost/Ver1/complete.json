@@ -2,7 +2,7 @@
   "status": "complete",
   "family": "XGBoost",
   "version": 1,
-  "config_sha256": "37a10a98726881b8517412030c2b44e6e687bf8660a33de98f4903c389f22890",
+  "config_sha256": "3bae941cbfa4009adc0e445425ea83ff4ee4039c8fbba928ad875bf87b526337",
   "final_training_end": "2025-05-31 17:00:00+09:00",
   "evaluation_rows": 2216280,
   "stacking": false,

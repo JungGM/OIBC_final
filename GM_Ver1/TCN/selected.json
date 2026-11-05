@@ -1,0 +1,44 @@
+[
+  {
+    "trial": 5,
+    "validation_mae_kwh": 4.25986909866333,
+    "config": {
+      "embedding_dim": 4,
+      "dropout": 0.18197493470536547,
+      "learning_rate": 0.003652986141411532,
+      "weight_decay": 7.853935394076638e-06,
+      "loss": "huber",
+      "huber_beta": 0.06531841644964186,
+      "batch_size": 512,
+      "max_epochs": 16,
+      "patience": 4,
+      "seed": 20261105,
+      "channels": 32,
+      "levels": 3,
+      "kernel_size": 5,
+      "receptive_field": 57,
+      "epochs": 2
+    }
+  },
+  {
+    "trial": 4,
+    "validation_mae_kwh": 4.264599800109863,
+    "config": {
+      "embedding_dim": 4,
+      "dropout": 0.01038568907466228,
+      "learning_rate": 0.0011469078078110936,
+      "weight_decay": 4.770763906133472e-06,
+      "loss": "huber",
+      "huber_beta": 0.07640876067417135,
+      "batch_size": 512,
+      "max_epochs": 16,
+      "patience": 4,
+      "seed": 20261105,
+      "channels": 32,
+      "levels": 3,
+      "kernel_size": 5,
+      "receptive_field": 57,
+      "epochs": 6
+    }
+  }
+]

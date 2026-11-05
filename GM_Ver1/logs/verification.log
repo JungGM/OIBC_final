@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "expected_training_rows": {
+    "2023-12-31 17:00:00+09:00": 1590433,
+    "2024-12-31 17:00:00+09:00": 3473883,
+    "2025-05-31 17:00:00+09:00": 4390755
+  },
+  "candidates": [
+    {
+      "family": "XGBoost",
+      "version": "Ver1",
+      "full_history_rows": 4390755,
+      "forecast_rows": 2216280,
+      "unique_full_grid": true,
+      "finite_nonnegative": true,
+      "checkpoint_reload_predictions_match": true,
+      "exact_raw_label_scoring": true,
+      "all_stage_hashes_match": true,
+      "all_training_boundaries_match": true
+    },
+    {
+      "family": "XGBoost",
+      "version": "Ver2",
+      "full_history_rows": 4390755,
+      "forecast_rows": 2216280,
+      "unique_full_grid": true,
+      "finite_nonnegative": true,
+      "checkpoint_reload_predictions_match": true,
+      "exact_raw_label_scoring": true,
+      "all_stage_hashes_match": true,
+      "all_training_boundaries_match": true
+    },
+    {
+      "family": "GRU",
+      "version": "Ver1",
+      "full_history_rows": 4390755,
+      "forecast_rows": 2216280,
+      "unique_full_grid": true,
+      "finite_nonnegative": true,
+      "checkpoint_reload_predictions_match": true,
+      "exact_raw_label_scoring": true,
+      "all_stage_hashes_match": true,
+      "all_training_boundaries_match": true
+    },
+    {
+      "family": "GRU",
+      "version": "Ver2",
+      "full_history_rows": 4390755,
+      "forecast_rows": 2216280,
+      "unique_full_grid": true,
+      "finite_nonnegative": true,
+      "checkpoint_reload_predictions_match": true,
+      "exact_raw_label_scoring": true,
+      "all_stage_hashes_match": true,
+      "all_training_boundaries_match": true
+    },
+    {
+      "family": "TCN",
+      "version": "Ver1",
+      "full_history_rows": 4390755,
+      "forecast_rows": 2216280,
+      "unique_full_grid": true,
+      "finite_nonnegative": true,
+      "checkpoint_reload_predictions_match": true,
+      "exact_raw_label_scoring": true,
+      "all_stage_hashes_match": true,
+      "all_training_boundaries_match": true
+    },
+    {
+      "family": "TCN",
+      "version": "Ver2",
+      "full_history_rows": 4390755,
+      "forecast_rows": 2216280,
+      "unique_full_grid": true,
+      "finite_nonnegative": true,
+      "checkpoint_reload_predictions_match": true,
+      "exact_raw_label_scoring": true,
+      "all_stage_hashes_match": true,
+      "all_training_boundaries_match": true
+    }
+  ],
+  "dataset_ready_sha256": "9f3bf03888a27de355b720225771890bd6818864bdfe68748488702820efbf1a",
+  "training_grid_sha256": "70ed4636611b084eef42562e4505f82522af06f40aeccd82579db7d208dcbe02",
+  "evaluation_input_sha256": "b692e0b7cea10851073472b959113d7c7ea1cc0fa73ebb95cfbad2f8ca4f5733",
+  "scope": "6 forecasting candidates; no stacking or VPP optimization; local verification is not official scoring"
+}

@@ -5,5 +5,6 @@
   "role": "competition evaluation input; labels unavailable",
   "site_count": 253,
   "nonnegative_finite": true,
-  "warning": "Chronological predictions only; never use final-refit training predictions for stacking"
+  "warning": "Chronological predictions only; never use final-refit training predictions for stacking",
+  "selection_labels_end": "2024-01-01 00:00:00+09:00"
 }

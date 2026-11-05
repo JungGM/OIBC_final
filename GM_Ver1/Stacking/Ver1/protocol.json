@@ -1,0 +1,29 @@
+{
+  "base_models": [
+    "XGBoost/Ver1",
+    "XGBoost/Ver2",
+    "GRU/Ver1",
+    "GRU/Ver2",
+    "TCN/Ver1",
+    "TCN/Ver2"
+  ],
+  "alpha_grid": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "inner_training_end": "2024-09-30 17:00:00+09:00",
+  "inner_validation": "2024-10-01 01:00 through 2024-12-31 17:00 KST",
+  "selection_metric": "observed nonnegative-target site MAE in kWh",
+  "check_meta_training_end": "2024-12-31 17:00:00+09:00",
+  "check_period": "2025 Jan-May",
+  "final_meta_training_end": "2025-05-31 17:00:00+09:00",
+  "final_meta_features": "out-of-time 2024 and 2025 base predictions only",
+  "gradient_descent_weight_optimization": false,
+  "vpp_optimization": false,
+  "caution": "2024/2025 were inspected in previous research; not globally untouched data"
+}

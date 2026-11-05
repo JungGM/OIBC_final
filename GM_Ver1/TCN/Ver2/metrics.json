@@ -1,0 +1,166 @@
+{
+  "confirm_2024": {
+    "rows": 1880633,
+    "prediction_rows": 2216280,
+    "site_mae_kwh": 6.12554082793279,
+    "site_rmse_kwh": 20.523170427671648,
+    "normalized_mae": 0.038808418878320206,
+    "negative_observed_labels": 0,
+    "reference_groups": {
+      "complete_hours": 178,
+      "available_prediction_hours": 8760,
+      "rows": 1880633,
+      "sites": 253,
+      "penalty_krw": 1972994.5424610428,
+      "weighted_absolute_error": 19729945.424610425,
+      "revenue_krw": 109793169.6983487,
+      "settlement_krw": 107820175.15588766,
+      "site_mae": 6.12554082793279,
+      "site_rmse": 20.523170427671648,
+      "group_mae": 202.65149138002474,
+      "group_rmse": 432.71911655513753
+    },
+    "monthly": [
+      {
+        "month": "2024-01",
+        "rows": 108350,
+        "mae_kwh": 4.442739377375213,
+        "rmse_kwh": 18.001116338730967
+      },
+      {
+        "month": "2024-02",
+        "rows": 119408,
+        "mae_kwh": 4.897526783154106,
+        "rmse_kwh": 18.05375637458722
+      },
+      {
+        "month": "2024-03",
+        "rows": 128799,
+        "mae_kwh": 6.159481341939373,
+        "rmse_kwh": 21.84731533074049
+      },
+      {
+        "month": "2024-04",
+        "rows": 126265,
+        "mae_kwh": 5.619963720511783,
+        "rmse_kwh": 19.308381545431754
+      },
+      {
+        "month": "2024-05",
+        "rows": 143833,
+        "mae_kwh": 7.042347859456097,
+        "rmse_kwh": 23.96891568569716
+      },
+      {
+        "month": "2024-06",
+        "rows": 153292,
+        "mae_kwh": 6.802268446599127,
+        "rmse_kwh": 21.26849904709883
+      },
+      {
+        "month": "2024-07",
+        "rows": 176121,
+        "mae_kwh": 8.342949329256776,
+        "rmse_kwh": 25.662245194266067
+      },
+      {
+        "month": "2024-08",
+        "rows": 186279,
+        "mae_kwh": 7.13262649209537,
+        "rmse_kwh": 21.237696090735426
+      },
+      {
+        "month": "2024-09",
+        "rows": 181440,
+        "mae_kwh": 6.959823302175872,
+        "rmse_kwh": 21.696620854059603
+      },
+      {
+        "month": "2024-10",
+        "rows": 187488,
+        "mae_kwh": 5.657547611104639,
+        "rmse_kwh": 19.045253785558604
+      },
+      {
+        "month": "2024-11",
+        "rows": 181440,
+        "mae_kwh": 5.174776559723441,
+        "rmse_kwh": 17.927447542971194
+      },
+      {
+        "month": "2024-12",
+        "rows": 187665,
+        "mae_kwh": 4.44767641980124,
+        "rmse_kwh": 15.628051188620839
+      },
+      {
+        "month": "2025-01",
+        "rows": 253,
+        "mae_kwh": 0.00013187866375389098,
+        "rmse_kwh": 0.00040139559944950287
+      }
+    ],
+    "limitation": "Reference groups fixed; only complete-roster hours in group score. 2024/2025 were seen in earlier research, not globally untouched test data."
+  },
+  "check_2025": {
+    "rows": 916872,
+    "prediction_rows": 916872,
+    "site_mae_kwh": 5.779762830811289,
+    "site_rmse_kwh": 23.03326148196087,
+    "normalized_mae": 0.03366058813668843,
+    "negative_observed_labels": 0,
+    "reference_groups": {
+      "complete_hours": 3624,
+      "available_prediction_hours": 3624,
+      "rows": 916872,
+      "sites": 253,
+      "penalty_krw": 79674808.55320682,
+      "weighted_absolute_error": 796748085.5320681,
+      "revenue_krw": 3273622209.5507417,
+      "settlement_krw": 3193947400.9975348,
+      "site_mae": 5.779762830811289,
+      "site_rmse": 23.03326148196087,
+      "group_mae": 401.3684120361699,
+      "group_rmse": 831.6398186923043
+    },
+    "monthly": [
+      {
+        "month": "2025-01",
+        "rows": 187979,
+        "mae_kwh": 4.660703701713425,
+        "rmse_kwh": 17.284233141112985
+      },
+      {
+        "month": "2025-02",
+        "rows": 170016,
+        "mae_kwh": 5.464675499963413,
+        "rmse_kwh": 25.472708429535608
+      },
+      {
+        "month": "2025-03",
+        "rows": 188232,
+        "mae_kwh": 5.888631044499297,
+        "rmse_kwh": 24.30176329668472
+      },
+      {
+        "month": "2025-04",
+        "rows": 182160,
+        "mae_kwh": 6.247821207629425,
+        "rmse_kwh": 23.184249427844353
+      },
+      {
+        "month": "2025-05",
+        "rows": 188232,
+        "mae_kwh": 6.627849963220174,
+        "rmse_kwh": 24.270242639554365
+      },
+      {
+        "month": "2025-06",
+        "rows": 253,
+        "mae_kwh": 0.0025732751529848777,
+        "rmse_kwh": 0.008242776674085496
+      }
+    ],
+    "limitation": "Reference groups fixed; only complete-roster hours in group score. 2024/2025 were seen in earlier research, not globally untouched test data."
+  }
+}

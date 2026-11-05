@@ -1,0 +1,10 @@
+{
+  "rows": 916872,
+  "sha256": "0ff2f387021f3cbe8ab3729361f5abf2cd19f4ce80ee81f31d916cc2f65bf5f3",
+  "training_end": "2024-12-31 17:00:00+09:00",
+  "role": "out_of_time_forecast; frozen fit for entire validation window",
+  "site_count": 253,
+  "nonnegative_finite": true,
+  "warning": "Chronological predictions only; never use final-refit training predictions for stacking",
+  "selection_labels_end": "2024-01-01 00:00:00+09:00"
+}

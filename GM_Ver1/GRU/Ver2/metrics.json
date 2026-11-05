@@ -1,31 +1,31 @@
 {
   "confirm_2024": {
-    "rows": 1884185,
-    "prediction_rows": 2222352,
-    "site_mae_kwh": 6.288114446448963,
-    "site_rmse_kwh": 20.657852002008532,
-    "normalized_mae": 0.03947010936438604,
+    "rows": 1880633,
+    "prediction_rows": 2216280,
+    "site_mae_kwh": 6.291636916816352,
+    "site_rmse_kwh": 20.666633360914208,
+    "normalized_mae": 0.03948832750560558,
     "negative_observed_labels": 0,
     "reference_groups": {
       "complete_hours": 178,
-      "available_prediction_hours": 8784,
-      "rows": 1884185,
+      "available_prediction_hours": 8760,
+      "rows": 1880633,
       "sites": 253,
       "penalty_krw": 2193005.2783798366,
       "weighted_absolute_error": 21930052.783798367,
       "revenue_krw": 109793169.6983487,
       "settlement_krw": 107600164.41996886,
-      "site_mae": 6.288114446448963,
-      "site_rmse": 20.657852002008532,
+      "site_mae": 6.291636916816352,
+      "site_rmse": 20.666633360914208,
       "group_mae": 238.42062511941552,
       "group_rmse": 464.3974070247451
     },
     "monthly": [
       {
         "month": "2024-01",
-        "rows": 111902,
-        "mae_kwh": 4.506962584869813,
-        "rmse_kwh": 17.223101387288523
+        "rows": 108350,
+        "mae_kwh": 4.509711293703271,
+        "rmse_kwh": 17.28202597465895
       },
       {
         "month": "2024-02",

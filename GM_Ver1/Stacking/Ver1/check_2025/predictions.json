@@ -1,0 +1,8 @@
+{
+  "rows": 916872,
+  "training_end": "2024-12-31 17:00:00+09:00",
+  "sha256": "cdcadf1ee14ab65d903b7dc82a32476bf5f2ecda282a65f66b395194f4e11026",
+  "role": "out_of_time_meta_forecast; settings frozen before 2025",
+  "finite_nonnegative": true,
+  "unique_keys": true
+}

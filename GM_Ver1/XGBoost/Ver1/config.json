@@ -113,5 +113,10 @@
     "2023-12-31"
   ],
   "selection_metric": "observed nonnegative-label site MAE in raw kWh on common 12,000-sequence validation sample",
-  "features_status": "78 frozen default features + site code and 6 solar features, fixed across all trials; no feature-importance claim"
+  "features_status": "78 frozen default features + site code and 6 solar features, fixed across all trials; no feature-importance claim",
+  "selection_labels_end": "2024-01-01 00:00:00+09:00",
+  "confirmation_operating_days": [
+    "2024-01-02",
+    "2024-12-31"
+  ]
 }

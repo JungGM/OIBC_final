@@ -11,10 +11,18 @@ try {
     if ($Dataset) { $Arguments += @("--dataset", $Dataset) }
     & $Python @Arguments
     if ($LASTEXITCODE -ne 0) { throw "Forecast training failed: $LASTEXITCODE" }
+    & $Python -m GM_Ver1.repair_origins --out $ArtifactRoot
+    if ($LASTEXITCODE -ne 0) { throw "Forecast origin validation failed: $LASTEXITCODE" }
     $ExportArguments = @("-m", "GM_Ver1.export", "--out", $ArtifactRoot)
     if ($Dataset) { $ExportArguments += @("--dataset", $Dataset) }
     & $Python @ExportArguments
     if ($LASTEXITCODE -ne 0) { throw "Forecast verification/export failed: $LASTEXITCODE" }
+    & $Python -m GM_Ver1.sync_outputs --out $ArtifactRoot
+    if ($LASTEXITCODE -ne 0) { throw "Forecast artifact sync failed: $LASTEXITCODE" }
+    $StackArguments = @("-m", "GM_Ver1.stacking", "--out", $ArtifactRoot)
+    if ($Dataset) { $StackArguments += @("--dataset", $Dataset) }
+    & $Python @StackArguments
+    if ($LASTEXITCODE -ne 0) { throw "Stacking failed: $LASTEXITCODE" }
 } finally {
     Pop-Location
 }

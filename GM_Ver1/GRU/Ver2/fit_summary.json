@@ -1,0 +1,41 @@
+{
+  "confirm_2024": {
+    "training_start": "2021-01-01 01:00:00+09:00",
+    "training_end": "2023-12-31 17:00:00+09:00",
+    "eligible_rows": 1590433,
+    "labeled_sequences": 66391,
+    "seconds": 144.5711052417755,
+    "model_sha256": "040e3ee1fcd237e7bfd213b80f25dc62e5ee2c340a5dff59480ed5b992ec3a24",
+    "full_history": true,
+    "excluded_missing_and_negative": true,
+    "trained_epochs": 4,
+    "refit_epoch_policy": "min(selected_epoch, max(3, ceil(selected_epoch*20000/full_training_sequences)))",
+    "selection_labels_end": "2024-01-01 00:00:00+09:00"
+  },
+  "check_2025": {
+    "training_start": "2021-01-01 01:00:00+09:00",
+    "training_end": "2024-12-31 17:00:00+09:00",
+    "eligible_rows": 3473883,
+    "labeled_sequences": 144952,
+    "seconds": 241.1605839729309,
+    "model_sha256": "32e63d385bcf9043935bd430e820938196816452b5bc2ee01004e789530e3b38",
+    "full_history": true,
+    "excluded_missing_and_negative": true,
+    "trained_epochs": 3,
+    "refit_epoch_policy": "min(selected_epoch, max(3, ceil(selected_epoch*20000/full_training_sequences)))",
+    "selection_labels_end": "2024-01-01 00:00:00+09:00"
+  },
+  "final": {
+    "training_start": "2021-01-01 01:00:00+09:00",
+    "training_end": "2025-05-31 17:00:00+09:00",
+    "eligible_rows": 4390755,
+    "labeled_sequences": 183155,
+    "seconds": 393.094535112381,
+    "model_sha256": "4b7cbc36b30ba8646786b69b4893a05a005a5d8c326ad2f03c07571b1c85fd64",
+    "full_history": true,
+    "excluded_missing_and_negative": true,
+    "trained_epochs": 3,
+    "refit_epoch_policy": "min(selected_epoch, max(3, ceil(selected_epoch*20000/full_training_sequences)))",
+    "selection_labels_end": "2024-01-01 00:00:00+09:00"
+  }
+}

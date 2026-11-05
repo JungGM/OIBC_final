@@ -1,0 +1,50 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.08973425919192228,
+    "seconds": 5.522927522659302,
+    "validation_mae_kwh": 5.140100002288818
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.037913832548602026,
+    "seconds": 5.434948444366455,
+    "validation_mae_kwh": 4.358346939086914
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.03289212929144817,
+    "seconds": 5.5524749755859375,
+    "validation_mae_kwh": 4.350125312805176
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.030853447392031167,
+    "seconds": 5.531739950180054,
+    "validation_mae_kwh": 4.331448078155518
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.029674660581866602,
+    "seconds": 5.125664234161377,
+    "validation_mae_kwh": 4.4989914894104
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.02881366171709755,
+    "seconds": 5.458732604980469,
+    "validation_mae_kwh": 4.551043510437012
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.028366867241845437,
+    "seconds": 5.21706485748291,
+    "validation_mae_kwh": 4.549935340881348
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.027826942056338868,
+    "seconds": 5.254055023193359,
+    "validation_mae_kwh": 4.6890459060668945
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "rows": 2216280,
+  "sha256": "e4564ea973848270240a152c77954fbf49828ec6eb8f025d496e70604b73d3aa",
+  "training_end": "2023-12-31 17:00:00+09:00",
+  "role": "out_of_time_forecast; frozen fit for entire validation window",
+  "site_count": 253,
+  "nonnegative_finite": true,
+  "warning": "Chronological predictions only; never use final-refit training predictions for stacking",
+  "first_prediction": "2024-01-02 01:00:00+09:00",
+  "embargo_reason": "HPO validation labels available through 2024-01-01 00:00; exclude Jan 1 operating day",
+  "selection_labels_end": "2024-01-01 00:00:00+09:00"
+}

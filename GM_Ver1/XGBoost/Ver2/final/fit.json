@@ -8,5 +8,6 @@
   "full_history": true,
   "excluded_missing_and_negative": true,
   "trained_epochs": null,
-  "refit_epoch_policy": null
+  "refit_epoch_policy": null,
+  "selection_labels_end": "2024-01-01 00:00:00+09:00"
 }

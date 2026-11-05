@@ -6,5 +6,6 @@
   "seconds": 139.6136338710785,
   "model_sha256": "a5ae84de2c802957d10bfd47d51fa034ebd11cff08227011736d42cf067c4e66",
   "full_history": true,
-  "excluded_missing_and_negative": true
+  "excluded_missing_and_negative": true,
+  "selection_labels_end": "2024-01-01 00:00:00+09:00"
 }

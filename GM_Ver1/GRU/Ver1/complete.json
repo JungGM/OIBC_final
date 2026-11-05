@@ -2,7 +2,7 @@
   "status": "complete",
   "family": "GRU",
   "version": 1,
-  "config_sha256": "dd7f295f6d7430e15d22abbf80f45d476fd7248f953728c823f04de958d3b861",
+  "config_sha256": "c0c6da7be57c5076399c973f43e896b681270123a8c110d63e2abf89aa6e5189",
   "final_training_end": "2025-05-31 17:00:00+09:00",
   "evaluation_rows": 2216280,
   "stacking": false,

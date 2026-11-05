@@ -1,0 +1,98 @@
+[
+  {
+    "model": "XGBoost/Ver1",
+    "tuning_mae_kwh": 3.8336069583892822,
+    "confirm_2024": {
+      "site_mae_kwh": 6.075073377737472,
+      "site_rmse_kwh": 20.55882486691702,
+      "complete_hours": 178,
+      "reference_penalty_krw": 2271218.655084969
+    },
+    "check_2025": {
+      "site_mae_kwh": 5.802991887689708,
+      "site_rmse_kwh": 23.06723917569079,
+      "complete_hours": 3624,
+      "reference_penalty_krw": 78126128.45860651
+    }
+  },
+  {
+    "model": "XGBoost/Ver2",
+    "tuning_mae_kwh": 3.8488471508026123,
+    "confirm_2024": {
+      "site_mae_kwh": 6.1368914940097525,
+      "site_rmse_kwh": 20.69587944042867,
+      "complete_hours": 178,
+      "reference_penalty_krw": 2291457.8250575718
+    },
+    "check_2025": {
+      "site_mae_kwh": 5.8333180294362075,
+      "site_rmse_kwh": 23.10887415694066,
+      "complete_hours": 3624,
+      "reference_penalty_krw": 78268946.58461937
+    }
+  },
+  {
+    "model": "GRU/Ver1",
+    "tuning_mae_kwh": 4.299108505249023,
+    "confirm_2024": {
+      "site_mae_kwh": 6.51855574172715,
+      "site_rmse_kwh": 20.90357516474453,
+      "complete_hours": 178,
+      "reference_penalty_krw": 2299786.2981311665
+    },
+    "check_2025": {
+      "site_mae_kwh": 5.488462681272127,
+      "site_rmse_kwh": 22.64287624638793,
+      "complete_hours": 3624,
+      "reference_penalty_krw": 72118408.96344131
+    }
+  },
+  {
+    "model": "GRU/Ver2",
+    "tuning_mae_kwh": 4.419848918914795,
+    "confirm_2024": {
+      "site_mae_kwh": 6.291636916816352,
+      "site_rmse_kwh": 20.666633360914208,
+      "complete_hours": 178,
+      "reference_penalty_krw": 2193005.2783798366
+    },
+    "check_2025": {
+      "site_mae_kwh": 5.675271368479358,
+      "site_rmse_kwh": 22.4330794371358,
+      "complete_hours": 3624,
+      "reference_penalty_krw": 71322817.18149191
+    }
+  },
+  {
+    "model": "TCN/Ver1",
+    "tuning_mae_kwh": 4.25986909866333,
+    "confirm_2024": {
+      "site_mae_kwh": 6.226443820963389,
+      "site_rmse_kwh": 20.50442899836414,
+      "complete_hours": 178,
+      "reference_penalty_krw": 2152978.499257357
+    },
+    "check_2025": {
+      "site_mae_kwh": 5.76748707977467,
+      "site_rmse_kwh": 23.54970859481486,
+      "complete_hours": 3624,
+      "reference_penalty_krw": 91326176.5567627
+    }
+  },
+  {
+    "model": "TCN/Ver2",
+    "tuning_mae_kwh": 4.264599800109863,
+    "confirm_2024": {
+      "site_mae_kwh": 6.12554082793279,
+      "site_rmse_kwh": 20.523170427671648,
+      "complete_hours": 178,
+      "reference_penalty_krw": 1972994.5424610428
+    },
+    "check_2025": {
+      "site_mae_kwh": 5.779762830811289,
+      "site_rmse_kwh": 23.03326148196087,
+      "complete_hours": 3624,
+      "reference_penalty_krw": 79674808.55320682
+    }
+  }
+]

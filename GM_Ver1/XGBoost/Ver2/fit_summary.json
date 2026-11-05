@@ -1,0 +1,41 @@
+{
+  "confirm_2024": {
+    "training_start": "2021-01-01 01:00:00+09:00",
+    "training_end": "2023-12-31 17:00:00+09:00",
+    "eligible_rows": 1590433,
+    "labeled_sequences": 66391,
+    "seconds": 153.18115997314453,
+    "model_sha256": "503e91ef81c0ea9355f62bb2cc49878b8259126814958ace7f6dc2fcecc8b541",
+    "full_history": true,
+    "excluded_missing_and_negative": true,
+    "trained_epochs": null,
+    "refit_epoch_policy": null,
+    "selection_labels_end": "2024-01-01 00:00:00+09:00"
+  },
+  "check_2025": {
+    "training_start": "2021-01-01 01:00:00+09:00",
+    "training_end": "2024-12-31 17:00:00+09:00",
+    "eligible_rows": 3473883,
+    "labeled_sequences": 144952,
+    "seconds": 330.7649803161621,
+    "model_sha256": "433f51cdb844ee2a4f51a7f96d2ea3da9cf41096dd7742c2494bacfc47c626b9",
+    "full_history": true,
+    "excluded_missing_and_negative": true,
+    "trained_epochs": null,
+    "refit_epoch_policy": null,
+    "selection_labels_end": "2024-01-01 00:00:00+09:00"
+  },
+  "final": {
+    "training_start": "2021-01-01 01:00:00+09:00",
+    "training_end": "2025-05-31 17:00:00+09:00",
+    "eligible_rows": 4390755,
+    "labeled_sequences": 183155,
+    "seconds": 444.39355635643005,
+    "model_sha256": "ffdf3569dde40e7699f3c5ce8cc219ee11a3828de5c84ee190a4f28f0afc8280",
+    "full_history": true,
+    "excluded_missing_and_negative": true,
+    "trained_epochs": null,
+    "refit_epoch_policy": null,
+    "selection_labels_end": "2024-01-01 00:00:00+09:00"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "method": "weighted_standardized_ridge_closed_form",
+  "alpha": 0.001,
+  "feature_order": [
+    "XGBoost/Ver1",
+    "XGBoost/Ver2",
+    "GRU/Ver1",
+    "GRU/Ver2",
+    "TCN/Ver1",
+    "TCN/Ver2"
+  ],
+  "coefficients": [
+    0.2287293111558746,
+    0.08248610412716599,
+    0.088155725737389,
+    0.3003201708706377,
+    0.10428578706837129,
+    0.19839765639961746
+  ],
+  "intercept": 0.0007021244997931775,
+  "training_mean": [
+    0.15016803495626216,
+    0.14860732407542648,
+    0.1430721947927873,
+    0.15471727248963082,
+    0.15016183935599442,
+    0.15170670621921784
+  ],
+  "training_scale": [
+    0.21683438651730622,
+    0.2143774198378686,
+    0.20522646997968993,
+    0.2193995990628607,
+    0.21433806812298603,
+    0.21965724459545383
+  ],
+  "weight_policy": "capacity_kw/170",
+  "objective": "weighted mean CF squared error + alpha*L2",
+  "coefficients_are_convex_weights": false,
+  "training_rows": 1878862,
+  "training_end": "2024-12-31 17:00:00+09:00",
+  "training_first_observed": "2024-01-02 01:00:00+09:00",
+  "training_last_observed": "2024-12-31 17:00:00+09:00",
+  "target_policy": "observed nonnegative only; true zero retained; no imputed targets"
+}

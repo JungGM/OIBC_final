@@ -3,3 +3,102 @@ ForecastTCN epoch 1/16: {'epoch': 1, 'train_loss': 0.09589310605369974, 'seconds
 ForecastTCN epoch 2/16: {'epoch': 2, 'train_loss': 0.03325025806027461, 'seconds': 10.537944793701172, 'validation_mae_kwh': 4.604743480682373}
 ForecastTCN epoch 3/16: {'epoch': 3, 'train_loss': 0.028615720949157042, 'seconds': 21.50256657600403, 'validation_mae_kwh': 4.644262313842773}
 ForecastTCN epoch 4/16: {'epoch': 4, 'train_loss': 0.02713736691111795, 'seconds': 8.467652797698975, 'validation_mae_kwh': 4.613463401794434}
+ForecastTCN epoch 5/16: {'epoch': 5, 'train_loss': 0.026268521938711886, 'seconds': 8.764430046081543, 'validation_mae_kwh': 4.627573013305664}
+ForecastTCN epoch 6/16: {'epoch': 6, 'train_loss': 0.025560102254503413, 'seconds': 9.564819812774658, 'validation_mae_kwh': 4.654938220977783}
+TCN trial 0: MAE=4.604743, best epoch=2
+[I 2026-11-05 11:47:54,432] Trial 0 finished with value: 4.604743480682373 and parameters: {'embedding_dim': 8, 'dropout': 0.021111072548293308, 'learning_rate': 0.000712949727659373, 'weight_decay': 1.7586001020187672e-05, 'loss': 'huber', 'huber_beta': 0.054504891302191764, 'channels': 64, 'levels': 4, 'kernel_size': 2}. Best is trial 0 with value: 4.604743480682373.
+ForecastTCN epoch 1/16: {'epoch': 1, 'train_loss': 0.07063018042533652, 'seconds': 3.798823595046997, 'validation_mae_kwh': 5.46251916885376}
+ForecastTCN epoch 2/16: {'epoch': 2, 'train_loss': 0.029755677048909572, 'seconds': 3.826552152633667, 'validation_mae_kwh': 4.615038871765137}
+ForecastTCN epoch 3/16: {'epoch': 3, 'train_loss': 0.024961959981348803, 'seconds': 3.8083314895629883, 'validation_mae_kwh': 4.541640758514404}
+ForecastTCN epoch 4/16: {'epoch': 4, 'train_loss': 0.02264133192764805, 'seconds': 3.8990375995635986, 'validation_mae_kwh': 4.28882360458374}
+ForecastTCN epoch 5/16: {'epoch': 5, 'train_loss': 0.021679017213680582, 'seconds': 3.870126485824585, 'validation_mae_kwh': 4.3887457847595215}
+ForecastTCN epoch 6/16: {'epoch': 6, 'train_loss': 0.020958998462696214, 'seconds': 4.508566379547119, 'validation_mae_kwh': 4.420102119445801}
+ForecastTCN epoch 7/16: {'epoch': 7, 'train_loss': 0.02037655026969026, 'seconds': 4.222806930541992, 'validation_mae_kwh': 4.425271511077881}
+ForecastTCN epoch 8/16: {'epoch': 8, 'train_loss': 0.019966370693336673, 'seconds': 4.001024007797241, 'validation_mae_kwh': 4.557518482208252}
+TCN trial 1: MAE=4.288824, best epoch=4
+[I 2026-11-05 11:48:32,633] Trial 1 finished with value: 4.28882360458374 and parameters: {'embedding_dim': 4, 'dropout': 0.20676716051342162, 'learning_rate': 0.0008733531238707131, 'weight_decay': 4.231743454931469e-05, 'loss': 'huber', 'huber_beta': 0.11359338158423972, 'channels': 32, 'levels': 3, 'kernel_size': 5}. Best is trial 1 with value: 4.28882360458374.
+ForecastTCN epoch 1/16: {'epoch': 1, 'train_loss': 0.0638762107922977, 'seconds': 7.074185132980347, 'validation_mae_kwh': 4.968337535858154}
+ForecastTCN epoch 2/16: {'epoch': 2, 'train_loss': 0.026258357097082716, 'seconds': 7.6304590702056885, 'validation_mae_kwh': 4.649148464202881}
+ForecastTCN epoch 3/16: {'epoch': 3, 'train_loss': 0.023474345432413415, 'seconds': 6.585620403289795, 'validation_mae_kwh': 4.781359672546387}
+ForecastTCN epoch 4/16: {'epoch': 4, 'train_loss': 0.02221478531726189, 'seconds': 7.052998304367065, 'validation_mae_kwh': 4.77832555770874}
+ForecastTCN epoch 5/16: {'epoch': 5, 'train_loss': 0.021258902136056825, 'seconds': 7.596615791320801, 'validation_mae_kwh': 4.779682636260986}
+ForecastTCN epoch 6/16: {'epoch': 6, 'train_loss': 0.020514084472529368, 'seconds': 7.101806402206421, 'validation_mae_kwh': 4.851194858551025}
+TCN trial 2: MAE=4.649148, best epoch=2
+[I 2026-11-05 11:49:22,273] Trial 2 finished with value: 4.649148464202881 and parameters: {'embedding_dim': 8, 'dropout': 0.2194452294364079, 'learning_rate': 0.001150873067103891, 'weight_decay': 0.0009000452271150441, 'loss': 'huber', 'huber_beta': 0.09529534713617492, 'channels': 64, 'levels': 3, 'kernel_size': 3}. Best is trial 1 with value: 4.28882360458374.
+ForecastTCN epoch 1/16: {'epoch': 1, 'train_loss': 0.015432431253514595, 'seconds': 8.927679538726807, 'validation_mae_kwh': 4.791126251220703}
+ForecastTCN epoch 2/16: {'epoch': 2, 'train_loss': 0.006837942753615952, 'seconds': 8.805092811584473, 'validation_mae_kwh': 4.6772332191467285}
+ForecastTCN epoch 3/16: {'epoch': 3, 'train_loss': 0.006344475493804148, 'seconds': 8.940880060195923, 'validation_mae_kwh': 4.6097235679626465}
+ForecastTCN epoch 4/16: {'epoch': 4, 'train_loss': 0.00603373185175852, 'seconds': 8.631101608276367, 'validation_mae_kwh': 4.746533393859863}
+ForecastTCN epoch 5/16: {'epoch': 5, 'train_loss': 0.005784042564704442, 'seconds': 8.744615077972412, 'validation_mae_kwh': 4.578797340393066}
+ForecastTCN epoch 6/16: {'epoch': 6, 'train_loss': 0.005546255410747672, 'seconds': 8.706229209899902, 'validation_mae_kwh': 4.708383083343506}
+ForecastTCN epoch 7/16: {'epoch': 7, 'train_loss': 0.005348180212085887, 'seconds': 8.679134368896484, 'validation_mae_kwh': 4.621967792510986}
+ForecastTCN epoch 8/16: {'epoch': 8, 'train_loss': 0.005197319632886081, 'seconds': 8.49182653427124, 'validation_mae_kwh': 4.594708442687988}
+ForecastTCN epoch 9/16: {'epoch': 9, 'train_loss': 0.005092407015269314, 'seconds': 8.972985982894897, 'validation_mae_kwh': 4.598469257354736}
+TCN trial 3: MAE=4.578797, best epoch=5
+[I 2026-11-05 11:50:52,560] Trial 3 finished with value: 4.578797340393066 and parameters: {'embedding_dim': 8, 'dropout': 0.11799682817717497, 'learning_rate': 0.0032007682383800935, 'weight_decay': 8.140840244764254e-06, 'loss': 'mse', 'huber_beta': 0.03244338678041147, 'channels': 64, 'levels': 4, 'kernel_size': 3}. Best is trial 1 with value: 4.28882360458374.
+ForecastTCN epoch 1/16: {'epoch': 1, 'train_loss': 0.06843353246551809, 'seconds': 3.863609552383423, 'validation_mae_kwh': 4.948057651519775}
+ForecastTCN epoch 2/16: {'epoch': 2, 'train_loss': 0.028082202810473196, 'seconds': 3.8244400024414062, 'validation_mae_kwh': 4.396335601806641}
+ForecastTCN epoch 3/16: {'epoch': 3, 'train_loss': 0.025591819336125657, 'seconds': 3.8960890769958496, 'validation_mae_kwh': 4.3359904289245605}
+ForecastTCN epoch 4/16: {'epoch': 4, 'train_loss': 0.02459870404154912, 'seconds': 4.05409836769104, 'validation_mae_kwh': 4.277790546417236}
+ForecastTCN epoch 5/16: {'epoch': 5, 'train_loss': 0.02405517360944202, 'seconds': 3.921386957168579, 'validation_mae_kwh': 4.423668384552002}
+ForecastTCN epoch 6/16: {'epoch': 6, 'train_loss': 0.02357852313188801, 'seconds': 3.833280086517334, 'validation_mae_kwh': 4.264599800109863}
+ForecastTCN epoch 7/16: {'epoch': 7, 'train_loss': 0.023127468362664442, 'seconds': 3.802628517150879, 'validation_mae_kwh': 4.367045879364014}
+ForecastTCN epoch 8/16: {'epoch': 8, 'train_loss': 0.02271151653281475, 'seconds': 10.50003457069397, 'validation_mae_kwh': 4.361021041870117}
+ForecastTCN epoch 9/16: {'epoch': 9, 'train_loss': 0.022266188403992276, 'seconds': 11.915146350860596, 'validation_mae_kwh': 4.3466596603393555}
+ForecastTCN epoch 10/16: {'epoch': 10, 'train_loss': 0.02181633256749626, 'seconds': 12.37659215927124, 'validation_mae_kwh': 4.412112236022949}
+TCN trial 4: MAE=4.264600, best epoch=6
+[I 2026-11-05 11:52:07,013] Trial 4 finished with value: 4.264599800109863 and parameters: {'embedding_dim': 4, 'dropout': 0.01038568907466228, 'learning_rate': 0.0011469078078110936, 'weight_decay': 4.770763906133472e-06, 'loss': 'huber', 'huber_beta': 0.07640876067417135, 'channels': 32, 'levels': 3, 'kernel_size': 5}. Best is trial 4 with value: 4.264599800109863.
+ForecastTCN epoch 1/16: {'epoch': 1, 'train_loss': 0.05217767703675454, 'seconds': 12.837623834609985, 'validation_mae_kwh': 4.533628463745117}
+ForecastTCN epoch 2/16: {'epoch': 2, 'train_loss': 0.028453040471185156, 'seconds': 11.811391115188599, 'validation_mae_kwh': 4.25986909866333}
+ForecastTCN epoch 3/16: {'epoch': 3, 'train_loss': 0.02627891095615142, 'seconds': 11.887796878814697, 'validation_mae_kwh': 4.5360894203186035}
+ForecastTCN epoch 4/16: {'epoch': 4, 'train_loss': 0.024935323247605255, 'seconds': 12.48501968383789, 'validation_mae_kwh': 4.567211151123047}
+ForecastTCN epoch 5/16: {'epoch': 5, 'train_loss': 0.023777979777717027, 'seconds': 11.852797031402588, 'validation_mae_kwh': 4.803895473480225}
+ForecastTCN epoch 6/16: {'epoch': 6, 'train_loss': 0.022797401371407466, 'seconds': 11.86069655418396, 'validation_mae_kwh': 4.760253429412842}
+TCN trial 5: MAE=4.259869, best epoch=2
+[I 2026-11-05 11:53:33,638] Trial 5 finished with value: 4.25986909866333 and parameters: {'embedding_dim': 4, 'dropout': 0.18197493470536547, 'learning_rate': 0.003652986141411532, 'weight_decay': 7.853935394076638e-06, 'loss': 'huber', 'huber_beta': 0.06531841644964186, 'channels': 32, 'levels': 3, 'kernel_size': 5}. Best is trial 5 with value: 4.25986909866333.
+ForecastTCN epoch 1/16: {'epoch': 1, 'train_loss': 0.04661083930807953, 'seconds': 16.649478435516357, 'validation_mae_kwh': 4.618031978607178}
+ForecastTCN epoch 2/16: {'epoch': 2, 'train_loss': 0.021860090251545887, 'seconds': 16.072436571121216, 'validation_mae_kwh': 4.279817581176758}
+ForecastTCN epoch 3/16: {'epoch': 3, 'train_loss': 0.01987319683235414, 'seconds': 16.607097864151, 'validation_mae_kwh': 4.488525390625}
+ForecastTCN epoch 4/16: {'epoch': 4, 'train_loss': 0.018973702704389972, 'seconds': 16.202961921691895, 'validation_mae_kwh': 4.366540908813477}
+ForecastTCN epoch 5/16: {'epoch': 5, 'train_loss': 0.018079236478034753, 'seconds': 16.051748514175415, 'validation_mae_kwh': 4.547203063964844}
+ForecastTCN epoch 6/16: {'epoch': 6, 'train_loss': 0.017447916428515883, 'seconds': 8.735724925994873, 'validation_mae_kwh': 4.60756778717041}
+TCN trial 6: MAE=4.279818, best epoch=2
+[I 2026-11-05 11:55:16,557] Trial 6 finished with value: 4.279817581176758 and parameters: {'embedding_dim': 4, 'dropout': 0.17723236979570395, 'learning_rate': 0.002512679007262688, 'weight_decay': 0.0004582582101462123, 'loss': 'huber', 'huber_beta': 0.12282036831988975, 'channels': 32, 'levels': 4, 'kernel_size': 5}. Best is trial 5 with value: 4.25986909866333.
+ForecastTCN epoch 1/16: {'epoch': 1, 'train_loss': 0.08973425919192228, 'seconds': 5.522927522659302, 'validation_mae_kwh': 5.140100002288818}
+ForecastTCN epoch 2/16: {'epoch': 2, 'train_loss': 0.037913832548602026, 'seconds': 5.434948444366455, 'validation_mae_kwh': 4.358346939086914}
+ForecastTCN epoch 3/16: {'epoch': 3, 'train_loss': 0.03289212929144817, 'seconds': 5.5524749755859375, 'validation_mae_kwh': 4.350125312805176}
+ForecastTCN epoch 4/16: {'epoch': 4, 'train_loss': 0.030853447392031167, 'seconds': 5.531739950180054, 'validation_mae_kwh': 4.331448078155518}
+ForecastTCN epoch 5/16: {'epoch': 5, 'train_loss': 0.029674660581866602, 'seconds': 5.125664234161377, 'validation_mae_kwh': 4.4989914894104}
+ForecastTCN epoch 6/16: {'epoch': 6, 'train_loss': 0.02881366171709755, 'seconds': 5.458732604980469, 'validation_mae_kwh': 4.551043510437012}
+ForecastTCN epoch 7/16: {'epoch': 7, 'train_loss': 0.028366867241845437, 'seconds': 5.21706485748291, 'validation_mae_kwh': 4.549935340881348}
+ForecastTCN epoch 8/16: {'epoch': 8, 'train_loss': 0.027826942056338868, 'seconds': 5.254055023193359, 'validation_mae_kwh': 4.6890459060668945}
+TCN trial 7: MAE=4.331448, best epoch=4
+[I 2026-11-05 11:56:06,662] Trial 7 finished with value: 4.331448078155518 and parameters: {'embedding_dim': 4, 'dropout': 0.18695672390901766, 'learning_rate': 0.0010721949160212585, 'weight_decay': 8.496695507823945e-05, 'loss': 'huber', 'huber_beta': 0.04378948172198205, 'channels': 32, 'levels': 4, 'kernel_size': 5}. Best is trial 5 with value: 4.25986909866333.
+Fitting TCN through 2023-12-31 17:00:00+09:00: 66391 labeled sequences
+ForecastTCN epoch 1/2: {'epoch': 1, 'train_loss': 0.03609126208209633, 'seconds': 12.603176832199097}
+ForecastTCN epoch 2/2: {'epoch': 2, 'train_loss': 0.024014264117674357, 'seconds': 12.663070440292358}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\TCN\Ver1\confirm_2024\model.pt (27.7s)
+Fitting TCN through 2024-12-31 17:00:00+09:00: 144952 labeled sequences
+ForecastTCN epoch 1/2: {'epoch': 1, 'train_loss': 0.029331063250960278, 'seconds': 28.353979110717773}
+ForecastTCN epoch 2/2: {'epoch': 2, 'train_loss': 0.022620781425162443, 'seconds': 27.726502656936646}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\TCN\Ver1\check_2025\model.pt (61.3s)
+Fitting TCN through 2025-05-31 17:00:00+09:00: 183155 labeled sequences
+ForecastTCN epoch 1/2: {'epoch': 1, 'train_loss': 0.02789216133823709, 'seconds': 35.49297094345093}
+ForecastTCN epoch 2/2: {'epoch': 2, 'train_loss': 0.021606395446840676, 'seconds': 34.8802011013031}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\TCN\Ver1\final\model.pt (76.4s)
+Fitting TCN through 2023-12-31 17:00:00+09:00: 66391 labeled sequences
+ForecastTCN epoch 1/3: {'epoch': 1, 'train_loss': 0.03862530685519046, 'seconds': 12.853203296661377}
+ForecastTCN epoch 2/3: {'epoch': 2, 'train_loss': 0.023546673752578542, 'seconds': 31.24454975128174}
+ForecastTCN epoch 3/3: {'epoch': 3, 'train_loss': 0.02222535835165792, 'seconds': 42.32689118385315}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\TCN\Ver2\confirm_2024\model.pt (89.3s)
+Fitting TCN through 2024-12-31 17:00:00+09:00: 144952 labeled sequences
+ForecastTCN epoch 1/3: {'epoch': 1, 'train_loss': 0.03099048885842649, 'seconds': 57.56166911125183}
+ForecastTCN epoch 2/3: {'epoch': 2, 'train_loss': 0.022389791321782718, 'seconds': 27.604995727539062}
+ForecastTCN epoch 3/3: {'epoch': 3, 'train_loss': 0.021125876475983282, 'seconds': 28.330183029174805}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\TCN\Ver2\check_2025\model.pt (126.5s)
+Fitting TCN through 2025-05-31 17:00:00+09:00: 183155 labeled sequences
+ForecastTCN epoch 1/3: {'epoch': 1, 'train_loss': 0.029257114343550786, 'seconds': 35.82343816757202}
+ForecastTCN epoch 2/3: {'epoch': 2, 'train_loss': 0.02167675599321025, 'seconds': 37.83772039413452}
+ForecastTCN epoch 3/3: {'epoch': 3, 'train_loss': 0.020425959058945755, 'seconds': 36.50377035140991}
+Saved C:\Users\jgm20\OIBC_local\OIBC_final\forecast_v1_20261105\TCN\Ver2\final\model.pt (116.3s)
+Requested forecasting stages complete.

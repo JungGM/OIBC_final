@@ -1,4 +1,4 @@
-"""Verify all six candidates and publish safe summaries plus local source copy."""
+"""Verify all six candidates and copy model artifacts into GM_Ver1/."""
 from __future__ import annotations
 
 import argparse
@@ -17,10 +17,16 @@ from GM_Ver1.common import Panel, SEED, sha256, write_json
 from GM_Ver1.gru import predict as neural_predict
 from GM_Ver1.predict import load_candidate
 from GM_Ver1.run import FINAL_END, SPLITS, evaluate, stamp
+from GM_Ver1.sync_outputs import copy_if_changed
 
 
 def verify_predictions(path, panel, ids):
+    metadata = json.loads(path.with_suffix(".json").read_text())
+    assert sha256(path) == metadata["sha256"]
     p = pd.read_parquet(path)
+    origin = (p.ts.min()-pd.Timedelta(hours=1)).normalize()-pd.Timedelta(hours=7)
+    assert pd.Timestamp(metadata["training_end"]) <= origin
+    assert pd.Timestamp(metadata["selection_labels_end"]) <= origin
     assert len(p) == len(ids)*24
     assert not p.duplicated(["site_id", "ts"]).any()
     assert np.isfinite(p.prediction).all() and (p.prediction >= 0).all()
@@ -56,7 +62,8 @@ def export(out, repo, dataset):
         for v in [1, 2]:
             version = f"Ver{v}"
             local = fam / version
-            assert json.loads((local / "complete.json").read_text())["status"] == "complete"
+            complete = json.loads((local / "complete.json").read_text())
+            assert complete["status"] == "complete" and complete["config_sha256"] == sha256(local / "config.json")
             config = json.loads((local / "config.json").read_text())
             # Version numbering must follow tuning rank, not confirmation scores.
             assert config["trial"] == trials[v-1]["trial"]
@@ -65,6 +72,7 @@ def export(out, repo, dataset):
             for split, end, left, right in SPLITS:
                 ids = panel.indices(start=stamp(left), end=stamp(right), labeled=False)
                 pred_file = local / split / "predictions.parquet"
+                assert json.loads(pred_file.with_suffix(".json").read_text())["training_end"] == end
                 verify_predictions(pred_file, panel, ids)
                 scores[split] = evaluate(panel, ids, pred_file, dataset)
             for stage, end in [(s[0], s[1]) for s in SPLITS]+[("final", FINAL_END)]:
@@ -73,9 +81,10 @@ def export(out, repo, dataset):
                 assert fit["training_end"] == end and fit["eligible_rows"] == expected_rows[end]
                 assert sha256(weights) == fit["model_sha256"]
                 fits[stage] = fit
-                manifest.append(dict(path=str(weights.relative_to(out)), sha256=fit["model_sha256"], bytes=weights.stat().st_size))
+                manifest.append(dict(path=weights.relative_to(out).as_posix(), sha256=fit["model_sha256"], bytes=weights.stat().st_size))
             all_ids = np.arange(len(evaluation.X))
             p = verify_predictions(local / "final" / "predictions.parquet", evaluation, all_ids)
+            assert json.loads((local / "final" / "predictions.json").read_text())["training_end"] == FINAL_END
             assert p.ts.min() == pd.Timestamp(data_manifest["summary"]["evaluation"]["start"])
             assert p.ts.max() == pd.Timestamp(data_manifest["summary"]["evaluation"]["end"])
             assert (p.groupby("site_id").size() == 8760).all()
@@ -93,7 +102,10 @@ def export(out, repo, dataset):
             write_json(local / "metrics.json", scores)
             target = public / version
             target.mkdir(parents=True, exist_ok=True)
-            shutil.copytree(local, target, dirs_exist_ok=True)
+            shutil.copytree(local, target, dirs_exist_ok=True, copy_function=copy_if_changed)
+            for stage, fit in fits.items():
+                name = "model.ubj" if family == "XGBoost" else "model.pt"
+                assert sha256(target / stage / name) == fit["model_sha256"]
             write_json(target / "config.json", config)
             write_json(target / "metrics.json", scores)
             write_json(target / "fit_summary.json", fits)
@@ -108,13 +120,16 @@ def export(out, repo, dataset):
                     reference_penalty_krw=result["reference_groups"]["penalty_krw"])
             results.append(row)
     report = dict(status="PASS", expected_training_rows=expected_rows, candidates=checks,
+                  dataset_ready_sha256=lock["ready_training"]["sha256"],
+                  training_grid_sha256=lock["full_grid_sha256"],
+                  evaluation_input_sha256=lock["evaluation_input_sha256"],
                   scope="6 forecasting candidates; no stacking or VPP optimization; local verification is not official scoring")
     write_json(out / "verification.json", report)
     write_json(repo / "GM_Ver1" / "verification.json", report)
     write_json(out / "comparison.json", results)
     write_json(repo / "GM_Ver1" / "comparison.json", results)
     write_json(out / "weights_manifest.json", manifest)
-    lines = ["# 예측 모델 비교 결과", "", "후보는 2023년 튜닝 MAE 순으로 고정했다. 최종 모델은 전 기간의 유효 이력으로 다시 학습했다.", "",
+    lines = ["# 예측 모델 비교 결과", "", "후보는 2023년 튜닝 MAE 순으로 고정했다. 최종 모델은 전 기간의 유효 이력으로 다시 학습했다. 튜닝 마지막 타깃이 2024-01-01 00시이므로 2024년 확인은 1월 2일부터 사용한다.", "",
              "| 후보 | 튜닝 MAE(kWh) | 2024 MAE | 2025.1~5 MAE | 2024 참조 벌금(원) | 2025.1~5 참조 벌금(원) |",
              "|---|---:|---:|---:|---:|---:|"]
     for r in results:

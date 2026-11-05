@@ -5,12 +5,30 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import torch
+from types import SimpleNamespace
 
-from GM_Ver1.common import Panel, write_json
+from GM_Ver1.common import Panel, write_json, sha256
+from GM_Ver1.export import verify_predictions
 from GM_Ver1.tcn import ForecastTCN, receptive_field
 
 
 class BoundaryTests(unittest.TestCase):
+    def test_selection_labels_must_be_available_at_forecast_origin(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "predictions.parquet"
+            for first, valid in [("2024-01-01 01:00", False), ("2024-01-02 01:00", True)]:
+                times = pd.date_range(first, periods=24, freq="h", tz="Asia/Seoul").as_unit("ns")
+                pd.DataFrame(dict(site_id=["PV001"]*24, ts=times, prediction=np.zeros(24))).to_parquet(path, index=False)
+                write_json(path.with_suffix(".json"), dict(sha256=sha256(path),
+                    training_end="2023-12-31 17:00:00+09:00", selection_labels_end="2024-01-01 00:00:00+09:00"))
+                panel = SimpleNamespace(times=lambda ids: times.asi8.reshape(1, 24),
+                    site_index=np.array([0]), sites=["PV001"], nsites=1)
+                if valid:
+                    verify_predictions(path, panel, np.array([0]))
+                else:
+                    with self.assertRaises(AssertionError):
+                        verify_predictions(path, panel, np.array([0]))
+
     def test_pandas_microseconds_cannot_bypass_17h_cutoff(self):
         with tempfile.TemporaryDirectory() as d:
             path = Path(d)
