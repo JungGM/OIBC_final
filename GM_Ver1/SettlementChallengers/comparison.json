@@ -1,0 +1,66 @@
+{
+  "method": "Shared annual scenario actuals generated from current forecast and 60 April-May out-of-time error days, with capacity scaling and paired draws",
+  "choice": "GRU1 chosen after spring diagnostic; same GA allocation and no new fitting",
+  "capacities_kw": {
+    "G1": 22630.055,
+    "G2": 20025.315
+  },
+  "scenarios": {
+    "0.5": {
+      "shared_revenue_krw": 6484977244.72625,
+      "current_penalty_krw": 84295240.08205539,
+      "gru_penalty_krw": 101522127.47112732,
+      "current_settlement_krw": 6400682004.644195,
+      "gru_settlement_krw": 6383455117.255123,
+      "gru_gain_krw": -17226887.389071923,
+      "gain_p10_p90_krw": [
+        -19561744.50820955,
+        -14883249.027714154
+      ],
+      "night_corrected_settlement_krw": 6400475139.663627,
+      "night_corrected_gain_krw": -206864.98056739557
+    },
+    "1.0": {
+      "shared_revenue_krw": 6494912690.880285,
+      "current_penalty_krw": 167581704.1389632,
+      "gru_penalty_krw": 177675818.94661748,
+      "current_settlement_krw": 6327330986.741322,
+      "gru_settlement_krw": 6317236871.933667,
+      "gru_gain_krw": -10094114.80765431,
+      "gain_p10_p90_krw": [
+        -12821377.154397914,
+        -7234666.865602216
+      ],
+      "night_corrected_settlement_krw": 6327409176.121506,
+      "night_corrected_gain_krw": 78189.38018483632
+    },
+    "1.5": {
+      "shared_revenue_krw": 6514654321.851654,
+      "current_penalty_krw": 249151333.77880353,
+      "gru_penalty_krw": 256158064.5589402,
+      "current_settlement_krw": 6265502988.072851,
+      "gru_settlement_krw": 6258496257.292715,
+      "gru_gain_krw": -7006730.780136684,
+      "gain_p10_p90_krw": [
+        -9899569.022231067,
+        -4018820.2092778767
+      ],
+      "night_corrected_settlement_krw": 6265770004.39609,
+      "night_corrected_gain_krw": 267016.32323833654
+    },
+    "2.0": {
+      "shared_revenue_krw": 6546907046.505017,
+      "current_penalty_krw": 328299898.2021945,
+      "gru_penalty_krw": 333609670.9700941,
+      "current_settlement_krw": 6218607148.302824,
+      "gru_settlement_krw": 6213297375.534924,
+      "gru_gain_krw": -5309772.767899508,
+      "gain_p10_p90_krw": [
+        -8255218.156941265,
+        -2188740.8315328658
+      ],
+      "night_corrected_settlement_krw": 6218991696.014413,
+      "night_corrected_gain_krw": 384547.71158956736
+    }
+  }
+}
