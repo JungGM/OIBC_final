@@ -27,6 +27,10 @@ try {
     if ($Dataset) { $GradientArguments += @("--dataset", $Dataset) }
     & $Python @GradientArguments
     if ($LASTEXITCODE -ne 0) { throw "Gradient optimization failed: $LASTEXITCODE" }
+    $PortfolioArguments = @("-m", "GM_Ver1.genetic_algorithm", "--out", $ArtifactRoot)
+    if ($Dataset) { $PortfolioArguments += @("--dataset", $Dataset) }
+    & $Python @PortfolioArguments
+    if ($LASTEXITCODE -ne 0) { throw "GA portfolio optimization failed: $LASTEXITCODE" }
 } finally {
     Pop-Location
 }

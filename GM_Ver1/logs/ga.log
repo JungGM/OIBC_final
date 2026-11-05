@@ -1,0 +1,94 @@
+Loading verified out-of-time base forecasts and historical actuals
+GA seed=20261105 generation=0: penalty=27,716,474.76
+GA seed=20261105 generation=10: penalty=27,437,723.49
+GA seed=20261105 generation=20: penalty=27,359,270.99
+GA seed=20261105 generation=30: penalty=27,341,545.36
+GA seed=20261105 generation=40: penalty=27,320,018.80
+GA seed=20261105 generation=50: penalty=27,307,036.72
+GA seed=20261105 generation=60: penalty=27,293,163.23
+GA seed=20261105 generation=70: penalty=27,285,938.05
+GA seed=20261105 generation=80: penalty=27,281,199.54
+GA seed=20261105 generation=90: penalty=27,276,578.66
+GA seed=20261105 generation=100: penalty=27,274,152.81
+GA seed=20261105 generation=110: penalty=27,272,682.06
+GA seed=20261105 generation=120: penalty=27,272,295.99
+GA seed=20261106 generation=0: penalty=27,737,834.15
+GA seed=20261106 generation=10: penalty=27,443,950.30
+GA seed=20261106 generation=20: penalty=27,368,497.91
+GA seed=20261106 generation=30: penalty=27,337,903.07
+GA seed=20261106 generation=40: penalty=27,311,378.68
+GA seed=20261106 generation=50: penalty=27,296,700.08
+GA seed=20261106 generation=60: penalty=27,290,711.61
+GA seed=20261106 generation=70: penalty=27,282,514.82
+GA seed=20261106 generation=80: penalty=27,277,866.42
+GA seed=20261106 generation=90: penalty=27,275,918.94
+GA seed=20261106 generation=100: penalty=27,274,278.31
+GA seed=20261106 generation=110: penalty=27,274,278.31
+GA seed=20261106 generation=120: penalty=27,274,278.31
+GA seed=20261107 generation=0: penalty=27,660,337.03
+GA seed=20261107 generation=10: penalty=27,458,719.16
+GA seed=20261107 generation=20: penalty=27,355,554.89
+GA seed=20261107 generation=30: penalty=27,333,746.27
+GA seed=20261107 generation=40: penalty=27,316,003.54
+GA seed=20261107 generation=50: penalty=27,293,104.64
+GA seed=20261107 generation=60: penalty=27,285,605.13
+GA seed=20261107 generation=70: penalty=27,283,176.20
+GA seed=20261107 generation=80: penalty=27,280,617.78
+GA seed=20261107 generation=90: penalty=27,276,453.97
+GA seed=20261107 generation=100: penalty=27,274,985.58
+GA seed=20261107 generation=110: penalty=27,272,698.95
+GA seed=20261107 generation=120: penalty=27,270,792.49
+GA seed=20261105 generation=0: penalty=38,978,962.37
+GA seed=20261105 generation=10: penalty=38,978,962.37
+GA seed=20261105 generation=20: penalty=38,958,140.37
+GA seed=20261105 generation=30: penalty=38,946,472.70
+GA seed=20261105 generation=40: penalty=38,932,257.50
+GA seed=20261105 generation=50: penalty=38,926,298.89
+GA seed=20261105 generation=60: penalty=38,921,698.14
+GA seed=20261105 generation=70: penalty=38,918,051.67
+GA seed=20261105 generation=80: penalty=38,914,835.87
+GA seed=20261105 generation=90: penalty=38,910,169.20
+GA seed=20261105 generation=100: penalty=38,908,585.33
+GA seed=20261105 generation=110: penalty=38,906,617.44
+GA seed=20261105 generation=120: penalty=38,905,403.13
+GA seed=20261105 generation=0: penalty=69,200,965.79
+GA seed=20261105 generation=10: penalty=69,166,468.78
+GA seed=20261105 generation=20: penalty=69,087,214.29
+GA seed=20261105 generation=30: penalty=69,054,609.75
+GA seed=20261105 generation=40: penalty=69,010,417.40
+GA seed=20261105 generation=50: penalty=68,982,780.31
+GA seed=20261105 generation=60: penalty=68,981,355.91
+GA seed=20261105 generation=70: penalty=68,976,020.35
+GA seed=20261105 generation=80: penalty=68,961,212.37
+GA seed=20261105 generation=90: penalty=68,958,683.35
+GA seed=20261105 generation=100: penalty=68,951,382.44
+GA seed=20261105 generation=110: penalty=68,949,060.93
+GA seed=20261105 generation=120: penalty=68,945,586.89
+C:\Users\jgm20\OneDrive\����\ChatGPT\E\GM_Ver1\genetic_algorithm.py:218: Pandas4Warning: The 'float_precision' argument is deprecated. Use the default float precision instead.
+  forecasts = pd.read_csv(directory/"forecast.csv", float_precision="round_trip")
+{
+  "diagnostic": {
+    "complete_hours": 1464,
+    "revenue_krw": 1598579787.5367217,
+    "penalty_krw": 32558408.47464095,
+    "settlement_krw": 1566021379.0620809
+  },
+  "reference": {
+    "complete_hours": 1464,
+    "revenue_krw": 1598579787.5367217,
+    "penalty_krw": 32863982.158726897,
+    "settlement_krw": 1565715805.3779948
+  },
+  "capacities": {
+    "G1": 22630.055,
+    "G2": 20025.315
+  },
+  "expected_settlement": {
+    "mean_revenue_krw": 6494912690.880285,
+    "mean_penalty_krw": 167581704.1389632,
+    "mean_settlement_krw": 6327330986.741322,
+    "p10_krw": 6271957300.222602,
+    "p90_krw": 6383100472.59954
+  },
+  "forecast_implied_gross_krw": 6481953668.17899
+}

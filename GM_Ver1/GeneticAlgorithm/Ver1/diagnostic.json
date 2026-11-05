@@ -1,0 +1,116 @@
+{
+  "period": "2025 April-May KST",
+  "ga": {
+    "complete_hours": 1464,
+    "revenue_krw": 1598579787.5367217,
+    "penalty_krw": 32558408.47464095,
+    "settlement_krw": 1566021379.0620809
+  },
+  "reference": {
+    "complete_hours": 1464,
+    "revenue_krw": 1598579787.5367217,
+    "penalty_krw": 32863982.158726897,
+    "settlement_krw": 1565715805.3779948
+  },
+  "settlement_gain_krw": 305573.68408608437,
+  "penalty_reduction_pct": 0.9298133214961091,
+  "fixed_composition_known_by": "2025-03-31 17:00:00+09:00",
+  "fit_complete_hours": 2331,
+  "search": {
+    "training_penalty_krw": 38905403.13489519,
+    "history": [
+      {
+        "generation": 0,
+        "best_penalty_krw": 38978962.36728222,
+        "median_penalty_krw": 39903757.1185069,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 10,
+        "best_penalty_krw": 38978962.36728222,
+        "median_penalty_krw": 39081409.489321575,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 20,
+        "best_penalty_krw": 38958140.36961309,
+        "median_penalty_krw": 38996042.21126249,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 30,
+        "best_penalty_krw": 38946472.70033956,
+        "median_penalty_krw": 38986448.02284729,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 40,
+        "best_penalty_krw": 38932257.50191755,
+        "median_penalty_krw": 38970271.29320399,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 50,
+        "best_penalty_krw": 38926298.89391386,
+        "median_penalty_krw": 38962609.501686074,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 60,
+        "best_penalty_krw": 38921698.14333808,
+        "median_penalty_krw": 38950367.91284157,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 70,
+        "best_penalty_krw": 38918051.668042175,
+        "median_penalty_krw": 38949627.06935883,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 80,
+        "best_penalty_krw": 38914835.86788485,
+        "median_penalty_krw": 38949801.36008111,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 90,
+        "best_penalty_krw": 38910169.20093332,
+        "median_penalty_krw": 38940799.03193876,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 100,
+        "best_penalty_krw": 38908585.3330862,
+        "median_penalty_krw": 38933621.660936356,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 110,
+        "best_penalty_krw": 38906617.44176255,
+        "median_penalty_krw": 38937282.74914983,
+        "unique_chromosomes": 128
+      },
+      {
+        "generation": 120,
+        "best_penalty_krw": 38905403.13489519,
+        "median_penalty_krw": 38932484.0073451,
+        "unique_chromosomes": 128
+      }
+    ],
+    "seconds": 1.833153486251831,
+    "theoretical_fleet_error_lower_bound_krw": 38676011.27295374,
+    "optimality_not_proven": true,
+    "seed": 20261105,
+    "config": {
+      "population": 128,
+      "generations": 120,
+      "elite": 8,
+      "immigrants": 8,
+      "tournament": 3,
+      "crossover": 0.8,
+      "mutation_expected_bits": 1.5
+    }
+  },
+  "theoretical_fleet_error_lower_bound_krw": 32098643.7436184
+}

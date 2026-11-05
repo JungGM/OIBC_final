@@ -1,0 +1,32 @@
+{
+  "seed_candidates": [
+    20261105,
+    20261106,
+    20261107
+  ],
+  "config": {
+    "population": 128,
+    "generations": 120,
+    "elite": 8,
+    "immigrants": 8,
+    "tournament": 3,
+    "crossover": 0.8,
+    "mutation_expected_bits": 1.5
+  },
+  "minimum_group_kw": 20000.0,
+  "training_grid_sha256": "70ed4636611b084eef42562e4505f82522af06f40aeccd82579db7d208dcbe02",
+  "weights_sha256": "ee41c732bb232dba98a011a3150fa4ef9479a9cfc06be65c91ad84f5424c79c9",
+  "evaluation_prices_sha256": "ce3cb9d5f5ae2ac6fe94d3392e3fe060c31dba6fc84ade1c58c80d34a15aca12",
+  "composition_sha256": "e0066b912d1752a3994b2319743d970c957df2482ac11061faa1a15494a1f2d5",
+  "gd_check_model_sha256": "211fa4ac77a2c5463337e02a27ea580614b4111768ac01b5d3bbd10af2c7d966",
+  "gd_final_model_sha256": "7f09608123218fa18ad2ed2a826d9d50a53aee4f6480e833e9d2c764dc305047",
+  "inner_fit_end": "2025-02-28 17:00:00+09:00",
+  "selection_start": "2025-03-01 01:00:00+09:00",
+  "selection_end": "2025-03-31 17:00:00+09:00",
+  "check_start": "2025-04-01 01:00:00+09:00",
+  "final_fit_end": "2025-05-31 17:00:00+09:00",
+  "selection": "best GA seed on March penalty; GD and GA settings selected within March",
+  "reference_in_initial_population": true,
+  "held_out_diagnostic_used_for_reselection": false,
+  "historical_coverage": "2024/2025 already inspected in earlier research"
+}

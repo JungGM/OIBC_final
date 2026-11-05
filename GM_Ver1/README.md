@@ -1,6 +1,6 @@
 # 예측 모델 후보: XGBoost / GRU / TCN
 
-각 모델의 하이퍼파라미터 탐색, 두 후보 선정, 시간순 검증, 전체 이력 재학습과 발전소별 예측을 생성한다. `GM_Ver1.stacking`으로 Ridge 스태킹, `GM_Ver1.gradient_descent`로 대회 그룹 벌금 기반 가중치 최적화를 수행한다. VPP 구성 최적화는 후속 단계다. GRU/TCN 자체 가중치 학습에는 AdamW를 사용한다.
+각 모델의 하이퍼파라미터 탐색, 두 후보 선정, 시간순 검증, 전체 이력 재학습과 발전소별 예측을 생성한다. `GM_Ver1.stacking`으로 Ridge 스태킹, `GM_Ver1.gradient_descent`로 대회 그룹 벌금 기반 가중치 최적화를 수행한다. `GM_Ver1.genetic_algorithm`은 발전소별 예측을 사용해 VPP 배정과 그룹 예측을 만든다. GRU/TCN 자체 가중치 학습에는 AdamW를 사용한다.
 
 ## 시간과 데이터
 

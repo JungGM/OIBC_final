@@ -24,3 +24,4 @@ outputs/
 !GM_Ver1/**/*.pt
 !GM_Ver1/**/*.ubj
 !GM_Ver1/**/*.sqlite3
+!GM_Ver1/GeneticAlgorithm/**/*.csv

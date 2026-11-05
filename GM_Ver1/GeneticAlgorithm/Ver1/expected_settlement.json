@@ -1,0 +1,39 @@
+{
+  "forecast_implied_gross_krw": 6481953668.17899,
+  "draws": 1000,
+  "calibration_operating_days": 60,
+  "calibration_start": "2025-04-01 01:00:00+09:00",
+  "calibration_end": "2025-05-31 00:00:00+09:00",
+  "method": "paired G1/G2 24h residual block bootstrap, capacity rescaling, actual floored at zero",
+  "scenario_assumption": "April-May diagnostic residual days transfer to the full evaluation year and the refitted forecast and allocation. Provided evaluation SMP is fixed. Quantiles are conditional simulation percentiles.",
+  "scenarios": {
+    "0.5": {
+      "mean_revenue_krw": 6484977244.72625,
+      "mean_penalty_krw": 84295240.08205539,
+      "mean_settlement_krw": 6400682004.644195,
+      "p10_krw": 6372667947.044893,
+      "p90_krw": 6428727662.497002
+    },
+    "1.0": {
+      "mean_revenue_krw": 6494912690.880285,
+      "mean_penalty_krw": 167581704.1389632,
+      "mean_settlement_krw": 6327330986.741322,
+      "p10_krw": 6271957300.222602,
+      "p90_krw": 6383100472.59954
+    },
+    "1.5": {
+      "mean_revenue_krw": 6514654321.851654,
+      "mean_penalty_krw": 249151333.77880353,
+      "mean_settlement_krw": 6265502988.072851,
+      "p10_krw": 6183037904.746947,
+      "p90_krw": 6347991889.332831
+    },
+    "2.0": {
+      "mean_revenue_krw": 6546907046.505017,
+      "mean_penalty_krw": 328299898.2021946,
+      "mean_settlement_krw": 6218607148.302824,
+      "p10_krw": 6111162434.569596,
+      "p90_krw": 6326830191.427939
+    }
+  }
+}

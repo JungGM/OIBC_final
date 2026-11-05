@@ -1,0 +1,304 @@
+{
+  "selected_seed": 20261105,
+  "selection_hours": 737,
+  "training_hours": 1587,
+  "trials": [
+    {
+      "training_penalty_krw": 27272295.99266976,
+      "history": [
+        {
+          "generation": 0,
+          "best_penalty_krw": 27716474.757335365,
+          "median_penalty_krw": 28050322.027795956,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 10,
+          "best_penalty_krw": 27437723.488818217,
+          "median_penalty_krw": 27597343.36832886,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 20,
+          "best_penalty_krw": 27359270.994588837,
+          "median_penalty_krw": 27434752.96242737,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 30,
+          "best_penalty_krw": 27341545.358738765,
+          "median_penalty_krw": 27372865.889235295,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 40,
+          "best_penalty_krw": 27320018.80353856,
+          "median_penalty_krw": 27352161.935475603,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 50,
+          "best_penalty_krw": 27307036.721911002,
+          "median_penalty_krw": 27344327.359759424,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 60,
+          "best_penalty_krw": 27293163.22578441,
+          "median_penalty_krw": 27317227.941079818,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 70,
+          "best_penalty_krw": 27285938.05443082,
+          "median_penalty_krw": 27308124.754036352,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 80,
+          "best_penalty_krw": 27281199.543565765,
+          "median_penalty_krw": 27298041.806572087,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 90,
+          "best_penalty_krw": 27276578.664957542,
+          "median_penalty_krw": 27289155.146093015,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 100,
+          "best_penalty_krw": 27274152.814545974,
+          "median_penalty_krw": 27293720.3237398,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 110,
+          "best_penalty_krw": 27272682.05888312,
+          "median_penalty_krw": 27286853.815576807,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 120,
+          "best_penalty_krw": 27272295.99266976,
+          "median_penalty_krw": 27294611.71461836,
+          "unique_chromosomes": 128
+        }
+      ],
+      "seconds": 2.1058101654052734,
+      "theoretical_fleet_error_lower_bound_krw": 27175528.430202015,
+      "optimality_not_proven": true,
+      "seed": 20261105,
+      "config": {
+        "population": 128,
+        "generations": 120,
+        "elite": 8,
+        "immigrants": 8,
+        "tournament": 3,
+        "crossover": 0.8,
+        "mutation_expected_bits": 1.5
+      },
+      "selection_penalty_krw": 11751871.500535421
+    },
+    {
+      "training_penalty_krw": 27274278.31463767,
+      "history": [
+        {
+          "generation": 0,
+          "best_penalty_krw": 27737834.14921527,
+          "median_penalty_krw": 28044201.546741836,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 10,
+          "best_penalty_krw": 27443950.301907584,
+          "median_penalty_krw": 27635946.097951923,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 20,
+          "best_penalty_krw": 27368497.912997857,
+          "median_penalty_krw": 27427462.18895182,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 30,
+          "best_penalty_krw": 27337903.069843665,
+          "median_penalty_krw": 27377891.771475457,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 40,
+          "best_penalty_krw": 27311378.682432003,
+          "median_penalty_krw": 27340573.787402563,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 50,
+          "best_penalty_krw": 27296700.082624823,
+          "median_penalty_krw": 27318236.369523965,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 60,
+          "best_penalty_krw": 27290711.609845776,
+          "median_penalty_krw": 27316995.510002077,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 70,
+          "best_penalty_krw": 27282514.820743844,
+          "median_penalty_krw": 27301970.939166147,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 80,
+          "best_penalty_krw": 27277866.417880286,
+          "median_penalty_krw": 27299731.46765647,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 90,
+          "best_penalty_krw": 27275918.94450268,
+          "median_penalty_krw": 27292478.63458648,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 100,
+          "best_penalty_krw": 27274278.31463767,
+          "median_penalty_krw": 27292599.408019297,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 110,
+          "best_penalty_krw": 27274278.31463767,
+          "median_penalty_krw": 27294700.372691177,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 120,
+          "best_penalty_krw": 27274278.31463767,
+          "median_penalty_krw": 27319419.816002786,
+          "unique_chromosomes": 128
+        }
+      ],
+      "seconds": 2.0305211544036865,
+      "theoretical_fleet_error_lower_bound_krw": 27175528.430202015,
+      "optimality_not_proven": true,
+      "seed": 20261106,
+      "config": {
+        "population": 128,
+        "generations": 120,
+        "elite": 8,
+        "immigrants": 8,
+        "tournament": 3,
+        "crossover": 0.8,
+        "mutation_expected_bits": 1.5
+      },
+      "selection_penalty_krw": 11759737.526423588
+    },
+    {
+      "training_penalty_krw": 27270792.489273995,
+      "history": [
+        {
+          "generation": 0,
+          "best_penalty_krw": 27660337.03348856,
+          "median_penalty_krw": 28044388.416094672,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 10,
+          "best_penalty_krw": 27458719.15695615,
+          "median_penalty_krw": 27571921.32110595,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 20,
+          "best_penalty_krw": 27355554.885689754,
+          "median_penalty_krw": 27452628.185776584,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 30,
+          "best_penalty_krw": 27333746.266155317,
+          "median_penalty_krw": 27373049.94968191,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 40,
+          "best_penalty_krw": 27316003.541058786,
+          "median_penalty_krw": 27347901.025863484,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 50,
+          "best_penalty_krw": 27293104.64471953,
+          "median_penalty_krw": 27321379.71244476,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 60,
+          "best_penalty_krw": 27285605.133728947,
+          "median_penalty_krw": 27304337.9482826,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 70,
+          "best_penalty_krw": 27283176.201525256,
+          "median_penalty_krw": 27300427.74536933,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 80,
+          "best_penalty_krw": 27280617.77951445,
+          "median_penalty_krw": 27301119.011483055,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 90,
+          "best_penalty_krw": 27276453.97128907,
+          "median_penalty_krw": 27294136.91083444,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 100,
+          "best_penalty_krw": 27274985.581135996,
+          "median_penalty_krw": 27294757.633454993,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 110,
+          "best_penalty_krw": 27272698.94946608,
+          "median_penalty_krw": 27291442.19925105,
+          "unique_chromosomes": 128
+        },
+        {
+          "generation": 120,
+          "best_penalty_krw": 27270792.489273995,
+          "median_penalty_krw": 27288416.02291945,
+          "unique_chromosomes": 128
+        }
+      ],
+      "seconds": 1.6662871837615967,
+      "theoretical_fleet_error_lower_bound_krw": 27175528.430202015,
+      "optimality_not_proven": true,
+      "seed": 20261107,
+      "config": {
+        "population": 128,
+        "generations": 120,
+        "elite": 8,
+        "immigrants": 8,
+        "tournament": 3,
+        "crossover": 0.8,
+        "mutation_expected_bits": 1.5
+      },
+      "selection_penalty_krw": 11834052.961980535
+    }
+  ],
+  "reference": {
+    "complete_hours": 737,
+    "revenue_krw": 608689973.6744035,
+    "penalty_krw": 11972412.893581904,
+    "settlement_krw": 596717560.7808217
+  }
+}

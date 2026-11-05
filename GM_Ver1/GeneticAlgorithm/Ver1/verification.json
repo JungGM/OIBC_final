@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "independent_scorer_matches": true,
+  "sites": 253,
+  "group_capacity_kw": {
+    "G1": 22630.055,
+    "G2": 20025.315
+  },
+  "evaluation_hours": 8760,
+  "forecast_rows": 17520,
+  "composition_sha256": "4d527c18cb5c6c5a29e6d87860a19839450071382d67f5f4443eb1f49249555d",
+  "forecast_sha256": "0ab5f9d9ee362832222a4b1aad5d1080bbb393bc741ff556279c054a890cb720"
+}
