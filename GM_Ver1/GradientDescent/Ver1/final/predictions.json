@@ -1,0 +1,8 @@
+{
+  "rows": 2216280,
+  "training_end": "2025-05-31 17:00:00+09:00",
+  "sha256": "481235ce49ebe13c3b9b5cb92a6b9f1c51f8c3a0af772b5795840719e3195da2",
+  "role": "competition evaluation; no target labels available",
+  "finite_nonnegative": true,
+  "unique_keys": true
+}

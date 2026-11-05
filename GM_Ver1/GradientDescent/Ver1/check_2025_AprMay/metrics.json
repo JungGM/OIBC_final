@@ -1,0 +1,19 @@
+{
+  "site_mae_kwh": 6.06567137159605,
+  "site_rmse_kwh": 22.01201601643742,
+  "observed_rows": 370392,
+  "reference_groups": {
+    "complete_hours": 1464,
+    "available_prediction_hours": 1464,
+    "rows": 370392,
+    "sites": 253,
+    "penalty_krw": 32863982.15872689,
+    "weighted_absolute_error": 328639821.5872689,
+    "revenue_krw": 1598579787.5367217,
+    "settlement_krw": 1565715805.3779948,
+    "site_mae": 6.06567137159605,
+    "site_rmse": 22.01201601643742,
+    "group_mae": 423.11939885685945,
+    "group_rmse": 856.3175301398784
+  }
+}

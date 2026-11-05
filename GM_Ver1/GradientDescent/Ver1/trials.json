@@ -1,0 +1,218 @@
+[
+  {
+    "config": {
+      "mode": "global",
+      "regularization": 0.001,
+      "delta": 0.001
+    },
+    "selection_penalty_krw": 11972412.884507934,
+    "training_penalty_krw": 28048694.240149725,
+    "converged": true,
+    "iterations": {
+      "all": 65
+    }
+  },
+  {
+    "config": {
+      "mode": "global",
+      "regularization": 0.0,
+      "delta": 0.001
+    },
+    "selection_penalty_krw": 11984477.740942322,
+    "training_penalty_krw": 27952017.629162945,
+    "converged": true,
+    "iterations": {
+      "all": 68
+    }
+  },
+  {
+    "config": {
+      "mode": "global",
+      "regularization": 0.0001,
+      "delta": 0.001
+    },
+    "selection_penalty_krw": 12000847.305419996,
+    "training_penalty_krw": 27954732.151110232,
+    "converged": true,
+    "iterations": {
+      "all": 73
+    }
+  },
+  {
+    "config": {
+      "mode": "global",
+      "regularization": 0.001,
+      "delta": 0.005
+    },
+    "selection_penalty_krw": 12003141.173498042,
+    "training_penalty_krw": 28064702.6111946,
+    "converged": true,
+    "iterations": {
+      "all": 64
+    }
+  },
+  {
+    "config": {
+      "mode": "global",
+      "regularization": 0.0,
+      "delta": 0.005
+    },
+    "selection_penalty_krw": 12010266.76729439,
+    "training_penalty_krw": 27968347.595039874,
+    "converged": true,
+    "iterations": {
+      "all": 71
+    }
+  },
+  {
+    "config": {
+      "mode": "global",
+      "regularization": 0.0001,
+      "delta": 0.005
+    },
+    "selection_penalty_krw": 12025172.016168417,
+    "training_penalty_krw": 27974355.033845134,
+    "converged": true,
+    "iterations": {
+      "all": 73
+    }
+  },
+  {
+    "config": {
+      "mode": "peak_offpeak",
+      "regularization": 0.001,
+      "delta": 0.005
+    },
+    "selection_penalty_krw": 12052952.344952898,
+    "training_penalty_krw": 27785199.5863819,
+    "converged": true,
+    "iterations": {
+      "offpeak": 65,
+      "peak": 64
+    }
+  },
+  {
+    "config": {
+      "mode": "peak_offpeak",
+      "regularization": 0.0001,
+      "delta": 0.005
+    },
+    "selection_penalty_krw": 12062023.838899491,
+    "training_penalty_krw": 27682234.894489724,
+    "converged": true,
+    "iterations": {
+      "offpeak": 139,
+      "peak": 61
+    }
+  },
+  {
+    "config": {
+      "mode": "peak_offpeak",
+      "regularization": 0.0001,
+      "delta": 0.001
+    },
+    "selection_penalty_krw": 12063115.837618977,
+    "training_penalty_krw": 27669361.700100083,
+    "converged": true,
+    "iterations": {
+      "offpeak": 151,
+      "peak": 70
+    }
+  },
+  {
+    "config": {
+      "mode": "peak_offpeak",
+      "regularization": 0.0,
+      "delta": 0.005
+    },
+    "selection_penalty_krw": 12064532.794243783,
+    "training_penalty_krw": 27678690.720374167,
+    "converged": true,
+    "iterations": {
+      "offpeak": 78,
+      "peak": 61
+    }
+  },
+  {
+    "config": {
+      "mode": "peak_offpeak",
+      "regularization": 0.001,
+      "delta": 0.001
+    },
+    "selection_penalty_krw": 12065897.899727369,
+    "training_penalty_krw": 27754558.897585012,
+    "converged": true,
+    "iterations": {
+      "offpeak": 78,
+      "peak": 68
+    }
+  },
+  {
+    "config": {
+      "mode": "peak_offpeak",
+      "regularization": 0.0,
+      "delta": 0.001
+    },
+    "selection_penalty_krw": 12067220.125286065,
+    "training_penalty_krw": 27665994.19482201,
+    "converged": true,
+    "iterations": {
+      "offpeak": 81,
+      "peak": 67
+    }
+  },
+  {
+    "config": {
+      "mode": "global",
+      "regularization": 0.01,
+      "delta": 0.001
+    },
+    "selection_penalty_krw": 12094229.947082557,
+    "training_penalty_krw": 28127214.64859393,
+    "converged": true,
+    "iterations": {
+      "all": 41
+    }
+  },
+  {
+    "config": {
+      "mode": "peak_offpeak",
+      "regularization": 0.01,
+      "delta": 0.001
+    },
+    "selection_penalty_krw": 12098545.839846963,
+    "training_penalty_krw": 28027474.28999997,
+    "converged": true,
+    "iterations": {
+      "offpeak": 42,
+      "peak": 42
+    }
+  },
+  {
+    "config": {
+      "mode": "peak_offpeak",
+      "regularization": 0.01,
+      "delta": 0.005
+    },
+    "selection_penalty_krw": 12108245.685901886,
+    "training_penalty_krw": 28049388.661911964,
+    "converged": true,
+    "iterations": {
+      "offpeak": 42,
+      "peak": 42
+    }
+  },
+  {
+    "config": {
+      "mode": "global",
+      "regularization": 0.01,
+      "delta": 0.005
+    },
+    "selection_penalty_krw": 12110876.663724128,
+    "training_penalty_krw": 28141796.02796327,
+    "converged": true,
+    "iterations": {
+      "all": 42
+    }
+  }
+]

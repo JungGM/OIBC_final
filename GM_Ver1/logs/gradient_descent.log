@@ -1,0 +1,108 @@
+Loading 2024 complete-roster gradient objective
+Loading 2025 OOT forecasts
+PGD trial 1/16: {'mode': 'global', 'regularization': 0.0, 'delta': 0.001}, March penalty=11,984,477.74, converged=True
+PGD trial 2/16: {'mode': 'global', 'regularization': 0.0, 'delta': 0.005}, March penalty=12,010,266.77, converged=True
+PGD trial 3/16: {'mode': 'global', 'regularization': 0.0001, 'delta': 0.001}, March penalty=12,000,847.31, converged=True
+PGD trial 4/16: {'mode': 'global', 'regularization': 0.0001, 'delta': 0.005}, March penalty=12,025,172.02, converged=True
+PGD trial 5/16: {'mode': 'global', 'regularization': 0.001, 'delta': 0.001}, March penalty=11,972,412.88, converged=True
+PGD trial 6/16: {'mode': 'global', 'regularization': 0.001, 'delta': 0.005}, March penalty=12,003,141.17, converged=True
+PGD trial 7/16: {'mode': 'global', 'regularization': 0.01, 'delta': 0.001}, March penalty=12,094,229.95, converged=True
+PGD trial 8/16: {'mode': 'global', 'regularization': 0.01, 'delta': 0.005}, March penalty=12,110,876.66, converged=True
+PGD trial 9/16: {'mode': 'peak_offpeak', 'regularization': 0.0, 'delta': 0.001}, March penalty=12,067,220.13, converged=True
+PGD trial 10/16: {'mode': 'peak_offpeak', 'regularization': 0.0, 'delta': 0.005}, March penalty=12,064,532.79, converged=True
+PGD trial 11/16: {'mode': 'peak_offpeak', 'regularization': 0.0001, 'delta': 0.001}, March penalty=12,063,115.84, converged=True
+PGD trial 12/16: {'mode': 'peak_offpeak', 'regularization': 0.0001, 'delta': 0.005}, March penalty=12,062,023.84, converged=True
+PGD trial 13/16: {'mode': 'peak_offpeak', 'regularization': 0.001, 'delta': 0.001}, March penalty=12,065,897.90, converged=True
+PGD trial 14/16: {'mode': 'peak_offpeak', 'regularization': 0.001, 'delta': 0.005}, March penalty=12,052,952.34, converged=True
+PGD trial 15/16: {'mode': 'peak_offpeak', 'regularization': 0.01, 'delta': 0.001}, March penalty=12,098,545.84, converged=True
+PGD trial 16/16: {'mode': 'peak_offpeak', 'regularization': 0.01, 'delta': 0.005}, March penalty=12,108,245.69, converged=True
+Selected PGD config: {'mode': 'global', 'regularization': 0.001, 'delta': 0.001}
+{
+  "selected": {
+    "mode": "global",
+    "regularization": 0.001,
+    "delta": 0.001
+  },
+  "penalty_improvement_pct": {
+    "uniform_mean_6": -1.9161105026213932,
+    "Ridge_stacking": -2.3026341814633478,
+    "best_single": -11.144287579552682
+  },
+  "gradient_metrics": {
+    "site_mae_kwh": 6.06567137159605,
+    "site_rmse_kwh": 22.01201601643742,
+    "observed_rows": 370392,
+    "reference_groups": {
+      "complete_hours": 1464,
+      "available_prediction_hours": 1464,
+      "rows": 370392,
+      "sites": 253,
+      "penalty_krw": 32863982.15872689,
+      "weighted_absolute_error": 328639821.5872689,
+      "revenue_krw": 1598579787.5367217,
+      "settlement_krw": 1565715805.3779948,
+      "site_mae": 6.06567137159605,
+      "site_rmse": 22.01201601643742,
+      "group_mae": 423.11939885685945,
+      "group_rmse": 856.3175301398784
+    }
+  },
+  "verification": {
+    "status": "PASS",
+    "final_rows": 2216280,
+    "diagnostic_complete_hours": 1464,
+    "final_training_complete_hours": 3795,
+    "final_training_end": "2025-05-31 17:00:00+09:00",
+    "simplex_constraints_verified": true,
+    "independent_group_penalty_matches": true,
+    "reloaded_model_matches": true,
+    "raw_targets_uploaded": false,
+    "VPP_composition_changed": false,
+    "check_optimizer_converged": true,
+    "final_optimizer_converged": true,
+    "evaluation_provenance": [
+      {
+        "model": "XGBoost/Ver1",
+        "stage": "final",
+        "prediction_sha256": "97c280a1821187ba9949c243f4708d817df8e7b3c7d304d9b03f21a71f6f3838",
+        "training_end": "2025-05-31 17:00:00+09:00",
+        "rows": 2216280
+      },
+      {
+        "model": "XGBoost/Ver2",
+        "stage": "final",
+        "prediction_sha256": "4c905079a8783658087b86772796d8b24bbc8c121c4eae69e5aa2f944866e314",
+        "training_end": "2025-05-31 17:00:00+09:00",
+        "rows": 2216280
+      },
+      {
+        "model": "GRU/Ver1",
+        "stage": "final",
+        "prediction_sha256": "9b4494c0195d9d4987976679ab0b721c4f10bec73635c8c7fc4db20609a0d7a2",
+        "training_end": "2025-05-31 17:00:00+09:00",
+        "rows": 2216280
+      },
+      {
+        "model": "GRU/Ver2",
+        "stage": "final",
+        "prediction_sha256": "3cb9cc142c5db4f65afff78cf251416306549b7bc6e9704bf56267fd371f612e",
+        "training_end": "2025-05-31 17:00:00+09:00",
+        "rows": 2216280
+      },
+      {
+        "model": "TCN/Ver1",
+        "stage": "final",
+        "prediction_sha256": "eaf33acc60ff37d51b2e6e25849370b3db27331ef4c7d1c8e1705446e9e75343",
+        "training_end": "2025-05-31 17:00:00+09:00",
+        "rows": 2216280
+      },
+      {
+        "model": "TCN/Ver2",
+        "stage": "final",
+        "prediction_sha256": "6b1594bccc2695ba023ecefcb9131b0edfdb27bdf36b44de5f7fc3646102b64e",
+        "training_end": "2025-05-31 17:00:00+09:00",
+        "rows": 2216280
+      }
+    ]
+  }
+}

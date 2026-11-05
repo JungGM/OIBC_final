@@ -1,0 +1,35 @@
+{
+  "base_models": [
+    "XGBoost/Ver1",
+    "XGBoost/Ver2",
+    "GRU/Ver1",
+    "GRU/Ver2",
+    "TCN/Ver1",
+    "TCN/Ver2"
+  ],
+  "train_end": "2025-02-28 17:00:00+09:00",
+  "selection_start": "2025-03-01 01:00:00+09:00",
+  "selection_end": "2025-03-31 17:00:00+09:00",
+  "check_start": "2025-04-01 01:00:00+09:00",
+  "final_training_end": "2025-05-31 17:00:00+09:00",
+  "modes": [
+    "global",
+    "peak_offpeak"
+  ],
+  "regularization_grid": [
+    0.0,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "smooth_delta_grid": [
+    0.001,
+    0.005
+  ],
+  "selection_metric": "exact 0.1*sum(SMP*k*abs(group signed error sum)) on March complete-roster hours",
+  "objective": "smooth weighted full-roster group absolute error plus L2 distance to fixed Ridge prior",
+  "training_data": "complete-roster hours from causal 2024 and 2025 OOT forecasts only",
+  "fallback_selection": false,
+  "vpp_optimization": false,
+  "historical_caveat": "2024/2025 already inspected; April-May is a new within-run diagnostic split, not globally untouched data"
+}

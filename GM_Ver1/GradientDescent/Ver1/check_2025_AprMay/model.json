@@ -1,0 +1,150 @@
+{
+  "method": "projected_gradient_descent_with_backtracking",
+  "config": {
+    "mode": "global",
+    "regularization": 0.001,
+    "delta": 0.001
+  },
+  "fits": {
+    "all": {
+      "weights": [
+        0.3279744134540117,
+        0.21158954722841727,
+        0.12586168699722933,
+        0.23120587976592333,
+        0.0,
+        0.10336847255441661
+      ],
+      "loss": 0.02381537239748413,
+      "iterations": 62,
+      "converged": true,
+      "stationarity": 1.1525921559972841e-09,
+      "history": [
+        {
+          "iteration": 0,
+          "loss": 0.024319583825466378,
+          "step": 1.0,
+          "projected_gradient_norm": 0.004085923837213233
+        },
+        {
+          "iteration": 62,
+          "loss": 0.02381537239748413,
+          "projected_gradient_norm": 1.1525921559972841e-09
+        }
+      ],
+      "hours": 2331
+    }
+  },
+  "feature_order": [
+    "XGBoost/Ver1",
+    "XGBoost/Ver2",
+    "GRU/Ver1",
+    "GRU/Ver2",
+    "TCN/Ver1",
+    "TCN/Ver2"
+  ],
+  "prior": [
+    0.2283335185960319,
+    0.08209031156732327,
+    0.08775993317754628,
+    0.299924378310795,
+    0.10388999450852857,
+    0.19800186383977475
+  ],
+  "prior_source": "Stacking/Ver1/check_2025/model.json",
+  "prior_training_end": "2024-12-31 17:00:00+09:00",
+  "training_end": "2025-03-31 17:00:00+09:00",
+  "training_complete_hours": 2331,
+  "first_training_hour": "2024-12-24 15:00:00+09:00",
+  "last_training_hour": "2025-03-31 17:00:00+09:00",
+  "constraints": "weights >= 0 and sum(weights) == 1; no intercept",
+  "fixed_reference_groups": true,
+  "SMP_in_forecast_features": false,
+  "group_scale_kw": 21327.684999999998,
+  "provenance": [
+    {
+      "model": "XGBoost/Ver1",
+      "stage": "confirm_2024",
+      "prediction_sha256": "214b75c111926f93eba80360acf6a9df2316af9f715d6f1d6e349d6dbf35f712",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "XGBoost/Ver2",
+      "stage": "confirm_2024",
+      "prediction_sha256": "76b4dc520ba598d9dc68078551987413b7169adfcec7d370eed60aeedbeb8bc2",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "GRU/Ver1",
+      "stage": "confirm_2024",
+      "prediction_sha256": "61ee77bcbc5b6e41672b35ea0fe9ca02ed3dd38c4e27b0ec6170ae5ac31ad91b",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "GRU/Ver2",
+      "stage": "confirm_2024",
+      "prediction_sha256": "86b6e4e6cc79bf1faec9828ee1630d1de10e6e437176b9f1daf9c706d4e1877e",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "TCN/Ver1",
+      "stage": "confirm_2024",
+      "prediction_sha256": "306c18453b5e837fb6b5124c97d5bc895cdcd7d6a1f887e8d15053f015f0c0c1",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "TCN/Ver2",
+      "stage": "confirm_2024",
+      "prediction_sha256": "e4564ea973848270240a152c77954fbf49828ec6eb8f025d496e70604b73d3aa",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "XGBoost/Ver1",
+      "stage": "check_2025",
+      "prediction_sha256": "40fc099c5346f0566bbf094d414297dba25cb2c9b94d71c9b209ef77aebccb01",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    },
+    {
+      "model": "XGBoost/Ver2",
+      "stage": "check_2025",
+      "prediction_sha256": "e816a82ae91baaa88e6ebc2f50afe8a37cc32c774ec984e3d9e96bc53bc0d2c6",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    },
+    {
+      "model": "GRU/Ver1",
+      "stage": "check_2025",
+      "prediction_sha256": "77a3b87ccfa1c5d8754b6bf63b22278774173d47d621798b8d4fa83aa1445d27",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    },
+    {
+      "model": "GRU/Ver2",
+      "stage": "check_2025",
+      "prediction_sha256": "30b59676e748de039366fa4dea1ea2636b9ba8953581c98348167f3666d6dc7b",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    },
+    {
+      "model": "TCN/Ver1",
+      "stage": "check_2025",
+      "prediction_sha256": "0ff2f387021f3cbe8ab3729361f5abf2cd19f4ce80ee81f31d916cc2f65bf5f3",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    },
+    {
+      "model": "TCN/Ver2",
+      "stage": "check_2025",
+      "prediction_sha256": "8b175932efca44a263dc8e52afa0c0936a288b4f198c47e0917efb7afcb39e4c",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    }
+  ]
+}

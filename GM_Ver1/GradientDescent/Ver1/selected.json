@@ -1,0 +1,10 @@
+{
+  "config": {
+    "mode": "global",
+    "regularization": 0.001,
+    "delta": 0.001
+  },
+  "source": "2025 March exact group penalty only",
+  "diagnostic_April_May_used_for_selection": false,
+  "tuning_seconds": 0.5432863235473633
+}

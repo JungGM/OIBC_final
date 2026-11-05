@@ -1,0 +1,92 @@
+{
+  "complete_2024_hours": 178,
+  "complete_2025_hours": 3624,
+  "excluded_incomplete_2024_hours": 8582,
+  "excluded_incomplete_2025_hours": 0,
+  "training_sources": [
+    {
+      "model": "XGBoost/Ver1",
+      "stage": "confirm_2024",
+      "prediction_sha256": "214b75c111926f93eba80360acf6a9df2316af9f715d6f1d6e349d6dbf35f712",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "XGBoost/Ver2",
+      "stage": "confirm_2024",
+      "prediction_sha256": "76b4dc520ba598d9dc68078551987413b7169adfcec7d370eed60aeedbeb8bc2",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "GRU/Ver1",
+      "stage": "confirm_2024",
+      "prediction_sha256": "61ee77bcbc5b6e41672b35ea0fe9ca02ed3dd38c4e27b0ec6170ae5ac31ad91b",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "GRU/Ver2",
+      "stage": "confirm_2024",
+      "prediction_sha256": "86b6e4e6cc79bf1faec9828ee1630d1de10e6e437176b9f1daf9c706d4e1877e",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "TCN/Ver1",
+      "stage": "confirm_2024",
+      "prediction_sha256": "306c18453b5e837fb6b5124c97d5bc895cdcd7d6a1f887e8d15053f015f0c0c1",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "TCN/Ver2",
+      "stage": "confirm_2024",
+      "prediction_sha256": "e4564ea973848270240a152c77954fbf49828ec6eb8f025d496e70604b73d3aa",
+      "training_end": "2023-12-31 17:00:00+09:00",
+      "rows": 2216280
+    },
+    {
+      "model": "XGBoost/Ver1",
+      "stage": "check_2025",
+      "prediction_sha256": "40fc099c5346f0566bbf094d414297dba25cb2c9b94d71c9b209ef77aebccb01",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    },
+    {
+      "model": "XGBoost/Ver2",
+      "stage": "check_2025",
+      "prediction_sha256": "e816a82ae91baaa88e6ebc2f50afe8a37cc32c774ec984e3d9e96bc53bc0d2c6",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    },
+    {
+      "model": "GRU/Ver1",
+      "stage": "check_2025",
+      "prediction_sha256": "77a3b87ccfa1c5d8754b6bf63b22278774173d47d621798b8d4fa83aa1445d27",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    },
+    {
+      "model": "GRU/Ver2",
+      "stage": "check_2025",
+      "prediction_sha256": "30b59676e748de039366fa4dea1ea2636b9ba8953581c98348167f3666d6dc7b",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    },
+    {
+      "model": "TCN/Ver1",
+      "stage": "check_2025",
+      "prediction_sha256": "0ff2f387021f3cbe8ab3729361f5abf2cd19f4ce80ee81f31d916cc2f65bf5f3",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    },
+    {
+      "model": "TCN/Ver2",
+      "stage": "check_2025",
+      "prediction_sha256": "8b175932efca44a263dc8e52afa0c0936a288b4f198c47e0917efb7afcb39e4c",
+      "training_end": "2024-12-31 17:00:00+09:00",
+      "rows": 916872
+    }
+  ]
+}

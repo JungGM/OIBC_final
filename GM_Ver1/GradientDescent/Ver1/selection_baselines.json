@@ -1,0 +1,14 @@
+{
+  "period": "2025 March through March 31 17:00",
+  "penalty_krw": {
+    "XGBoost/Ver1": 12331928.771351365,
+    "XGBoost/Ver2": 12867407.02491108,
+    "GRU/Ver1": 14032628.864769824,
+    "GRU/Ver2": 13293635.91102136,
+    "TCN/Ver1": 16599742.676009685,
+    "TCN/Ver2": 14878582.382671574,
+    "uniform_mean_6": 12431881.637808656,
+    "selected_PGD": 11972412.884507934
+  },
+  "comparisons_only_no_reselection": true
+}

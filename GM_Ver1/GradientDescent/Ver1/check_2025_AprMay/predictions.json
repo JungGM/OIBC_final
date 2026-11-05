@@ -1,0 +1,8 @@
+{
+  "rows": 370392,
+  "training_end": "2025-03-31 17:00:00+09:00",
+  "sha256": "8458b785e9d3467c21f7202a908777127545708f5df529fa5f07c500b5573ada",
+  "role": "out_of_time_April_May_diagnostic; March selection frozen",
+  "finite_nonnegative": true,
+  "unique_keys": true
+}

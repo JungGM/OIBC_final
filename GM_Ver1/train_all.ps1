@@ -23,6 +23,10 @@ try {
     if ($Dataset) { $StackArguments += @("--dataset", $Dataset) }
     & $Python @StackArguments
     if ($LASTEXITCODE -ne 0) { throw "Stacking failed: $LASTEXITCODE" }
+    $GradientArguments = @("-m", "GM_Ver1.gradient_descent", "--out", $ArtifactRoot)
+    if ($Dataset) { $GradientArguments += @("--dataset", $Dataset) }
+    & $Python @GradientArguments
+    if ($LASTEXITCODE -ne 0) { throw "Gradient optimization failed: $LASTEXITCODE" }
 } finally {
     Pop-Location
 }
