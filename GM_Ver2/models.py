@@ -156,32 +156,53 @@ class SequenceGRU(nn.Module):
         return F.softplus(self.head(h).squeeze(-1)-2)
 
 
-def recurrent(x, y, q, capacity, allowed, predict_x, names, epochs, threads, seed, path):
+def recurrent(x, y, q, capacity, allowed, predict_x, names, epochs, threads, seed, path,
+              *, warm=None, expanding=False, recent_start=None):
     torch.manual_seed(seed)
     torch.set_num_threads(threads)
     rng = np.random.default_rng(seed)
     use = [i for i, name in enumerate(names) if not name.endswith(("_code", "_next", "_rise"))]
-    probe = x[allowed[::max(1, len(allowed)//36)]][..., use]
-    mean = np.nan_to_num(np.nanmean(probe, axis=(0, 1, 2)))
-    scale = np.maximum(np.nan_to_num(np.nanstd(probe, axis=(0, 1, 2))), .001)
+    if warm is None:
+        probe = x[allowed[::max(1, len(allowed)//36)]][..., use]
+        mean = np.nan_to_num(np.nanmean(probe, axis=(0, 1, 2)))
+        scale = np.maximum(np.nan_to_num(np.nanstd(probe, axis=(0, 1, 2))), .001)
+    else:
+        mean = np.asarray(warm["mean"], dtype=np.float32)
+        scale = np.asarray(warm["scale"], dtype=np.float32)
     allowed_targets = np.isfinite(y[allowed]) & (y[allowed] >= 0) & (q[allowed] > 0)[..., None]
     day, site = np.where(allowed_targets.sum(axis=1) >= 8)
     day = allowed[day]
     model = SequenceGRU(len(use), len(capacity))
-    opt = torch.optim.AdamW(model.parameters(), lr=.002, weight_decay=.0003)
+    if warm is not None:
+        model.load_state_dict(warm["state"])
+    opt = torch.optim.AdamW(model.parameters(), lr=.002 if warm is None else .0008,
+                            weight_decay=.0003)
     typical_price = q[q > 0].mean()
 
     def encode(values):
         return torch.from_numpy(np.nan_to_num((values[..., use]-mean)/scale).clip(-8, 8))
 
-    for epoch in range(epochs+2):
+    n_epochs = epochs if expanding else epochs+2
+    for epoch in range(n_epochs):
         model.train()
-        ids = rng.choice(len(day), min(16000, len(day)), replace=False)
-        for chunk in np.array_split(ids, (len(ids)+255)//256):
+        if not expanding:
+            ids = rng.choice(len(day), min(16000, len(day)), replace=False)
+        elif warm is None:
+            ids = rng.permutation(len(day))
+        else:
+            anchor = np.flatnonzero(day < recent_start)
+            fresh = np.flatnonzero(day >= recent_start)
+            anchors = rng.choice(anchor, min(32000, len(anchor)), replace=False)
+            ids = rng.permutation(np.r_[anchors, fresh])
+        batch_size = 512 if expanding else 256
+        for chunk in np.array_split(ids, (len(ids)+batch_size-1)//batch_size):
             d, s = day[chunk], site[chunk]
             xt = encode(x[d, :, s])
             yt = y[d, :, s]/capacity[s, None]
             weight = np.sqrt(np.clip(q[d]/typical_price, 0., 5.))*np.sqrt(capacity[s, None])
+            if expanding:
+                # Weaker price dependence keeps the point forecast useful off peak.
+                weight = np.where(weight > 0, np.sqrt(weight*np.sqrt(capacity[s, None])), 0.)
             weight *= np.isfinite(yt) & (yt >= 0)
             weight = torch.from_numpy(weight.astype("float32"))
             err = model(xt, torch.from_numpy(s)) - torch.from_numpy(np.nan_to_num(yt).astype("float32"))
@@ -190,7 +211,7 @@ def recurrent(x, y, q, capacity, allowed, predict_x, names, epochs, threads, see
             loss.backward()
             nn.utils.clip_grad_norm_(model.parameters(), 1.)
             opt.step()
-        print(f"  GRU epoch {epoch+1}/{epochs+2}", flush=True)
+        print(f"  GRU epoch {epoch+1}/{n_epochs}, {len(ids):,} sequences", flush=True)
     torch.save(dict(state=model.state_dict(), mean=mean.tolist(), scale=scale.tolist(),
                     features=[names[i] for i in use]), path)
     result = []
