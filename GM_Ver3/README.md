@@ -35,3 +35,27 @@ python -m GM_Ver3.submission --raw $Raw --submission "$Out/validation_nested/sub
 `settlement`는 명시적으로 전달한 발전소 목록, 고정 배정, SMP, 발전소별 실적 및 예측을 읽습니다. SMP 파일의 KST 종료시각을 평가 범위로 사용합니다. 학습 구간 SMP처럼 `k`가 없으면 종료시각 11~15시에 3, 나머지에 1을 적용합니다. 그룹별 부호 있는 오차를 합한 뒤 절댓값을 취해 `0.1 × SMP × k`를 곱합니다. 실적이 없거나 음수인 발전소가 있는 시각은 두 그룹의 평가에서 함께 제외하고 제외 수를 기록합니다. 0 kWh 실적은 유효합니다. `issue_cutoff`는 종료시각별 예측 마감을 계산합니다.
 
 `selection.json`은 2~4월 비교, `seasonal/summary.json`은 계절별 부분 관측 검증, `validation_nested/`는 개선된 선택·5월 평가·제출 파일을 보관합니다. 출력 경로는 저장소와 배포 폴더 바깥에 둡니다. 2021~2024년 부분 관측 결과에는 253개소 VPP 벌금이나 연간 공식 점수를 부여하지 않습니다.
+
+## 다중 모델 전체 아키텍처
+
+기존 실행 폴더와 제출 파일을 보존하면서 새로운 경로에 모델과 결과를 생성합니다. 트리 모델 세 종은 제한된 설정 그리드를 2024년의 시점외 관측으로 평가합니다. GRU·LSTM은 이전에 발행된 기상예보의 3일 또는 7일 요약과 대상일 24시간 예보를 분리해 처리합니다. 발전량 실측은 학습 타깃입니다. 평가기간에는 발전량 lag와 실측 기상 없이 실행합니다. 학습용 과거 발전량 평균을 넣는 트리 ablation은 각 행의 과거만 사용합니다.
+
+```powershell
+python -m unittest GM_Ver3.test_settlement GM_Ver3.test_validation GM_Ver3.test_architecture
+python -m GM_Ver3.experts --raw $Raw --base $Out --out $Experts --stage all
+python -m GM_Ver3.experts --raw $Raw --base $Out --out $Experts --stage ablation
+python -m GM_Ver3.architecture --raw $Raw --base $Out --trained $Experts --out $Decision
+python -m GM_Ver3.architecture_audit --raw $Raw --base $Out --decision $Decision
+python -m GM_Ver3.full_refit --raw $Raw --base $Out --trained $Experts --decisions $Decision --out $FullRefit
+python -m GM_Ver3.portfolio_challenge --raw $Raw --base $Out --decision $Decision --out $Portfolio
+```
+
+`$Experts`, `$Decision`, `$FullRefit`은 별도 로컬 경로입니다. 첫 두 명령은 후보별·폴드별로 체크포인트를 저장합니다. 같은 설정과 원본으로 중단한 실행을 재개합니다. 설정이나 원본 변경 시 새 출력 폴더를 사용합니다.
+
+OOF 스태킹은 단순 평균, 그룹 절대오차 LP, Ridge, LightGBM·XGBoost 잔차 스태커, 일반 MLP 게이트와 경제 손실 MLP 게이트를 비교합니다. 게이트는 시간·기상에 따라 합이 1인 모델 가중치를 계산합니다. 시간순 내부 검증으로 폭과 학습률, 조기 종료를 고르고 이전 블록 전체로 다시 학습합니다.
+
+VPP 편성은 과거에 이미 만들어 둔 시점외 스태커 잔차를 사용합니다. 참조, 용량균형, 위치 정렬, 잔차 상관, GA와 GA+이동·교환을 비교합니다. 직접 그룹 예측과 합산 예측의 결합 비율도 과거 블록 안에서 시간순 분리한 평가로 고릅니다. 기존 1~4월과 같은 시각에서 벌금 합계로 선택하고 5월은 재검증 결과로 별도 공개합니다. 최종 재학습은 선택한 개별 모델 또는 스태킹 구성원을 첫 평가일 마감까지 확장합니다.
+
+연간 정산금 실험의 모의 실적은 같은 시나리오 안에서 기존 보존 제출본과 새 후보가 공유합니다. 5월 오차를 3일 블록으로 재표본한 가정에 따른 값입니다. 보고서에는 대회 서버 점수를 별도로 표시하며, 실제 점수를 확인하지 않은 경우 빈 값으로 저장합니다.
+
+별도 `portfolio_challenge`는 1~4월에 선택한 예측 스태커의 발전소별 예측을 고정합니다. 평균 벌금 또는 평균과 최악 월을 사용하는 GA·이동 교환을 같은 예측에서 비교합니다. 5월을 이전 설정 변경에 사용한 이력이 있으므로 회귀 진단으로 봅니다.
