@@ -24,6 +24,16 @@ def submission(sites, times, folder):
     return forecast, first
 
 
+def profile(forecast, first, times, capacity, solar):
+    period = (times-pd.Timedelta(hours=1)).strftime("%Y-%m")
+    night = np.stack([(solar[:, mask] <= -.105).all(axis=1) for mask in (first, ~first)], axis=-1)
+    cap = np.array([capacity[first].sum(), capacity[~first].sum()])
+    return dict(generation_gwh=float(forecast.sum()/1e6),
+                night_kwh=float(forecast[night].sum()),
+                group_hours_above_nameplate=int((forecast > cap[None, :]).sum()),
+                monthly_gwh={key: float(forecast[period == key].sum()/1e6) for key in np.unique(period)})
+
+
 def compare(raw, base, decision, candidate, archives, threads):
     sites, train_prices, eval_prices = input_files(raw)
     index, smp, k = price_arrays(eval_prices)
@@ -38,7 +48,15 @@ def compare(raw, base, decision, candidate, archives, threads):
         raise ValueError("Need complete contiguous May days")
     old = joblib.load(base/"may/lgbm_full.joblib")
     eval_x = np.load(base/"test_x.npy", mmap_mode="r")
-    old_eval = tree_predict(old, eval_x, sites.capacity_kw.to_numpy(), threads)
+    capacity = sites.capacity_kw.to_numpy()
+    names = json.loads((base/"features.json").read_text())
+    train_x = np.load(base/"train_x.npy", mmap_mode="r")
+    if train_x.shape[1:] != eval_x.shape[1:] or eval_x.shape[-1] != len(names):
+        raise ValueError("Training and inference feature layout mismatch")
+    solar = eval_x[..., names.index("solar")]
+    profiles = {name: profile(point, first, index, capacity, solar)
+                for name, (point, first) in models.items()}
+    old_eval = tree_predict(old, eval_x, capacity, threads)
     old_may = np.load(base/"may/lgbm_full.npy")
     recipe = json.loads((candidate/"report.json").read_text())["selected"]
     with np.load(decision/"may/oof.npz") as bundle:
@@ -66,7 +84,8 @@ def compare(raw, base, decision, candidate, archives, threads):
                                   at_or_above_64_65=int((net[:, j] >= 6_465_000_000).sum()))
                         for j, name in enumerate(models)}
     dump_json(candidate/"archived_submission_comparison.json", dict(
-        runs=runs, draws_per_anchor=len(hours), assumption="shared simulated actuals from May residual blocks"))
+        runs=runs, draws_per_anchor=len(hours), profiles=profiles, inference_feature_count=len(names),
+        assumption="shared simulated actuals from May residual blocks"))
     print(json.dumps(runs, indent=2), flush=True)
 
 
